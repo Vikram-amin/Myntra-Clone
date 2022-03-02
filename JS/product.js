@@ -87,6 +87,7 @@ productGridItems.innerHTML=""
   outer_div.append(image_div,div)
 
   outer_div.addEventListener('click',()=>{
+    localStorage.setItem("PoductDetalisData", JSON.stringify(product));
     window.location.href='../HTML/productDetail.html'
   })
 
@@ -100,6 +101,9 @@ productGridItems.innerHTML=""
 }
 
 displayProducts(JSON.parse(localStorage.getItem('tShirts')))
+
+
+// sort Products
 
 let sortButton = document.getElementById("sortButton");
 sortButton.addEventListener("change", sortProducts)
@@ -132,6 +136,7 @@ function sortProducts(){
   displayProducts(updatedProductList)
 }
 
+// filter Product By Brand
 
 let FilterBrand = document.getElementById('filterButtonBrand')
 
@@ -158,15 +163,17 @@ FilterBrand.addEventListener('click',(event)=>{
   }
 })
 
+//    filter Product By Price
+
 let FilterPrice = document.getElementById('filterButtonPrice')
 
 FilterPrice.addEventListener('click',(event)=>{
 
   let productList = JSON.parse(localStorage.getItem('tShirts'));
-  let filter =  event.target.checked
-  if(filter){
-    let filterCriteria = event.target.value
+  let filter =  event.target.checked;
 
+  if(filter){
+    let filterCriteria = event.target.value;
 
     let updatedProductList = productList.filter((prod) => {
       if(filterCriteria === '174-1881'){
@@ -182,6 +189,5 @@ FilterPrice.addEventListener('click',(event)=>{
       }
     })
     displayProducts(updatedProductList)
-  
   }
 })

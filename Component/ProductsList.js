@@ -24,7 +24,7 @@ return  [
             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1673725/2018/2/16/11518766944762-Roadster-Men-Navy-Striped-Round-Neck-T-shirt-4281518766944542-4.jpg",
         },
         rating: 4.2,
-        count: 300,
+        count: 34.3,
       },
       {
         id: 2,
@@ -45,7 +45,7 @@ return  [
           image4: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1225877/2021/11/9/43a0f278-c56c-490d-9b88-5b3bb968264f1636464304101-Roadster-Mustard-Yellow-Printed-Round-Neck-T-shirt-541636464-5.jpg",
         },
         rating: 4.5,
-        count: 320,
+        count: 43.2,
       },
       {
         id: 3,
@@ -66,7 +66,7 @@ return  [
           image4: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6712234/2019/3/27/783dc4de-8dae-47a2-9ccd-628645baa2cf1553680490323-Roadster-Men-Navy-Blue-Striped-Polo-Collar-T-shirt-557155368-5.jpg",
         },
         rating: 4.1,
-        count: 470,
+        count: 47.0,
       },
       {
         id: 4,
@@ -87,7 +87,7 @@ return  [
           image4: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2275305/2021/11/9/b670b196-233b-43dd-87bf-1f0b80d191f71636464059214-Roadster-Men-Blue--White-Printed-Pure-Cotton-Round-Neck-T-sh-5.jpg",
         },
         rating: 4.2,
-        count: 460,
+        count: 46.0,
       },
 
       {
@@ -113,7 +113,7 @@ return  [
             "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14350098/2021/6/18/c72642c3-92a0-4495-8a64-31a49445206b1623996957736-Mast--Harbour-Men-Tshirts-3781623996957278-2.jpg",
         },
         rating: 3.9,
-        count: 450,
+        count: 45.0,
       },
 
       {
@@ -139,7 +139,7 @@ return  [
             "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/0e145eb2-0cb6-4001-9a5f-24822cd773b31632910116725-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-5.jpg",
         },
         rating: 4.9,
-        count: 400,
+        count: 40.9,
       },
 
 
@@ -167,7 +167,7 @@ return  [
             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11363110/2020/3/5/878e98a7-cc6d-44a0-be82-1c217f8117281583391728472-WROGN-Men-Tshirts-491583391727243-3.jpg",
         },
         rating: 4.3,
-        count: 480,
+        count: 48,
       },
 
       {
@@ -193,7 +193,7 @@ return  [
             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700830/2019/4/8/a11913ed-bd40-48e6-bd8c-95f529cabcec1554699735359-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-4.jpg",
         },
         rating: 4.2,
-        count: 689,
+        count: 68.9,
       },
 
       {
@@ -219,7 +219,7 @@ return  [
             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/67f8fc06-3131-4ae9-a869-2b485f0aca3c1559989322742-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--4.jpg",
         },
         rating: 4.5,
-        count: 415,
+        count: 41.5,
       },
 
       {
@@ -245,7 +245,7 @@ return  [
             "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/31dc399e-1cf9-4053-934a-9f645c421b651576820663105-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-6.jpg",
         },
         rating: 4.2,
-        count: 380,
+        count: 38.2,
       },
 
 
