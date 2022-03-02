@@ -1,0 +1,647 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+span {
+  color: black;
+  /* background-color: white; */
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: white;
+  font-size: 16px;
+  height: 89px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  /* display: flex; */
+  justify-content: space-between;
+  transition: all 0s ease 0s;
+  box-shadow: rgb(0, 0, 0, 0.08) 0 4px 12px;
+  /* display: block; */
+}
+#header .menu {
+  visibility: hidden;
+  position: absolute;
+  /* top: 0; */
+  left: 20px;
+}
+#header .logo {
+  height: 80px;
+  width: 63px;
+  margin: 0 50px 0 50px;
+  padding: 20px;
+}
+
+#header .logo img {
+  /* justify-content: center; */
+  height: 46px;
+  width: 60px;
+
+  /* width: 100%; */
+}
+#navigation {
+  visibility: visible;
+}
+#header .nav {
+  visibility: visible;
+  display: flex;
+
+  margin-bottom: 0;
+}
+.nav .names {
+  margin-left: 23px;
+}
+#header .nav a {
+  /* justify-content: space-between; */
+  /* margin-left: 25px; */
+  text-decoration: none;
+  color: #484849;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  word-spacing: 2px;
+  padding: 0 17px 0px 17px;
+  /* height: 100%; */
+}
+
+#header .search {
+  display: flex;
+  width: 31%;
+  text-align: center;
+  align-items: center;
+  margin-right: 0%;
+}
+
+#header .search input {
+  /* display: flex; */
+  height: 40px;
+  width: 95%;
+  color: #f5f5f6;
+  background-color: #f5f5f6;
+  padding: 8px 10px 10px 10px;
+  border: 0;
+}
+
+#header .search a {
+  background-color: #f5f5f6;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+
+  padding: 8px 10px 5px 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(128, 125, 125);
+  text-align: center;
+}
+
+#header .right {
+  height: 55px;
+  width: 18%;
+  /* justify-content: space-between;
+ */
+  display: flex;
+  margin: 20px 0px 10px 30px;
+}
+
+#header .right > div {
+  margin-left: 8%;
+}
+
+.talign {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #fafbfc;
+  margin-top: 80px;
+  padding: 70px 2px 2px 10px;
+}
+
+footer .info {
+  /* justify-content: space-around; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+footer .info > div {
+  width: fit-content;
+  margin-left: 6%;
+}
+
+footer .info > div > a {
+  display: block;
+  margin: 4px;
+  text-decoration: none;
+  color: rgb(85, 83, 83);
+}
+
+footer .info > div > p a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .info > div > p {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer .info > div .stores {
+  width: 134px;
+}
+
+footer .info .keepInTouch {
+  padding: 5px;
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+
+footer .info .keepInTouch a {
+  /* text-decoration: none;
+   */
+
+  width: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex div {
+  color: rgb(85, 83, 83);
+  padding: 5px;
+  margin: 2px;
+}
+
+.ddown {
+  visibility: hidden;
+  z-index: 200;
+  position: absolute;
+  width: 1200px;
+  height: 500px;
+  padding: 20px;
+
+  background-color: white;
+  top: 80px;
+  left: 160px;
+  display: flex;
+  /* transition: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+}
+.ddown li {
+  list-style: none;
+  padding: 1.5px;
+  font-weight: 400;
+}
+.ddown > div > ul > :nth-child(1) {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f28090;
+  /* background-color: black; */
+  padding: 12px 0px 10px 0px;
+  /* margin-bottom: 15px; */
+}
+.ddown > div {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.ddown .nextul {
+  border-top: solid 2px rgb(223, 235, 223);
+  margin-top: 10px;
+  /* background-color: #484849; */
+}
+
+#main {
+  position: relative;
+  margin-top: 90px;
+  /* top: 100px; */
+  width: 100%;
+
+  text-align: center;
+}
+
+#main img {
+  margin: auto;
+  width: 90%;
+}
+
+.cimages {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.cimages img {
+  width: 94%;
+}
+
+#crackDeals .dflex {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#crackDeals .dflex > div {
+  width: 18%;
+  margin-left: 1.5%;
+}
+
+#crackDeals .dflex > div img {
+  width: 100%;
+}
+
+.dimages {
+  text-align: center;
+  width: 100%;
+}
+
+.dimages img {
+  width: 100%;
+}
+
+#dprofile {
+  visibility: hidden;
+  position: absolute;
+  top: 79px;
+  width: 300px;
+  height: 500px;
+  right: 150px;
+  background-color: white;
+  color: black;
+  justify-content: left;
+  text-align: left;
+  padding: 5px 30px 5px 30px;
+}
+#dprofile ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cecccc;
+}
+#dprofile li {
+  text-decoration: none;
+  list-style: none;
+  padding: 4px 0 4px 0;
+}
+
+/* mobile version */
+
+@media only screen and (max-width: 800px) {
+  #header {
+    width: 100%;
+    justify-content: none;
+  }
+  #header .menu {
+    cursor: pointer;
+    top: 33px;
+    visibility: visible;
+  }
+  #header .menu span {
+    height: 20px;
+  }
+
+  .nav {
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    /* flex-direction: row; */
+    background-color: white;
+  }
+  #navigation {
+    visibility: hidden;
+  }
+  .nav > div {
+    width: 20px;
+  }
+
+  #header .search {
+    display: flex;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    margin-right: -43.5%;
+    /* margin-left: %; */
+  }
+
+  #header .search input {
+    /* display: flex; */
+    height: 60px;
+    width: 0;
+    color: #f5f5f6;
+    /* background-color: #f5f5f6; */
+    padding: 0;
+    border: 0;
+  }
+  #header .search a {
+    background-color: white;
+    width: 20px;
+    height: 34px;
+    align-items: center;
+
+    padding: 8px 0px 5px 0;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(128, 125, 125);
+    text-align: center;
+  }
+  #header .right {
+    height: 30px;
+    width: 25%;
+    /* justify-content: none; */
+
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #header .right > div {
+    margin-left: 4px;
+  }
+
+  .talign {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talign .rname {
+    z-index: 100;
+    visibility: hidden;
+    background-color: red;
+    color: red;
+  }
+
+  #main {
+    position: relative;
+    margin-top: 90px;
+    /* top: 100px; */
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #main img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cimages {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cimages img {
+    width: 94%;
+  }
+
+  #crackDeals .dflex {
+    overflow-x: scroll;
+
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* margin-left: 20px; */
+    width: 100%;
+  }
+  #creackDeals .dflex::-webkit-scrollbar {
+    overflow: hidden;
+  }
+  #crackDeals .dflex > div:nth-child(1) {
+    margin-left: 630px;
+  }
+  #crackDeals .dflex > div {
+    width: 1100px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
+  }
+
+  #crackDeals .dflex > div img {
+    width: 250px;
+  }
+
+  .dimages {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dimages img {
+    width: 100%;
+  }
+
+  #dprofile {
+    visibility: hidden;
+    position: absolute;
+    top: 79px;
+    width: 300px;
+    height: 500px;
+    right: 150px;
+    background-color: white;
+    color: black;
+    justify-content: left;
+    text-align: left;
+    padding: 5px 30px 5px 30px;
+  }
+  #dprofile ul {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cecccc;
+  }
+  #dprofile li {
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0 4px 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    width: 100%;
+    justify-content: none;
+  }
+  #header .menu {
+    cursor: pointer;
+    top: 33px;
+    visibility: visible;
+  }
+  #header .menu span {
+    height: 20px;
+  }
+
+  .nav {
+    z-index: 2;
+    visibility: visible;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    /* flex-direction: row; */
+    background-color: white;
+  }
+  #navigation {
+    /* visibility: hidden; */
+  }
+  .nav > div {
+    width: 20px;
+  }
+
+  #header .search {
+    display: flex;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    margin-right: -35.5%;
+    /* margin-left: %; */
+  }
+
+  #header .search input {
+    /* display: flex; */
+    height: 60px;
+    width: 0;
+    color: #f5f5f6;
+    /* background-color: #f5f5f6; */
+    padding: 0;
+    border: 0;
+  }
+  #header .search a {
+    background-color: white;
+    width: 20px;
+    height: 34px;
+    align-items: center;
+
+    padding: 8px 0px 5px 0;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(128, 125, 125);
+    text-align: center;
+  }
+  #header .right {
+    height: 30px;
+    width: 25%;
+    /* justify-content: none; */
+
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #header .right > div {
+    margin-left: 4px;
+  }
+
+  .talign {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talign .rname {
+    z-index: 100;
+    visibility: hidden;
+    background-color: red;
+    color: red;
+  }
+
+  #main {
+    position: relative;
+    margin-top: 90px;
+    /* top: 100px; */
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #main img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cimages {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cimages img {
+    width: 94%;
+  }
+
+  #crackDeals .dflex {
+    overflow-x: scroll;
+
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* margin-left: 20px; */
+    width: 100%;
+  }
+  #creackDeals .dflex::-webkit-scrollbar {
+    overflow: hidden;
+  }
+  #crackDeals .dflex > div:nth-child(1) {
+    margin-left: 800px;
+  }
+  #crackDeals .dflex > div {
+    width: 1200px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
+  }
+
+  #crackDeals .dflex > div img {
+    width: 250px;
+  }
+
+  .dimages {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dimages img {
+    width: 100%;
+  }
+
+  #dprofile {
+    visibility: hidden;
+    position: absolute;
+    top: 79px;
+    width: 300px;
+    height: 500px;
+    right: 150px;
+    background-color: white;
+    color: black;
+    justify-content: left;
+    text-align: left;
+    padding: 5px 30px 5px 30px;
+  }
+  #dprofile ul {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cecccc;
+  }
+  #dprofile li {
+    text-decoration: none;
+    list-style: none;
+    padding: 4px 0 4px 0;
+  }
+}
