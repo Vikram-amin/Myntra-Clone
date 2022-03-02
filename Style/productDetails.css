@@ -302,3 +302,51 @@ height: 500px;
       padding-top: 10px;
       padding-left: 15px;
   }
+
+  .pinp{
+    font-size: 13px;
+    color: #282c3f;
+    margin: 15px 0 25px 0;
+    font-weight: 100;
+  }
+
+  .paya{
+    color: #282c3f;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+
+  .noteIcon{
+      width: 10px;
+      height: 10px;
+  }
+
+  .produtDetailsdiv{
+    color: #282c3f;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+   margin-top: 25px;
+  }
+
+  .produtDetailsdiv img{
+    width: 20px;
+    height: 18px;
+    opacity: 1;
+   padding-left: 15px;
+   align-items: center;
+   justify-content: center;
+}
+
+.produtDetailspara{
+    color: #282c3f;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-top: 12px;
+    width: 84%;
+    font-weight: 100;
+}

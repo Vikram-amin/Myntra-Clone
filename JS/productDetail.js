@@ -56,7 +56,37 @@ const displayData = () => {
 <div class="deliverOption"> DELIVERY OPTIONS <img src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU=" /></div>
 
 <div class="enterPincode"><input type="text" placeholder="Enter a PIN code">CHECK</div>
-  `
+
+<p class="pinp">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+
+<p class="paya">100% Original Products </p>
+<p class="paya">Pay on delivery might be available</p>
+<p class="paya">Easy 30 days returns and exchanges</p>
+<p class="paya">Try & Buy might be available</p>
+
+<hr>
+
+<div class="produtDetailsdiv"> PRODUCT DETAILS <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwjVwMMSbIn5aK32MPiwO_8b6JA8ps-Lt3A&usqp=CAU" /></div>
+<p class="produtDetailspara">Keep this hip this season with the HRX Men's Athleisure T-shirt. This versatile T-shirt can be styled any way you like for the ultimate gym-to-street look.</p> 
+
+<div class="produtDetailsdiv"> Features</div>
+<p class="paya">Athleisure T-shirt can be paired with tracks, khakis or jeans </p>
+<p class="paya">Style: Round Neck </p>
+<p class="paya">Sleeve: Short Sleeves</p>
+<p class="paya">Colour: Yellow </p>
+<p class="paya">Print: Typography</p>
+<p class="paya">Fit: Regular</p>
+
+<div class="produtDetailsdiv"> Size & Fit </div>
+<p class="paya"> The model height 6' is wearing a size M </p>
+
+<div class="produtDetailsdiv"> Material & Care </div>
+<p class="paya"> 100% cotton </p>
+<p class="paya"> Machine-wash </p>
+<hr>
+`
+
+
 
     productDetailParent.append(Left,Right)
     productDetailContainer.append(productDetailParent)
