@@ -1,4 +1,136 @@
 [
+  {
+    id: 111,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Light Blue Logo Printed Slim Fit Casual T-shirt",
+    price: 3299,
+    gender: "men",
+    description: "Blue T-shirt for men",
+    brand: "Roadster",
+    color: "blue",
+    discount: 10,
+    off_price: 3399,
+    images: {
+      image1:
+        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/3ae9949f-002c-4329-9590-7182c6ebd1421632910116761-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-1.jpg",
+      image2:
+        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/eaf82df0-f587-43c2-b857-d27db4e92f7e1632910116752-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-2.jpg",
+      image3:
+        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/99f02959-6e3a-4693-a58a-2e70e98148ba1632910116735-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-4.jpg",
+      image4:
+        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14590966/2021/9/29/0e145eb2-0cb6-4001-9a5f-24822cd773b31632910116725-Calvin-Klein-Jeans-Men-Tshirts-4161632910116207-5.jpg",
+    },
+    rating: 4.9,
+    count: 40.9,
+  },
+
+  {
+    id: 112,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Black Typography Printed Cotton T-shirt",
+    price: 384,
+    gender: "men",
+    description: "Men Mauve Solid Polo Collar T-shirt",
+    brand: "HRX by Hrithik Roshan",
+    color: "",
+    discount: 45,
+    off_price: 699,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/1142777f-026c-4952-adc3-2a92fde814e61576820663411-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/a1cd3b5d-a251-4216-859f-e2a286d886af1576820663361-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/11f92baf-5518-4ca3-8520-655b7035f7771576820663308-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/31dc399e-1cf9-4053-934a-9f645c421b651576820663105-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-6.jpg",
+    },
+    rating: 4.2,
+    count: 38.2,
+  },
+
+
+
+  {
+    id: 113,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Mauve Solid Polo Collar T-shirt",
+    price: 909,
+    gender: "men",
+    description: "Men Mauve Solid Polo Collar T-shirt",
+    brand: "WROGN",
+    color: "brown",
+    discount: 35,
+    off_price: 1399,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11363110/2020/3/5/573bb0f9-564e-4a11-a91a-e6e1c8f3fcba1583391728565-WROGN-Men-Tshirts-491583391727243-1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11363110/2020/3/5/1a9da9b8-79bb-49dd-b187-97f1221983071583391728515-WROGN-Men-Tshirts-491583391727243-2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11363110/2020/3/5/befb9095-2cca-49e0-9de4-934730863ffe1583391728365-WROGN-Men-Tshirts-491583391727243-5.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11363110/2020/3/5/878e98a7-cc6d-44a0-be82-1c217f8117281583391728472-WROGN-Men-Tshirts-491583391727243-3.jpg",
+    },
+    rating: 4.3,
+    count: 48,
+  },
+
+  {
+    id: 114,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Rust Red Graphic Printed Cotton T-shirt",
+    price: 699,
+    gender: "men",
+    description: "Men Mauve Solid Polo Collar T-shirt",
+    brand: "WROGN",
+    color: "red",
+    discount: 30,
+    off_price: 999,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700830/2019/4/8/3f06fe25-1ce2-4e1e-88e9-7a9d26b4f0bf1554699735416-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700830/2019/4/8/7f3d29b4-4465-4fd6-bd2a-160c425cf7b31554699735396-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700830/2019/4/8/b54ceacb-54ed-43a5-ac32-ae628aba043b1554699735376-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700830/2019/4/8/a11913ed-bd40-48e6-bd8c-95f529cabcec1554699735359-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-4.jpg",
+    },
+    rating: 4.2,
+    count: 68.9,
+  },
+
+  {
+    id: 115,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Yellow Printed Cotton Pure Cotton T-shirt",
+    price: 314,
+    gender: "men",
+    description: "Men Yellow Printed Cotton Pure Cotton T-shirt",
+    brand: "HRX by Hrithik Roshan",
+    color: "yellow",
+    discount: 55,
+    off_price: 699,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/c3d336e4-8c86-4434-94b2-c9b28b6dd6471559989322777-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/20153ade-f325-4613-a851-f79f8dc00c571559989322759-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2019/6/8/67f8fc06-3131-4ae9-a869-2b485f0aca3c1559989322742-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--4.jpg",
+    },
+    rating: 4.5,
+    count: 41.5,
+  },
+
     {
         id: 101,
         categories: 'shirt',
@@ -221,6 +353,42 @@
         rating: 4.1,
         count: 47.0,
       },
-
-
 ]
+
+
+let productGridItems = document.getElementById('productGridItems')
+
+const displayProducts = (data ) => {
+
+productGridItems.innerHTML=""
+// console.log(data)
+
+  data.forEach (function (product) {
+    let outer_div = document.createElement ('div');
+    let div = document.createElement('div')
+    let image_div = document.createElement('div')
+    image_div.className = 'img_div';
+
+    outer_div.setAttribute('id','products')
+
+    let img =  document.createElement('img');
+    img.src =   product.images.image1;
+  
+  
+    div.innerHTML = `<a>
+    <div>
+      <div class="brandname">${product.brand} <span></span></div>
+      <div class="title">${product.title}</div>
+      <div class="price"> Rs. ${product.price} <span class="line-through">Rs. ${product.off_price}</span> <span class="discount">(${product.discount}% OFF)</span>
+      </div>
+    </div></a
+  >`
+
+  image_div.append(img)
+  outer_div.append(image_div,div)
+  
+    productGridItems.append (outer_div);
+  });
+}
+
+displayProducts(JSON.parse(localStorage.getItem('tShirts')))
