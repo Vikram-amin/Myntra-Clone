@@ -36,8 +36,6 @@ const displayWishListProducts= (data) => {
         undo.setAttribute('id','undo')
         undo.textContent = "X"
         
-      
-      
         div.innerHTML = `<a>
         <div>
           <div class="title">${product.title}</div>
@@ -54,41 +52,47 @@ const displayWishListProducts= (data) => {
       
       WishListContainer.append (outer_div);
 
-      let cart = document.getElementById('moveToBag');
-      cart.addEventListener('click',() => {
-        addToCart(product)
-    })
-
-    let removeEl = document.getElementById('undo');
-    removeEl.addEventListener('click',() => {
-      console.log("hi")
-      // removeWishList(product.id)
+    //   let cart = document.getElementById('moveToBag');
+    //   cart.addEventListener('click',() => {
+    //     addToCart(product)
+    // })
+ 
+    undo.addEventListener('click',() => {
+      removeWishList(product.id)
   })
 
-    });    
-    }
-    
-    displayWishListProducts(wishListData)
+
+});    
 
 
-let cart = localStorage.getItem('cart');
-if(cart === null){
-  localStorage.setItem('cart',JSON.stringify([]))
 }
+    
+    displayWishListProducts(JSON.parse(localStorage.getItem('WishList')))
 
 
-const addToCart = (data) => {
-    let cart = JSON.parse(localStorage.getItem('cart'))
-    let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
+// let cart = localStorage.getItem('cart');
+// if(cart === null){
+//   localStorage.setItem('cart',JSON.stringify([]))
+// }
+
+
+// const addToCart = (data) => {
+//     let cart = JSON.parse(localStorage.getItem('cart'))
+//     let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
   
-    if(checkIfProductExit){
-      alert('Item Already in cart')
-    }else{
-        cart.push(data)
-        localStorage.setItem('cart',JSON.stringify(cart))
-  }
-  }
+//     if(checkIfProductExit){
+//       alert('Item Already in cart')
+//     }else{
+//         cart.push(data)
+//         localStorage.setItem('cart',JSON.stringify(cart))
+//   }
+//   }
 
-  const removeWishList = (data) => {
-
+  const removeWishList = (id) => {
+    // console.log(id)
+    let data = JSON.parse(localStorage.getItem('WishList'));
+    const newData = data.filter((item) => item.id != id)
+    localStorage.setItem('WishList',JSON.stringify(newData));
+    location.reload()
   }
+  displayWishListProducts(JSON.parse(localStorage.getItem('WishList')))
