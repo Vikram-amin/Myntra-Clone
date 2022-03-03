@@ -92,7 +92,7 @@
   }  
 
   #moveToBag{
-      width: 110%;
+      width: 100%;
       font-weight: 700;
       color: #ff3e6c;
       text-decoration: none;
@@ -100,11 +100,8 @@
       cursor: pointer;
       text-align: center;
       font-size: 14px;
-      padding-top: 14px;
-      margin-top: 30px;
-      margin-left: -10px;
+      margin-top: 20px;
       padding: 15px;
-      margin-bottom: -10px;
       border: none;
       border-top: 1px solid rgb(221, 213, 213);
      

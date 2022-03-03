@@ -39,22 +39,29 @@ const displayWishListProducts= (data) => {
         div.innerHTML = `<a>
         <div>
           <div class="title">${product.title}</div>
-          <div class="price"> Rs. ${product.price} <span class="line-through">Rs. ${product.off_price}</span> <span class="discount">(${product.discount}% OFF)</span>
-          </div>
-          <button id = "moveToBag">MOVE TO BAG</button>
-        </div></a
-      >`
-    //   console.log(product)
+          <div class="price"> Rs. ${product.price} <span class="line-through">Rs. ${product.off_price}</span> <span class="discount">(${product.discount}% OFF)</span></div>
+        </div></a>`
+
+        //<button id ="moveToBag" onclick="addToCart">MOVE TO BAG</button>
+        let btn = document.createElement('button')
+        btn.textContent = "MOVE TO BAG";
+        btn.setAttribute('id','moveToBag')
+        btn.addEventListener('click',()=>{
+          addToCart(product)
+        })
+
     
       image_div.append(img)
       image_div.append(undo)
+      div.append(btn)
       outer_div.append(image_div,div)
       
       WishListContainer.append (outer_div);
 
     //   let cart = document.getElementById('moveToBag');
     //   cart.addEventListener('click',() => {
-    //     addToCart(product)
+    //     // addToCart(product)
+    //     console.log("hi")
     // })
  
     undo.addEventListener('click',() => {
@@ -63,30 +70,17 @@ const displayWishListProducts= (data) => {
 
 
 });    
-
-
 }
-    
-    displayWishListProducts(JSON.parse(localStorage.getItem('WishList')))
+  displayWishListProducts(JSON.parse(localStorage.getItem('WishList')))
 
 
-// let cart = localStorage.getItem('cart');
-// if(cart === null){
-//   localStorage.setItem('cart',JSON.stringify([]))
-// }
+let cart = localStorage.getItem('cart');
+if(cart === null){
+  localStorage.setItem('cart',JSON.stringify([]))
+}
 
 
-// const addToCart = (data) => {
-//     let cart = JSON.parse(localStorage.getItem('cart'))
-//     let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
-  
-//     if(checkIfProductExit){
-//       alert('Item Already in cart')
-//     }else{
-//         cart.push(data)
-//         localStorage.setItem('cart',JSON.stringify(cart))
-//   }
-//   }
+
 
   const removeWishList = (id) => {
     // console.log(id)
@@ -96,3 +90,17 @@ const displayWishListProducts= (data) => {
     location.reload()
   }
   displayWishListProducts(JSON.parse(localStorage.getItem('WishList')))
+
+
+
+  function addToCart(data){
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
+  
+    if(checkIfProductExit){
+      alert('Item Already in cart')
+    }else{
+        cart.push(data)
+        localStorage.setItem('cart',JSON.stringify(cart))
+  }
+  }
