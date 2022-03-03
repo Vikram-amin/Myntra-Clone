@@ -10,6 +10,7 @@ body{
     margin: auto;
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin-top: 13vh;
 }
 
 
@@ -135,8 +136,8 @@ body{
     font-family: sans-serif;
     min-height: 17px;
 }
-
-#brandFilter ul{
+/* ul */
+#brandFilter #filterButtonBrand{
     padding-top: 10px;
 }
 
@@ -224,6 +225,6 @@ body{
     margin-left: 5px;
   }
 
-
-
-  
+#footerBlock{
+    padding-top: 140vh;
+}

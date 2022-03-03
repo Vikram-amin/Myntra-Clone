@@ -1,4 +1,5 @@
 import { navbar } from "../Component/navbar.js";
+import { footer } from "../Component/footer.js"
 import {ItemtShirts} from '../Component/ProductsList.js'
 
 
@@ -8,32 +9,18 @@ if (JSON.parse(localStorage.getItem("tShirts")) == null) {
 localStorage.setItem('tShirts',JSON.stringify(tShirtsData))
 }
 
-let ProductsHeader = document.getElementById('ProductsHeader');
+let ProductsHeader = document.getElementById('header');
+ProductsHeader.innerHTML = navbar()
 
-//ProductsHeader.innerHTML = navbar()
+let ProductsContainer= document.getElementById('ProductsContainer')
+let ProductsParent = document.getElementById('ProductsParent')
 
-// brand: "Roadster"
-// categories: "tshirt"
-// color: "blue"
-// count: 420
-// description: "Blue T-shirt for men"
-// discount: 10
-// gender: "men"
-// id: 5
-// images: {image1: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,…in-Klein-Jeans-Men-Tshirts-4161632910116207-1.jpg', image2: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,…in-Klein-Jeans-Men-Tshirts-4161632910116207-2.jpg', image3: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,…in-Klein-Jeans-Men-Tshirts-4161632910116207-4.jpg', image4: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,…in-Klein-Jeans-Men-Tshirts-4161632910116207-5.jpg'}
-// off_price: 3399
-// price: "3299
-// rating: 4.9
-// size: "Sizes : 39, 40, 42, 44..."
-// title: "Men Light Blue Logo Printed Slim Fit Casual T-shirt"
 
 let productGridItems = document.getElementById('productGridItems')
 
 const displayProducts = (data ) => {
-
 productGridItems.innerHTML=""
 // console.log(data)
-
   data.forEach (function (product) {
     let outer_div = document.createElement ('div');
     let div = document.createElement('div')
@@ -45,15 +32,13 @@ productGridItems.innerHTML=""
     let img =  document.createElement('img');
     img.src =   product.images.image1;
   
-  
     div.innerHTML = `<a>
     <div>
       <div class="brandname">${product.brand} <span></span></div>
       <div class="title">${product.title}</div>
       <div class="price"> Rs. ${product.price} <span class="line-through">Rs. ${product.off_price}</span> <span class="discount">(${product.discount}% OFF)</span>
       </div>
-    </div></a
-  >`
+    </div></a>`
 
   outer_div.addEventListener ('mouseenter', startInterval);
   outer_div.addEventListener ('mouseleave', stopInterval);
@@ -89,17 +74,24 @@ productGridItems.innerHTML=""
   // let wisListButton = document.createElement('button');
   // wisListButton.setAttribute('id','wishListBtn')
   
-
-
     productGridItems.append (outer_div);
   });
+  
 }
 
+ //----------------------------------------------------------------
+ let footerBlock = document.getElementById('footerBlock');
+
+ let footerContainer = document.createElement('div');
+ footerContainer.innerHTML = footer()
+ footerBlock.append(footerContainer)
+ 
+ //ProductsContainer.append(footerBlock)
+ //---------------------------------------------------------------
+
+
 displayProducts(JSON.parse(localStorage.getItem('tShirts')))
-
-
 // sort Products
-
 let sortButton = document.getElementById("sortButton");
 sortButton.addEventListener("change", sortProducts)
 

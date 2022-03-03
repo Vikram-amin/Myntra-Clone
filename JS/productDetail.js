@@ -1,4 +1,11 @@
+import { navbar } from "../Component/navbar.js";
+import { items } from "../Component/similarProducs.js";
+import { displaySimilarProducts } from "../Script/showData.js" 
+import { footer }from "../Component/footer.js"
 
+
+let ProductDetailsHeader = document.getElementById('header');
+ProductDetailsHeader.innerHTML = navbar()
 
 
 let productDetailContainer = document.getElementById('productDetailContainer');
@@ -85,6 +92,36 @@ const displayData = () => {
     <p class="paya"> Machine-wash </p>
     <hr>
   `
+
+  productDetailParent.append(Left,Right);
+  productDetailContainer.append(productDetailParent)
+
+//----------------------------------------------------------------
+//sililar product
+
+let SimilarProductontainer = document.createElement('div');
+
+let Spara = document.createElement('div')
+Spara.textContent = "SIMILAR PRODUCTS"
+Spara.setAttribute('class','Spara')
+
+let productCOntainerItems = document.createElement('div')
+productCOntainerItems.setAttribute('id','productCOntainerItems')
+
+displaySimilarProducts(items,productCOntainerItems) //import
+
+SimilarProductontainer.append(Spara)
+SimilarProductontainer.append(productCOntainerItems)
+productDetailContainer.append(SimilarProductontainer)
+
+//----------------------------------------------------------------
+// footer
+
+let footerContainer = document.createElement('div');
+footerContainer.innerHTML = footer()
+productDetailContainer.append(footerContainer)
+
+//---------------------------------------------------------------
   
   let wishlist = document.getElementById('wishlist');
     wishlist.addEventListener('click',() => {
@@ -95,13 +132,11 @@ const displayData = () => {
     cart.addEventListener('click',() => {
       addToCart(product)
   })
-
-    productDetailParent.append(Left,Right)
-    productDetailContainer.append(productDetailParent)
-
 }
-
 displayData()
+
+//----------------------------------------------------------------------------------
+
 
 
 let cart = localStorage.getItem('cart');
@@ -138,3 +173,7 @@ const addToCart = (data) => {
       updateCartCount(JSON.parse(localStorage.getItem('cart')))
 }
 }
+//---------------------------------------------------------------------
+
+
+
