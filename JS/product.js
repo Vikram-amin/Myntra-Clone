@@ -8,11 +8,6 @@ if (JSON.parse(localStorage.getItem("tShirts")) == null) {
 localStorage.setItem('tShirts',JSON.stringify(tShirtsData))
 }
 
-
-
-
-
-
 let ProductsHeader = document.getElementById('ProductsHeader');
 
 //ProductsHeader.innerHTML = navbar()
