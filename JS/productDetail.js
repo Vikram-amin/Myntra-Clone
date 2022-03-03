@@ -135,6 +135,5 @@ const addToCart = (data) => {
   }else{
       cart.push(data)
       localStorage.setItem('cart',JSON.stringify(cart))
-      updateCartCount(JSON.parse(localStorage.getItem('cart')))
 }
 }
