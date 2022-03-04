@@ -6,7 +6,10 @@ headerEl.innerHTML = navbar()
 let footerEl = document.getElementById('footerEl');
 footerEl.innerHTML = footer()
 
-let cartParent = document.getElementById('cartParent')
+let cartParent = document.getElementById('cartParent');
+
+let cartLeft = document.createElement('div');
+cartLeft.setAttribute('id','cartLeft')
 
 let avilableOfferDiv = document.createElement('div');
 avilableOfferDiv.setAttribute('id','avilableOfferDiv')
@@ -30,7 +33,7 @@ avilableOfferDiv.innerHTML = `   <div class="avail_offer">
 </div>`
 
 
-cartParent.append(avilableOfferDiv)
+cartLeft.append(avilableOfferDiv)
 
 var dataDiv = document.createElement('div')
 dataDiv.setAttribute('id','dataDiv')
@@ -84,20 +87,52 @@ const displayData =(data) =>{
        div.append(undo)
   
        dataDiv.append(div)
-       
+
        undo.addEventListener("click", () => {
-        removeWishList(product.id);
+        removeCartList(el.id);
       });
      
     });
-    cartParent.append(dataDiv)
-
+    cartLeft.append(dataDiv)
 }
 
-
-
-
 displayData(JSON.parse(localStorage.getItem('cart')))
+
+//------------------------------------------------------------------------------------
+
+let cartRight = document.createElement('div');
+cartRight.setAttribute('id','cartRight')
+
+let coupensDiv = document.createElement('div');
+coupensDiv.innerHTML =`<div class="coupensDiv">
+<div class="couponsBox">
+    <div>
+        <p class='Cname'>COUPONS</p>
+    </div>
+    <div class='Capply'>
+        <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLSididhxOn_gqSKHQ_QWoDHQiFq6_CVDWjA&usqp=CAU'/> <span> Apply Coupons </span>  <button onclick="applyOffers()" id="applyOffer"><b>Apply</b></button> </div>
+        <div>
+           </div>
+    </div>
+</div>
+</div>`
+
+cartRight.append(coupensDiv)
+
+let giftsDiv = document.createElement('div');
+giftsDiv.innerHTML=`    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
+<div class="gifting">
+<div><img src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp" alt="" ></div>
+<div>
+    <p>Buying for a loved one?</p>
+    <p>Gift wrap and personalised message on card <br> Only 25 RS.</p>
+    <button onclick="applyNow()" id="applyNow"><b>Add Gift Wrap</b></button>
+</div>
+</div>`
+
+cartRight.append(giftsDiv)
+
+cartParent.append(cartLeft,cartRight)
 
 
 //-------------------------------------------------------------------------------------
@@ -123,4 +158,13 @@ function showMore() {
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------------
+
+const removeCartList = (id) => {
+    // console.log(id)
+    let data = JSON.parse(localStorage.getItem("cart"));
+    const newData = data.filter((item) => item.id != id);
+    localStorage.setItem("cart", JSON.stringify(newData));
+    location.reload();
+  };
+  displayData(JSON.parse(localStorage.getItem("cart")));

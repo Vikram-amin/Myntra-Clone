@@ -17,10 +17,10 @@
     font-size: 14px;
     margin-bottom: 12px;
     border: 1px solid lightgray;
-    width: 60%;
+    width: 98%;
     font-family: Whitney,Helvetica,Arial,sans-serif!important;
     line-height: 2;
-   padding: 5px;
+    padding: 5px;
 }
 
 .avail_offer ul li{
@@ -60,13 +60,25 @@
 }
 
 
-/* //////////////////////////////////////// */
+/* ////////////////////////////////////////  cart Left Side*/
 
 
+#cartParent{
+    display: flex;
+}
+
+#cartLeft{
+    width: 60%;
+    /* border: 1px solid red; */
+}
+#cartRight{
+    width: 40%;
+    /* border: 1px solid red; */
+}
 
 #dataDiv{
     border: 2px solid white;
-     width: 60%;
+     width: 100%;
 
 }
 #dataDiv img{
@@ -126,7 +138,6 @@
     border: 1px solid lightgray;
     margin-bottom: 10px;
     position: relative;
-    margin-right: -10px;
 }
 
 #imgDiv{
@@ -157,3 +168,106 @@
     border-radius: 50%;
     font-weight: 700;
   }
+
+  /* ////////////////////////////////////////// cart right Side */
+
+ #cartRight{
+     margin-left:25px ;
+     margin-top: -18px;
+     border-left: 1px solid rgb(214, 210, 210);
+ }
+
+ /* coupen card */
+
+ .coupensDiv{
+     border: 1px rgb(236, 234, 234);
+     margin-top: 18px;
+     margin-left: 20px;
+ }
+
+ 
+ .Cname{
+    font-size: 12px;
+    font-weight: 600;
+    color: #535766;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+ }
+
+ .Capply{  
+     position: relative;
+     margin-top: -10px;
+     margin-bottom: 10px;
+ }
+
+ .Capply img{
+     width: 30px;
+     height: 30px;
+     padding-top: 5px;
+ }
+
+ .Capply span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    position: absolute;
+ }
+
+ .Capply button{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    padding: 4px 16px;
+    color: #ff3f6c;
+    border: 1px solid #ff3f6c;
+    border-radius: 3px;
+    text-transform: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: #fff;
+    font-size: 12px;
+ }
+
+/*   gift card */
+
+.gifting{
+    display: flex;
+    margin-left: 20px;
+    background-color: #FCF1EC;
+
+}
+.Gname{
+    font-size: 12px;
+    font-weight: 600;
+    color: #535766;
+    margin: 30px 0 12px;
+    margin-left: 20px;
+}
+
+.gifting img{
+    height: 100px;
+
+}
+.gifting p:nth-child(1){
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    margin-top: 7px;
+}
+.gifting p{
+    background: #fff1ec;
+    font-size: 12px;
+    border-radius: 4px;
+    line-height: 20px;
+    padding-left: 15px;
+}
+
+.gifting button{
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ff3f6c;
+    border: none;
+    padding-left: 15px;
+
+}
