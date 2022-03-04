@@ -125,39 +125,74 @@ productDetailContainer.append(footerContainer)
   
   let wishlist = document.getElementById('wishlist');
     wishlist.addEventListener('click',() => {
+      wishlist.style.backgroundColor = "#535766";
       addToWishList(product)
   })
+
+  wishlist.addEventListener('dblclick',() => {
+    wishlist.style.backgroundColor = "#fff";
+})
+
+//-----------------------------------------------------------------
+
 
   let cart = document.getElementById('cart');
     cart.addEventListener('click',() => {
       addToCart(product)
   })
+
+  //-------------------------------------------------------------------
+  let shirtSize = document.getElementsByClassName('circles')
+
+  for(let i = 0; i < shirtSize.length; i++){
+  shirtSize[i].addEventListener('click',() => {
+    addSize(shirtSize[i])
+  })
+}
+
+
 }
 displayData()
 
 //----------------------------------------------------------------------------------
-
-
-
-let cart = localStorage.getItem('cart');
-if(cart === null){
-  localStorage.setItem('cart',JSON.stringify([]))
-}
 
 let WishListData = localStorage.getItem('WishList');
 if(WishListData === null){
   localStorage.setItem('WishList',JSON.stringify([]))
 }
 
+let SelectedSize;
+const addSize = (data)=>{
+  SelectedSize=data.textContent;
+  WishListData = JSON.parse(localStorage.getItem('WishList'));
+  let newData = WishListData.forEach((data) =>{
+    data.size = SelectedSize
+   // console.log(data)
+  })
+ // console.log(newData)
+//  localStorage.setItem("WishList", JSON.stringify(newData));
+}
+
+  
+  
 
 const addToWishList = (product) => {
   WishListData = JSON.parse(localStorage.getItem('WishList'))
+  console.log(WishListData)
   let checkIfProductExit = WishListData.find((Item) => Item.id === product.id);
 
   if(!checkIfProductExit){
     WishListData.push(product);
     localStorage.setItem("WishList", JSON.stringify(WishListData));
   }
+}
+
+
+//---------------------------------------------------------------------------------
+
+let cart = localStorage.getItem('cart');
+if(cart === null){
+  localStorage.setItem('cart',JSON.stringify([]))
 }
 
 
@@ -174,6 +209,8 @@ const addToCart = (data) => {
 }
 }
 //---------------------------------------------------------------------
+
+
 
 
 

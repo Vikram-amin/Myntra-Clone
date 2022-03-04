@@ -141,6 +141,10 @@ FilterBrand.addEventListener('click',(event)=>{
         return prod.brand == 'WROGN'
       }else if(filterCriteria === 'HRX by Hrithik Roshan'){
         return prod.brand == 'HRX by Hrithik Roshan'
+      }else if(filterCriteria === 'Louis Philippe Sport'){
+        return prod.brand == 'Louis Philippe Sport';
+      }else if(filterCriteria === 'Puma'){
+        return prod.brand == 'Puma'
       }else{
         return true;
       }

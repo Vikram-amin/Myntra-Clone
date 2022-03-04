@@ -34,17 +34,17 @@ display: flex;
 
 
 #left img{
-width: 46%;
-
+width: 45%;
+transition: transform .4s,-webkit-transform .4s;
+will-change: transform;
 padding: 2px;
 height: 500px;
 }
 
-/* #left img:hover{
-    width: 49%;
-    padding: 0;
+#left img:hover{
+  transform: scale(1.02);
 
-} */
+}
 
 #productDetailParent #right{
     width: 40%;
@@ -78,7 +78,7 @@ height: 500px;
   .ratebox {
     width: 40%;
     width: fit-content;
-    height: 12px;
+    height: 40px;
     padding: 10px;
     border: 1px solid #eaeaec;
     border-radius: 2px;
@@ -199,7 +199,7 @@ height: 500px;
     background-color: #fff;
     border: 1px solid #bfc0c6;
     width: 50px;
-    height: 30px;
+    height: 50px;
     border-radius: 50%;
     font-size: 14px;
     font-weight: 500;
@@ -258,6 +258,7 @@ height: 500px;
     color: #282c3f;
   }
 
+  
   .wishbtn:hover{
     border: 1px solid black;
   }
