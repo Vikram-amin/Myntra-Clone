@@ -384,11 +384,15 @@ body {
   font-size: small;
   color: #aaa;
   color: #535766;
+ 
 }
 .container-1 .item-2 .ulList li a {
   text-decoration: none;
   color: #535766;
+
 }
+
+
 .container-1 .item-3 {
   display: flex;
   flex-direction: column;
