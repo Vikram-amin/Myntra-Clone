@@ -1,0 +1,120 @@
+
+#wishlistparent{
+    width: 90%;
+    margin: auto;
+}
+#WishListContainer{
+    display: grid;
+    grid-template-columns: repeat(5,17%);
+    grid-gap : 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+
+#WishListContainer #products{
+    width: 100%;
+    border: 1px solid rgb(221, 213, 213);
+    position: relative;
+}
+
+
+#WishListContainer img{
+    width: 100%;
+    margin-bottom: -10px;
+    padding: 0;
+  
+}
+#WishListContainer #products a {
+    text-decoration: none;
+}
+
+#WishListContainer #products a > div {
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    line-height: 30px;
+  }
+
+  
+  #WishListContainer #products .title {
+    color: #535766;
+    font-size: 14px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+  }
+  
+  #WishListContainer #products .price {
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 500;
+  }
+
+  #WishListContainer #products .line-through {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  #WishListContainer #products .discount {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+
+
+  #footerEl{
+      padding-top: 60px;
+  }
+
+  #wishlistCount{
+    width: 162px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282c3f;
+    padding-top: 100px;
+    padding-bottom:30px ;
+  }
+
+  #wishlistCount span{
+    font-weight: 100;
+    color: rgb(112, 114, 117);
+  }  
+
+  #moveToBag{
+      width: 100%;
+      font-weight: 700;
+      color: #ff3e6c;
+      text-decoration: none;
+      background-color: transparent;
+      cursor: pointer;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      padding: 15px;
+      border: none;
+      border-top: 1px solid rgb(221, 213, 213);
+     
+  }
+
+  #undo{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color:lightgrey;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: 700;
+  }

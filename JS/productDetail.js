@@ -1,4 +1,11 @@
+import { navbar } from "../Component/navbar.js";
+import { items } from "../Component/similarProducs.js";
+import { displaySimilarProducts } from "../Script/showData.js" 
+import { footer }from "../Component/footer.js"
 
+
+let ProductDetailsHeader = document.getElementById('header');
+ProductDetailsHeader.innerHTML = navbar()
 
 
 let productDetailContainer = document.getElementById('productDetailContainer');
@@ -85,44 +92,107 @@ const displayData = () => {
     <p class="paya"> Machine-wash </p>
     <hr>
   `
+
+  productDetailParent.append(Left,Right);
+  productDetailContainer.append(productDetailParent)
+
+//----------------------------------------------------------------
+//sililar product
+
+let SimilarProductontainer = document.createElement('div');
+
+let Spara = document.createElement('div')
+Spara.textContent = "SIMILAR PRODUCTS"
+Spara.setAttribute('class','Spara')
+
+let productCOntainerItems = document.createElement('div')
+productCOntainerItems.setAttribute('id','productCOntainerItems')
+
+displaySimilarProducts(items,productCOntainerItems) //import
+
+SimilarProductontainer.append(Spara)
+SimilarProductontainer.append(productCOntainerItems)
+productDetailContainer.append(SimilarProductontainer)
+
+//----------------------------------------------------------------
+// footer
+
+let footerContainer = document.createElement('div');
+footerContainer.innerHTML = footer()
+productDetailContainer.append(footerContainer)
+
+//---------------------------------------------------------------
   
   let wishlist = document.getElementById('wishlist');
     wishlist.addEventListener('click',() => {
+      wishlist.style.backgroundColor = "#535766";
       addToWishList(product)
   })
+
+  wishlist.addEventListener('dblclick',() => {
+    wishlist.style.backgroundColor = "#fff";
+})
+
+//-----------------------------------------------------------------
+
 
   let cart = document.getElementById('cart');
     cart.addEventListener('click',() => {
       addToCart(product)
   })
 
-    productDetailParent.append(Left,Right)
-    productDetailContainer.append(productDetailParent)
+  //-------------------------------------------------------------------
+  let shirtSize = document.getElementsByClassName('circles')
 
+  for(let i = 0; i < shirtSize.length; i++){
+  shirtSize[i].addEventListener('click',() => {
+    addSize(shirtSize[i])
+  })
 }
 
+
+}
 displayData()
 
-
-let cart = localStorage.getItem('cart');
-if(cart === null){
-  localStorage.setItem('cart',JSON.stringify([]))
-}
+//----------------------------------------------------------------------------------
 
 let WishListData = localStorage.getItem('WishList');
 if(WishListData === null){
   localStorage.setItem('WishList',JSON.stringify([]))
 }
 
+let SelectedSize;
+const addSize = (data)=>{
+  SelectedSize=data.textContent;
+  WishListData = JSON.parse(localStorage.getItem('WishList'));
+  let newData = WishListData.forEach((data) =>{
+    data.size = SelectedSize
+   // console.log(data)
+  })
+ // console.log(newData)
+//  localStorage.setItem("WishList", JSON.stringify(newData));
+}
+
+  
+  
 
 const addToWishList = (product) => {
   WishListData = JSON.parse(localStorage.getItem('WishList'))
+  console.log(WishListData)
   let checkIfProductExit = WishListData.find((Item) => Item.id === product.id);
 
   if(!checkIfProductExit){
     WishListData.push(product);
     localStorage.setItem("WishList", JSON.stringify(WishListData));
   }
+}
+
+
+//---------------------------------------------------------------------------------
+
+let cart = localStorage.getItem('cart');
+if(cart === null){
+  localStorage.setItem('cart',JSON.stringify([]))
 }
 
 
@@ -137,3 +207,9 @@ const addToCart = (data) => {
       localStorage.setItem('cart',JSON.stringify(cart))
 }
 }
+//---------------------------------------------------------------------
+
+
+
+
+

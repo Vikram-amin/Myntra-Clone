@@ -1,659 +1,559 @@
-// import {aObjs} from '../data/data';
 
-function navbar () {
-  return `<div id="header">
-    <!-- <header> -->
-<div class = "menu" id="hamburger" >
-<span class="material-icons" >
-menu
-</span>
-</div>
-    <div class="logo" id="logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
-            alt="" />
-    </div>
-
-    <div class="nav" id="navigation">
-    <div id="opt1" class="names"> 
-        <a href=""  >
-        <p id="name">MEN</p>
-            
-<div class="ddown" id="MEN">
-<div>
-<ul>
-<li>Topwear</li>
-<li>T-Shirts</li>
-<li>Casual Shirts</li>
-<li>Formal Shirts</li>
-<li>Sweatshirts</li>
-<li>Sweaters</li>
-<li>Jackets</li>
-<li>Blazers & Coats</li>
-<li>Suits</li>
-<li>Rain Jackets</li>
-</ul>
-
-<ul class="nextul">
-<li>Indian & Festive Wear</li>
-<li>Kurtas & Kurta Sets</li>
-<li>Sherwanis</li>
-<li>Nehru Jackets</li>
-<li>Dhotis</li>
-</ul>
-</div>
-
-<div>
-<ul>
-<li>Bottom Wear</li>
-<li>Jeans</li>
-<li>Casual Trousers</li>
-<li>Formal Trousers</li>
-<li>Shorts</li>
-<li>Track Pants & Joggers</li>
-
-</ul>
-
-<ul class="nextul">
-<li>Innerwear & Sleepwear</li>
-<li>Briefs & Trunks</li>
-<li>Boxers</li>
-<li>Vests</li>
-<li>Sleepwear & Loungewear</li>
-<li>Thermals</li>
-</ul>
-<ul class="nextul">
-<li>Plus Size</li>
-
-</ul>
-</div>
-<div>
-<ul>
-<li>  Footwear</li>
-<li>Casual Shoes</li>
-<li>Sports Shoes</li>
-<li>Formal Shoes</li>
-<li>Sneakers</li>
-<li>Sandals & Floaters</li>
-<li>Flip Flops</li>
-<li>Socks</li>
-</ul>
-<ul class="nextul">
-<li>Personal Care & Grooming</li>
-
-</ul>
-<ul class="nextul">
-<li>Sunglasses & Frames</li>
-
-</ul>
-<ul clss="nextul">
-<li>Watches</li>
-
-</ul>
-</div>
-<div>
-<ul>
-<li> Sports & Active Wear</li>
-<li>Sports Shoes</li>
-<li>Sports Sandals</li>
-<li>Active T-Shirts</li>
-<li>Track Pants & Shorts</li>
-<li>Tracksuits</li>
-<li>Jackets & Sweatshirts</li>
-<li>Sports Accessories</li>
-<li>Swimwear</li>
-</ul>
-<ul class="nextul">
-<li>Gadgets</li>
-<li>Smart Wearables</li>
-<li>Fitness Gadgets</li>
-<li>Headphones</li>
-<li>Speakers</li>
-</ul>
-</div>
-
-<div>
-<ul>
-<li>Fashion Accessories</li>
-<li>Wallets</li>
-<li>Belts</li>
-<li>Perfumes & Body Mists</li>
-<li>Trimmers</li>
-<li>Deodorants</li>
-<li>Ties, Cufflinks & Pocket Squares</li>
-<li>Accessory Gift Sets</li>
-<li>Caps & Hats</li>
-<li>Mufflers, Scarves & Gloves</li>
-<li>Phone Cases</li>
-<li>Rings & Wristwear</li>
-<li>Helmets
-</li>
-</ul>
-<ul class="nextul">
-<li>Bags & Backpacks</li>
-</ul>
-<ul class="nextul">
-<li>Luggages & Trolleys</li>
-</ul>
-</div>
-</div>
-        </a>
-        </div>
-
-        <div class="names" id="opt2">
-        <a href="">
-        <p class="name">WOMEN</p>
-        <div class="ddown" id="WOMEN">
-        <div>
-          <ul>
-            <li>Indian & Fusion Wear</li>
-            <li>Kurtas & Suits</li>
-            <li>Kurtis, Tunics & Tops</li>
-            <li>Ethnic Wear</li>
-            <li>Leggings, Salwars & Churidars</li>
-            <li>Skirts & Palazzos</li>
-            <li>Sarees</li>
-            <li>Dress Materials</li>
-            <li>Lehenga Cholis</li>
-            <li>Dupattas & Shawls</li>
-            <li>Jackets</li>
-          </ul>
-      
-          <ul class="nextul">
-            <li>Belts, Scarves & More</li>
-          </ul>
-          <ul class="nextul">
-            <li>Watches & Wearables</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Western Wear</li>
-            <li>Dresses</li>
-            <li>Jumpsuits</li>
-            <li>Tops</li>
-            <li>Jeans</li>
-            <li>Trousers & Capris</li>
-            <li>Shorts & Skirts</li>
-            <li>Shrugs</li>
-            <li>Sweaters & Sweatshirts</li>
-            <li>Jackets & Coats</li>
-            <li>Blazers & Waistcoats</li>
-          </ul>
-      
-          <ul class="nextul">
-            <li>Plus Size</li>
-          </ul>
-          <ul class="nextul">
-            <li>Sunglasses & Frames</li>
-          </ul>
-        </div>
-        <div>
-  <ul>
-    <li>Footwear</li>
-    <li>Flats</li>
-    <li>Casual Shoes</li>
-    <li>Heels</li>
-    <li>Boots</li>
-    <li>Sports Shoes & Floaters</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Sports & Active Wear</li>
-    <li>Clothing</li>
-    <li>Footwear</li>
-    <li>Sports Accessories</li>
-    <li>Sports Equipment</li>
-  </ul>
-</div>
-
-<div>
-  <ul>
-    <li>Lingerie & Sleepwear</li>
-    <li>Bra</li>
-    <li>Briefs</li>
-    <li>Shapewear</li>
-    <li>Sleepwear & Loungewear</li>
-    <li>Swimwear</li>
-    <li>Camisoles & Thermals</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Beauty & Personal Care</li>
-    <li>Makeup</li>
-    <li>Skincare</li>
-    <li>Premium Beauty</li>
-    <li>Lipsticks</li>
-    <li>Fragrances</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Gadgets</li>
-    <li>Smart Wearables</li>
-    <li>Fitness Gadgets</li>
-    <li>Headphones</li>
-    <li>Speakers</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Jewellery</li>
-    <li>Fashion Jewellery</li>
-    <li>Fine Jewellery</li>
-    <li>Earrings</li>
-  </ul>
-  <ul class="nextul">
-    <li>Backpacks</li>
-  </ul>
-  <ul class="nextul">
-    <li>Handbags, Bags & Wallets</li>
-  </ul>
-  <ul class="nextul">
-    <li>Luggages & Trolleys</li>
-  </ul>
-</div>
-      </div>
-      
-     
-        </a>
-        </div>
-        <div id="opt3" class="names">  
-        <a href="">
-        <p class="name">KIDS</p>
-        <div class="ddown" id="KIDS">
-        <div >
-  <ul>
-    <li>Boys Clothing</li>
-    <li>T-Shirts</li>
-    <li>Shirts</li>
-    <li>Shorts</li>
-    <li>Jeans</li>
-    <li>Trousers</li>
-    <li>Clothing Sets</li>
-    <li>Ethnic Wear</li>
-    <li>Track Pants & Pyjamas</li>
-    <li>Jacket, Sweater & Sweatshirts</li>
-    <li>Party Wear</li>
-    <li>Innerwear & Thermals</li>
-    <li>Nightwear & Loungewear</li>
-    <li>Value Packs</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Girls Clothing</li>
-    <li>Dresses</li>
-    <li>Tops</li>
-    <li>Tshirts</li>
-    <li>Clothing Sets</li>
-    <li>Lehenga choli</li>
-    <li>Kurta Sets</li>
-    <li>Party wear</li>
-    <li>Dungarees & Jumpsuits</li>
-    <li>Skirts & shorts</li>
-    <li>Tights & Leggings</li>
-    <li>Jeans, Trousers & Capris</li>
-    <li>Jacket, Sweater & Sweatshirts</li>
-    <li>Innerwear & Thermals</li>
-    <li>Nightwear & Loungewear</li>
-    <li>Value Packs</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Footwear</li>
-    <li>Casual Shoes</li>
-    <li>Flipflops</li>
-    <li>Sports Shoes</li>
-    <li>Flats</li>
-    <li>Sandals</li>
-    <li>Heels</li>
-    <li>School Shoes</li>
-    <li>Socks</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Toys</li>
-    <li>Learning & Development</li>
-    <li>Activity Toys</li>
-    <li>Soft Toys</li>
-    <li>Action Figure / Play set</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Infants</li>
-    <li>Bodysuits</li>
-    <li>Rompers & Sleepsuits</li>
-    <li>Clothing Sets</li>
-    <li>Tshirts & Tops</li>
-    <li>Dresses</li>
-    <li>Bottom wear</li>
-    <li>Winter Wear</li>
-    <li>Innerwear & Sleepwear</li>
-    <li>Infant Care</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Home & Bath</li>
-  </ul>
-  <ul class="nextul">
-    <li>Home & Bath</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Kids Accessories</li>
-    <li>Bags & Backpacks</li>
-    <li>Watches</li>
-    <li>Jewellery & Hair accessory</li>
-    <li>Sunglasses</li>
-    <li>Masks & Protective Gears</li>
-    <li>Caps & Hats</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Brands</li>
-    <li>H&M</li>
-    <li>Max Kids</li>
-    <li>Pantaloons</li>
-    <li>United Colors Of Benetton Kids</li>
-    <li>YK</li>
-    <li>U.S. Polo Assn. Kids</li>
-    <li>Mothercare</li>
-    <li>HRX</li>
-  </ul>
-</div>
-
-</div>
-        
-        </a>
-</div>
-<div class="names" id="opt4">
-        <a href="">
-        <p class="name">HOME & LIVING</p>
-        <div class="ddown" id="HOMEL">
-  <div>
-    <ul>
-      <li>Bed Linen & Furnishing</li>
-      <li>Bedsheets</li>
-      <li>Bedding Sets</li>
-      <li>Blankets, Quilts & Dohars</li>
-      <li>Pillows & Pillow Covers</li>
-      <li>Bed Covers</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Flooring</li>
-      <li>Carpets</li>
-      <li>Floor Mats & Dhurries</li>
-      <li>Door Mats</li>
-    </ul>
-  </div>
-
-  <div>
-    <ul>
-      <li>Bath</li>
-      <li>Bath Towels</li>
-      <li>Hand & Face Towels</li>
-      <li>Beach Towels</li>
-      <li>Towels Set</li>
-      <li>Bath Rugs</li>
-      <li>Bath Robes</li>
-      <li>Bathroom Accessories</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Lamps & Lighting</li>
-      <li>Floor Lamps</li>
-      <li>Ceiling Lamps</li>
-      <li>Table Lamps</li>
-      <li>Wall Lamps</li>
-      <li>Outdoor Lamps</li>
-      <li>String Lights</li>
-    </ul>
-  </div>
-
-  <div>
-    <ul>
-      <li>Home Décor</li>
-      <li>Plants & Planters</li>
-      <li>Aromas & Candles</li>
-      <li>Clocks</li>
-      <li>Mirrors</li>
-      <li>Wall Décor</li>
-      <li>Wall Shelves</li>
-      <li>Fountains</li>
-      <li>Showpieces & Vases</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Cushions & Cushion Covers</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Curtains</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Home Gift Sets</li>
-    </ul>
-  </div>
-
-  <div>
-    <ul>
-      <li>Kitchen & Table</li>
-      <li>Dinnerware & Serveware</li>
-      <li>Cups and Mugs</li>
-      <li>Bakeware & Cookware</li>
-      <li>Kitchen Storage & Tools</li>
-      <li>Bar & Drinkware</li>
-      <li>Table Covers & Furnishings</li>
-    </ul>
-
-    <ul class="nextul">
-      <li>Storage</li>
-      <li>Organisers</li>
-      <li>Hooks & Holders</li>
-    </ul>
-  </div>
-
-  <div>
-    <ul>
-      <li>Brands</li>
-      <li>Home Centre</li>
-      <li>Spaces</li>
-      <li>D'Decor</li>
-      <li>Portico New York</li>
-      <li>Pure Home & Living</li>
-      <li>Swayam</li>
-      <li>Raymond Home</li>
-      <li>Maspar</li>
-      <li>Corelle</li>
-      <li>Trident</li>
-      <li>Cortina</li>
-      <li>Story@Home</li>
-      <li>Random</li>
-      <li>Ellementry</li>
-      <li>ROMEE</li>
-      <li>SEJ by Nisha Gupta</li>
-    </ul>
-  </div>
-</div>
-
-        
-        
-        </a>
-        </div>
-        <div id="opt5" class="names">
-        <a href="">
-        <p class="name">BEAUTY</p>
-        
-<div class="ddown" id="BEAUTY">
-<div>
-  <ul>
-    <li>Makeup</li>
-    <li>Lipstick</li>
-    <li>Lip Gloss</li>
-    <li>Lip Liner</li>
-    <li>Mascara</li>
-    <li>Eyeliner</li>
-    <li>Kajal</li>
-    <li>Eyeshadow</li>
-    <li>Foundation</li>
-    <li>Primer</li>
-    <li>Concealer</li>
-    <li>Compact</li>
-    <li>Nail Polish</li>
-  </ul>
-</div>
-<div>
-  <ul>
-    <li>Skincare, Bath & Body</li>
-    <li>Face Moisturiser</li>
-    <li>Cleanser</li>
-    <li>Masks & Peel</li>
-    <li>Sunscreen</li>
-    <li>Serum</li>
-    <li>Face Wash</li>
-    <li>Eye Cream</li>
-    <li>Lip Balm</li>
-    <li>Body Lotion</li>
-    <li>Body Wash</li>
-    <li>Body Scrub</li>
-    <li>Hand Cream</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Baby Care</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Masks</li>
-  </ul>
-</div>
-
-<div>
-  <ul>
-    <li>Haircare</li>
-    <li>Shampoo</li>
-    <li>Conditioner</li>
-    <li>Hair Cream</li>
-    <li>Hair Oil</li>
-    <li>Hair Gel</li>
-    <li>Hair Color</li>
-    <li>Hair Serum</li>
-    <li>Hair Accessory</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Fragrances</li>
-    <li>Perfume</li>
-    <li>Deodorant</li>
-    <li>Body Mist</li>
-  </ul>
-</div>
-
-<div>
-  <ul>
-    <li>Appliances</li>
-    <li>Hair Straightener</li>
-    <li>Hair Dryer</li>
-    <li>Epilator</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Men's Grooming</li>
-    <li>Trimmers</li>
-    <li>Beard Oil</li>
-    <li>Hair Wax</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Beauty Gift & Makeup Set</li>
-    <li>Beauty Gift</li>
-    <li>Makeup Kit</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Premium Beauty</li>
-  </ul>
-
-  <ul class="nextul">
-    <li>Wellness & Hygiene</li>
-  </ul>
-</div>
-
-<div>
-  <ul>
-    <li>Top Brands</li>
-    <li>Lakme</li>
-    <li>Maybelline</li>
-    <li>LOreal</li>
-    <li>Philips</li>
-    <li>Bath & Body Works</li>
-    <li>THE BODY SHOP</li>
-    <li>Biotique</li>
-    <li>Mamaearth</li>
-    <li>MCaffeine</li>
-    <li>Nivea</li>
-    <li>Lotus Herbals</li>
-    <li>LOreal Professionnel</li>
-    <li>KAMA AYURVEDA</li>
-    <li>M.A.C</li>
-    <li>Forest Essentials</li>
-  </ul>
-</div>
-</div>
-        </a>
-        </div>
-    </div>
-
-    <div class="search">
-        <a href="#"><span class="material-icons">search</span></a>
-        <input type="text" placeholder="Search for products, brands & more" />
-    </div>
-
-    <div class="right">
-        <div class="talign" id="profileI">
-            <span class="material-icons">person</span><br />
-            <span class="rname">Profile</span>
-            <div id="dprofile">
-                <ul>
-                  <li><strong>User</strong></li>
-                  <li>Mobile No.</li>
-                </ul>
-                <ul>
-                  <li>Orders</li>
-                  <li>Wishlist</li>
-                  <li>Gift Cards</li>
-                  <li>Contact Us</li>
-                  <li>Myntra InsiderNew</li>
-                </ul>
-
-                <ul>
-                  <li>Myntra Credit</li>
-                  <li>Coupons</li>
-                  <li>Saved Cards</li>
-                  <li>Saved Addresses</li>
-                </ul>
-                <ul>
-                  <li>Edit Profile</li>
-                  <li>Logout</li>
-                </ul>
+function navbar(){
+  return `<header class="header">
+  <a style="margin-left: 27px;" href="#" class="logo"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt=""></a>
+<nav>
+  <ul class="menu-items">
+    <li>
+      <a href="home.html" class="menu-item-1">MEN</a>
+      <div class="mega-menu">
+        <div class="content">
+          <div class="col">
+            <section>
+              <h2 class="item-1-heading">Topwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Casual Shirts</a></li>
+                <li><a href="#">Formal Shirts</a></li>
+                <li><a href="#">SweatShirts</a></li>
+                <li><a href="#">Sweaters</a></li>
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">Blazers & Coats</a></li>
+                <li><a href="#">Suits</a></li>
+                <li><a href="#">Rain Jackets</a></li>
+              </ul>
+              <h2 class="item-1-heading">Indian & Festive Wear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Kurtas & Kurta Sets</a></li>
+                <li><a href="#">Sherwanis</a></li>
+                <li><a href="#">Nehru Jackets</a></li>
+                <li><a href="#">SweatShirts</a></li>
+                <li><a href="#">Dhotis</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-1-heading">Bottomwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Casual Trousers</a></li>
+                <li><a href="#">Formal Trousers</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Track pants & Joggers</a></li>
+              </ul>
+              <h2 class="item-1-heading">Innerwear & Sleepwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Briefs & Trunks</a></li>
+                <li><a href="#">Boxers</a></li>
+                <li><a href="#">Vests</a></li>
+                <li><a href="#">Sleepwear & Loungewear</a></li>
+                <li><a href="#">Thermals</a></li>
+              </ul>
+              <h2 class="item-1-heading">Plus Size</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-1-heading">Footwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Casual Shoes</a></li>
+                <li><a href="#"> Sports Shoes</a></li>
+                <li><a href="#">Formal Shoes</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Sandals & Floaters</a></li>
+                <li><a href="#">Flip Flops</a></li>
+                <li><a href="#">Socks</a></li>
+              </ul>
+              <h2 class="item-1-heading">Personal Care & Grooming</h2>
+              <h2 class="item-1-heading">Sunglasses & Frames</h2>
+              <h2 class="item-1-heading">Watches</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-1-heading">Sports & Active Wear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Sports Shoes</a></li>
+                <li><a href="#">Sports Sandals</a></li>
+                <li><a href="#">Active T-Shirts</a></li>
+                <li><a href="#">Tracksuits</a></li>
+                <li><a href="#">Jackets & Sweatshirts</a></li>
+                <li><a href="#">Sports Accessories</a></li>
+                <li><a href="#">Swimwear</a></li>
+              </ul>
+              <h2 class="item-1-heading">Gadgets</h2>
+              <ul class="mega-links">
+                <li><a href="#">Smart Wearables</a></li>
+                <li><a href="#">Fitness Gadgets</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+              </ul>
+            </section>
           </div>
         </div>
-        <div class="talign" id="wishlistI">
-            <span class="material-icons">favorite_border</span><br />
-            <span class="rname">Wishlist</span>
+      </div>
+    </li>
+    <li>
+      <a href="Women.html" class="menu-item-2">WOMEN</a>
+      <div class="mega-menu">
+        <div class="content">
+          <div class="col">
+            <section>
+              <h2 class="item-2-heading">Indian & Fusion Wear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Kurtas & Suits</a></li>
+                <li><a href="#">Kurtis,Tunics & Tops</a></li>
+                <li><a href="#">Ethinc Wear</a></li>
+                <li><a href="#">Leggings,Salwars & Churidars</a></li>
+                <li><a href="#">Skirts & Palazzos</a></li>
+                <li><a href="#">Sarees</a></li>
+                <li><a href="#">Dress Materials</a></li>
+                <li><a href="#">Lehenga Cholis</a></li>
+                <li><a href="#">Dupatta & Shawls</a></li>
+                <li><a href="#">Jackets</a></li>
+              </ul>
+              <h2 class="item-2-heading">Belts, Scarves & More</h2>
+              <h2 class="item-2-heading">Watches & Wearables</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-2-heading">Wester Wear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Tshirts</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Trousers & Capris</a></li>
+                <li><a href="#">Shorts & Skirts</a></li>
+                <li><a href="#">Co-ords</a></li>
+                <li><a href="#">Playsuits</a></li>
+                <li><a href="#">Jumpsuits</a></li>
+                <li><a href="#">Shrugs</a></li>
+                <li><a href="#">Sweaters & Sweatshirts</a></li>
+                <li><a href="#">Jaackets & Coats</a></li>
+                <li><a href="#">Blazers & Waistcoats</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-2-heading">Shop By Occasion</h2>
+              <ul class="mega-links">
+                <li><a href="#">Office</a></li>
+                <li><a href="#"> Casual outing</a></li>
+                <li><a href="#">Wedding</a></li>
+                <li><a href="#">Party</a></li>
+                <li><a href="#">Workout</a></li>
+                <li><a href="#">Vacation</a></li>
+                <li><a href="#">At Home</a></li>
+              </ul>
+              <h2 class="item-2-heading">Plus Size</h2>
+              <h2 class="item-2-heading">Maternity</h2>
+              <h2 class="item-2-heading">Sunglasses & frames</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-2-heading">Footwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Flats</a></li>
+                <li><a href="#">Casual Shoes</a></li>
+                <li><a href="#">Heels</a></li>
+                <li><a href="#">Boots</a></li>
+                <li><a href="#">Sports Shoes & Floaters</a></li>
+              </ul>
+              <h2 class="item-2-heading">Sports & Active Wear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Cloathing</a></li>
+                <li><a href="#">Footwear</a></li>
+                <li><a href="#">Sports Accessories</a></li>
+                <li><a href="#">Sports Equipment</a></li>
+              </ul>
+            </section>
+          </div>
         </div>
-        <div class="talign" id="bagI">
-            <span class="material-icons">shopping_bag</span><br />
-            <span class="rname">Bag</span>
+      </div>
+    </li>
+    <li>
+      <a href="./Kids.html" class="menu-item-3">KIDS</a>
+      <div class="mega-menu">
+        <div class="content">
+          <div class="col">
+            <section>
+              <h2 class="item-3-heading">Boys Clothing</h2>
+              <ul class="mega-links">
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Trousers</a></li>
+                <li><a href="#">Clothing Sets</a></li>
+                <li><a href="#">Ethinic Wear</a></li>
+                <li><a href="#">Track Pants & Pyjamas</a></li>
+                <li><a href="#">Jacket,Sweater & Sweatshirts</a></li>
+                <li><a href="#">Party Wear</a></li>
+                <li><a href="#">Innerwear & Thermals</a></li>
+                <li><a href="#">Nightwear & Loungewear</a></li>
+                <li><a href="#">Value Packs</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-3-heading">Girls Clothing</h2>
+              <ul class="mega-links">
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Tshirts</a></li>
+                <li><a href="#">Clothing Sets</a></li>
+                <li><a href="#">Lehenga Choli</a></li>
+                <li><a href="#">Kurta Sets</a></li>
+                <li><a href="#">Party wear</a></li>
+                <li><a href="#">Dungarees & Jumpsuits</a></li>
+                <li><a href="#">Skirts & shorts</a></li>
+                <li><a href="#">Tights & Leggings</a></li>
+                <li><a href="#">Jeans, Trousers & Capris</a></li>
+                <li><a href="#">Innerwear & Thermals</a></li>
+                <li><a href="#">Nightwear & Loungewear</a></li>
+                <li><a href="#">Value Packs</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-3-heading">Footwear</h2>
+              <ul class="mega-links">
+                <li><a href="#">Casual Shoes</a></li>
+                <li><a href="#"> Flipflops</a></li>
+                <li><a href="#">Sports Shoes</a></li>
+                <li><a href="#">Flats</a></li>
+                <li><a href="#">sandals</a></li>
+                <li><a href="#">Heels</a></li>
+                <li><a href="#">Socks</a></li>
+              </ul>
+              <h2 class="item-3-heading">Toys</h2>
+              <ul class="mega-links">
+                <li><a href="#">Learning & Development</a></li>
+                <li><a href="#"> Activity Toys</a></li>
+                <li><a href="#">Soft Toys</a></li>
+                <li><a href="#">Action Figure / Play set</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-3-heading">Infants</h2>
+              <ul class="mega-links">
+                <li><a href="#">Bodysuits</a></li>
+                <li><a href="#">Rompers & sleepsuits</a></li>
+                <li><a href="#">Clothing Sets</a></li>
+                <li><a href="#">Tshirts & Tops</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Bottom Wear</a></li>
+                <li><a href="#">Winter Wear</a></li>
+                <li><a href="#">Innerwear & Sleepwear</a></li>
+                <li><a href="#">Infant Care</a></li>
+              </ul>
+              <h2 class="item-3-heading">Home & Bath</h2>
+              <h2 class="item-3-heading">Personal Care</h2>
+            </section>
+          </div>
         </div>
-    </div>
+      </div>
+    </li>
+    <li>
+      <a href="#" class="menu-item-4">HOME & LIVING</a>
+      <div class="mega-menu">
+        <div class="content4">
+          <div class="col">
+            <section>
+              <h2 class="item-4-heading">Bed Linen & Furnishing</h2>
+              <ul class="mega-links">
+                <li><a href="#">Bedsheets</a></li>
+                <li><a href="#">Bedding Sets</a></li>
+                <li><a href="#">Blankets,Quilts & Dohars</a></li>
+                <li><a href="#">Pillows & Pillow Covers</a></li>
+                <li><a href="#">Bed Covers</a></li>
+                <li><a href="#">Diwan Sets</a></li>
+                <li><a href="#">Chair Pads & Covers</a></li>
+                <li><a href="#">Sofa Covers</a></li>
+              </ul>
+              <h2 class="item-4-heading">Flooring</h2>
+              <ul class="mega-links">
+                <li><a href="#">Carpets</a></li>
+                <li><a href="#">Floor Mats & Dhurries</a></li>
+                <li><a href="#">Door Mats</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-4-heading">Bath</h2>
+              <ul class="mega-links">
+                <li><a href="#">Bath Towels</a></li>
+                <li><a href="#">Hand & Face Towels</a></li>
+                <li><a href="#">Beach Towels</a></li>
+                <li><a href="#">Towels Set</a></li>
+                <li><a href="#">Bath Rugs</a></li>
+                <li><a href="#">Bath Robes</a></li>
+                <li><a href="#">Bathroom Accessories</a></li>
+                <li><a href="#">Shower Curtains</a></li>
+              </ul>
+              <h2 class="item-4-heading">Lamps & Lighting</h2>
+              <ul class="mega-links">
+                <li><a href="#">Floor Lamps</a></li>
+                <li><a href="#">Ceiling Lamps</a></li>
+                <li><a href="#">Table Lamps</a></li>
+                <li><a href="#">Wall Lamps</a></li>
+                <li><a href="#">Outdoor Lamps</a></li>
+                <li><a href="#">String Lights</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-4-heading">Home Decor</h2>
+              <ul class="mega-links">
+                <li><a href="#">Plants & Planters</a></li>
+                <li><a href="#"> Aromas & Candles</a></li>
+                <li><a href="#">Clocks</a></li>
+                <li><a href="#">Mirrors</a></li>
+                <li><a href="#">Wall Decor</a></li>
+                <li><a href="#">Festive Decor</a></li>
+                <li><a href="#">Pooja Essentials</a></li>
+                <li><a href="#">Wall Shelves</a></li>
+                <li><a href="#">Fountains</a></li>
+                <li><a href="#">Showpiece & Vases</a></li>
+              </ul>
+              <h2 class="item-4-heading">Cushions & Cushion Covers</h2>
+              <h2 class="item-4-heading">Curtains</h2>
+              <h2 class="item-4-heading">Home Gift Sets</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-4-heading">Kitchen & Table</h2>
+              <ul class="mega-links">
+                <li><a href="#">Dinnerware & Serveware</a></li>
+                <li><a href="#">Cups and Mugs</a></li>
+                <li><a href="#">Bakeware & Cookware</a></li>
+                <li><a href="#">Kitchen Storage & Tools</a></li>
+                <li><a href="#">Bar & Drinkware</a></li>
+                <li><a href="#">Table Covers & Furnishings</a></li>
+              </ul>
+              <h2 class="item-4-heading">Storage</h2>
+              <ul class="mega-links">
+                <li><a href="#">Oraganisers</a></li>
+                <li><a href="#">Hooks & Holders</a></li>
+                <li><a href="#">Laundry Bags</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-4-heading">Brands</h2>
+              <ul class="mega-links">
+                <li><a href="#">Home Centre</a></li>
+                <li><a href="#">Spaces</a></li>
+                <li><a href="#">D'Decor</a></li>
+                <li><a href="#">Portico NewYork</a></li>
+                <li><a href="#">Story@Home</a></li>
+                <li><a href="#">Pure Home & Living</a></li>
+                <li><a href="#">Swayam</a></li>
+                <li><a href="#">Raymond Home</a></li>
+                <li><a href="#">Maspar</a></li>
+                <li><a href="#">Corelle</a></li>
+                <li><a href="#">Trident</a></li>
+                <li><a href="#">Cortina</a></li>
+                <li><a href="#">Random</a></li>
+                <li><a href="#">Ellementry</a></li>
+                <li><a href="#">ROMEE</a></li>
+                <li><a href="#">SEJ by Nisha Gupta</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#" class="menu-item-5">BEAUTY</a>
+      <div class="mega-menu">
+        <div class="content4">
+          <div class="col">
+            <section>
+              <h2 class="item-5-heading">Makeup</h2>
+              <ul class="mega-links">
+                <li><a href="#">Lipstick</a></li>
+                <li><a href="#">Lip Gloss</a></li>
+                <li><a href="#">Lip Liner</a></li>
+                <li><a href="#">Mascara</a></li>
+                <li><a href="#">Eyeliner</a></li>
+                <li><a href="#">Kajal</a></li>
+                <li><a href="#">Eyeshadow</a></li>
+                <li><a href="#">Foundation</a></li>
+                <li><a href="#">Primer</a></li>
+                <li><a href="#">Concealer</a></li>
+                <li><a href="#">Compact</a></li>
+                <li><a href="#">Nail Polish</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-5-heading">Skincare, Bath & Body</h2>
+              <ul class="mega-links">
+                <li><a href="#">Face Moisturiser</a></li>
+                <li><a href="#">Cleanser</a></li>
+                <li><a href="#">Masks & Peel</a></li>
+                <li><a href="#">Sunscreen</a></li>
+                <li><a href="#">Serum</a></li>
+                <li><a href="#">Face Wash</a></li>
+                <li><a href="#">Lip Balm</a></li>
+                <li><a href="#">Body Lotion</a></li>
+                <li><a href="#">Body Wash</a></li>
+                <li><a href="#">Body Scrub</a></li>
+                <li><a href="#">Hand Cream</a></li>
+              </ul>
+              <h2 class="item-5-heading">Baby Care</h2>
+              <h2 class="item-5-heading">Masks</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-5-heading">Hair Carer</h2>
+              <ul class="mega-links">
+                <li><a href="#">Shampoo</a></li>
+                <li><a href="#">Conditoner</a></li>
+                <li><a href="#">Hair Cream</a></li>
+                <li><a href="#">Hair Oil</a></li>
+                <li><a href="#">Hair Gel</a></li>
+                <li><a href="#">Hair Color</a></li>
+                <li><a href="#">Hair Serum</a></li>
+                <li><a href="#">Hair Accessory/a></li>
+              </ul>
+              <h2 class="item-5-heading">Fragrances</h2>
+              <ul class="mega-links">
+                  <li><a href="#">Perfume</a></li>
+                  <li><a href="#">Deodrant</a></li>
+                  <li><a href="#">Body Mist</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-5-heading">Appliances</h2>
+              <ul class="mega-links">
+                <li><a href="#">Hair Straightner</a></li>
+                <li><a href="#">Hair Dryer</a></li>
+                <li><a href="#">Epilator</a></li>
+              </ul>
+              <h2 class="item-5-heading">Men's Grooming</h2>
+              <ul class="mega-links">
+                <li><a href="#">Trimmers</a></li>
+                <li><a href="#">Beard Oil</a></li>
+                <li><a href="#">Hair Wax</a></li>
+              </ul>
+              <h2 class="item-5-heading">Beauty Gift & Makeup Set</h2>
+              <ul class="mega-links">
+                <li><a href="#">Beauty Gift</a></li>
+                <li><a href="#">Makeup Kit</a></li>
+              </ul>
+              <h2 class="item-5-heading">Premium Beauty</h2>
+              <h2 class="item-5-heading">Wellness & Hygiene</h2>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h2 class="item-5-heading">Brands</h2>
+              <ul class="mega-links">
+                <li><a href="#">Lakme</a></li>
+                <li><a href="#">Maybelline</a></li>
+                <li><a href="#">LOreal</a></li>
+                <li><a href="#">Philips</a></li>
+                <li><a href="#">Bath & Body Works</a></li>
+                <li><a href="#">THE BODY SHOP</a></li>
+                <li><a href="#">Biotique</a></li>
+                <li><a href="#">Mamaearth</a></li>
+                <li><a href="#">MCaffeine</a></li>
+                <li><a href="#">Nivea</a></li>
+                <li><a href="#">Lotus Herbals</a></li>
+                <li><a href="#">LOreal Professionnel</a></li>
+                <li><a href="#">KAMA AYURVEDA</a></li>
+                <li><a href="#">M.A.C</a></li>
+                <li><a href="#">Forest Essentials</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#" class="menu-item-6">Studio <Span class="sup-part">NEW</Span></a>
+      <div class="mega-menu">
+        <div class="content-5">
+          <div class="col">
+            <section>
+             <img class="image-1" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg" alt="">
+             <p>Your daily insipiration for everything fashion </p>
+             <img class="image-2" src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
+             <img src="./Images/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
+            </section>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div class="search-div">
+  <img
+    id="searchpng"
+    src="https://image.flaticon.com/icons/png/128/49/49116.png"
+    alt=""
+  />
 
-    <!-- </header> -->
-</div>`;
+  <input
+    type="text"
+    placeholder="Search for products, brands and more"
+  />
+</div>
+<div class="nav-last">
+  <div>
+    <a href="">
+      <img
+        id="svg"
+        src="https://www.svgrepo.com/show/198180/user-profile.svg"
+        alt=""
+      />
+    </a>
+
+    <div>Profile</div>
+  </div>
+
+  <div>
+    <a href="">
+      <img
+        id="svg"
+        src="https://www.svgrepo.com/show/14970/heart.svg"
+        alt=""
+      />
+    </a>
+
+    <div>Wishlist</div>
+  </div>
+
+  <div>
+    <a href="">
+      <img
+        id="svg"
+        src="https://www.svgrepo.com/show/17522/bag.svg"
+        alt=""
+      />
+    </a>
+
+    <div>Bag</div>
+  </div>
+</div>`
 }
 
 export {navbar};
