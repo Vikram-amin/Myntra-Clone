@@ -1,6 +1,5 @@
-
-function navbar(){
-  return `<header class="header">
+function navbar() {
+  return ` <header class="header">
   <a style="margin-left: 27px;" href="#" class="logo"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt=""></a>
 <nav>
   <ul class="menu-items">
@@ -142,7 +141,7 @@ function navbar(){
               <h2 class="item-2-heading">Shop By Occasion</h2>
               <ul class="mega-links">
                 <li><a href="#">Office</a></li>
-                <li><a href="#"> Casual outing</a></li>
+                <li><a href="#">Casual Outing</a></li>
                 <li><a href="#">Wedding</a></li>
                 <li><a href="#">Party</a></li>
                 <li><a href="#">Workout</a></li>
@@ -264,7 +263,7 @@ function navbar(){
       </div>
     </li>
     <li>
-      <a href="#" class="menu-item-4">HOME & LIVING</a>
+      <a href="Home&Living.html" class="menu-item-4">HOME & LIVING</a>
       <div class="mega-menu">
         <div class="content4">
           <div class="col">
@@ -431,7 +430,7 @@ function navbar(){
                 <li><a href="#">Hair Gel</a></li>
                 <li><a href="#">Hair Color</a></li>
                 <li><a href="#">Hair Serum</a></li>
-                <li><a href="#">Hair Accessory/a></li>
+                <li><a href="#">Hair Accessory</a></li>
               </ul>
               <h2 class="item-5-heading">Fragrances</h2>
               <ul class="mega-links">
@@ -491,13 +490,13 @@ function navbar(){
     <li>
       <a href="#" class="menu-item-6">Studio <Span class="sup-part">NEW</Span></a>
       <div class="mega-menu">
-        <div class="content-5">
+        <div class="content-6">
           <div class="col">
             <section>
              <img class="image-1" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg" alt="">
              <p>Your daily insipiration for everything fashion </p>
              <img class="image-2" src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
-             <img src="./Images/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
+             <img src="../../IMAGES/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
             </section>
           </div>
         </div>
@@ -553,7 +552,8 @@ function navbar(){
 
     <div>Bag</div>
   </div>
-</div>`
+</div>
+</header>`;
 }
 
-export {navbar};
+export { navbar };

@@ -1,33 +1,31 @@
 import { navbar } from "../Component/navbar.js";
 import { items } from "../Component/similarProducs.js";
-import { displaySimilarProducts } from "../Script/showData.js" 
-import { footer }from "../Component/footer.js"
+import { displaySimilarProducts } from "../Script/showData.js";
+import { footer } from "../Component/footer.js";
 
+let ProductDetailsHeader = document.getElementById("header");
+ProductDetailsHeader.innerHTML = navbar();
 
-let ProductDetailsHeader = document.getElementById('header');
-ProductDetailsHeader.innerHTML = navbar()
-
-
-let productDetailContainer = document.getElementById('productDetailContainer');
+let productDetailContainer = document.getElementById("productDetailContainer");
 
 const displayData = () => {
-    let product = JSON.parse(localStorage.getItem('PoductDetalisData'));
+  let product = JSON.parse(localStorage.getItem("PoductDetalisData"));
 
-    let productDetailParent = document.getElementById('productDetailParent');
-    let Left = document.getElementById('left');
-    let Right = document.getElementById('right');
- 
-    let p = document.createElement('p')
-    p.setAttribute('class','produtPara')
-    p.innerHTML=`Home / Clothing / Men Clothing / Tshirts /<span> ${product.brand}</span>/<span> ${product.title}</span>`
-    productDetailContainer.append(p)
+  let productDetailParent = document.getElementById("productDetailParent");
+  let Left = document.getElementById("left");
+  let Right = document.getElementById("right");
 
-    Left.innerHTML = `<img src="${product.images.image1}" alt="">
+  let p = document.createElement("p");
+  p.setAttribute("class", "produtPara");
+  p.innerHTML = `Home / Clothing / Men Clothing / Tshirts /<span> ${product.brand}</span>/<span> ${product.title}</span>`;
+  productDetailContainer.append(p);
+
+  Left.innerHTML = `<img src="${product.images.image1}" alt="">
     <img src="${product.images.image2}" alt="">
     <img src="${product.images.image3}" alt="">
-    <img src="${product.images.image4}" alt="">`
+    <img src="${product.images.image4}" alt="">`;
 
-    Right.innerHTML=` <h3 class="poductName">${product.brand}</h3>
+  Right.innerHTML = ` <h3 class="poductName">${product.brand}</h3>
     <h3 class="ProductTitle">${product.title}</h3>
     <div class="ratebox">
     <p class="productRating">${product.rating}</p>
@@ -91,125 +89,112 @@ const displayData = () => {
     <p class="paya"> 100% cotton </p>
     <p class="paya"> Machine-wash </p>
     <hr>
-  `
+  `;
 
-  productDetailParent.append(Left,Right);
-  productDetailContainer.append(productDetailParent)
+  productDetailParent.append(Left, Right);
+  productDetailContainer.append(productDetailParent);
 
-//----------------------------------------------------------------
-//sililar product
+  //----------------------------------------------------------------
+  //sililar product
 
-let SimilarProductontainer = document.createElement('div');
+  let SimilarProductontainer = document.createElement("div");
 
-let Spara = document.createElement('div')
-Spara.textContent = "SIMILAR PRODUCTS"
-Spara.setAttribute('class','Spara')
+  let Spara = document.createElement("div");
+  Spara.textContent = "SIMILAR PRODUCTS";
+  Spara.setAttribute("class", "Spara");
 
-let productCOntainerItems = document.createElement('div')
-productCOntainerItems.setAttribute('id','productCOntainerItems')
+  let productCOntainerItems = document.createElement("div");
+  productCOntainerItems.setAttribute("id", "productCOntainerItems");
 
-displaySimilarProducts(items,productCOntainerItems) //import
+  displaySimilarProducts(items, productCOntainerItems); //import
 
-SimilarProductontainer.append(Spara)
-SimilarProductontainer.append(productCOntainerItems)
-productDetailContainer.append(SimilarProductontainer)
+  SimilarProductontainer.append(Spara);
+  SimilarProductontainer.append(productCOntainerItems);
+  productDetailContainer.append(SimilarProductontainer);
 
-//----------------------------------------------------------------
-// footer
+  //----------------------------------------------------------------
+  // footer
 
-let footerContainer = document.createElement('div');
-footerContainer.innerHTML = footer()
-productDetailContainer.append(footerContainer)
+  let footerContainer = document.createElement("div");
+  footerContainer.innerHTML = footer();
+  productDetailContainer.append(footerContainer);
 
-//---------------------------------------------------------------
-  
-  let wishlist = document.getElementById('wishlist');
-    wishlist.addEventListener('click',() => {
-      wishlist.style.backgroundColor = "#535766";
-      addToWishList(product)
-  })
+  //---------------------------------------------------------------
 
-  wishlist.addEventListener('dblclick',() => {
+  let wishlist = document.getElementById("wishlist");
+  wishlist.addEventListener("click", () => {
+    wishlist.style.backgroundColor = "#535766";
+    addToWishList(product);
+  });
+
+  wishlist.addEventListener("dblclick", () => {
     wishlist.style.backgroundColor = "#fff";
-})
+  });
 
-//-----------------------------------------------------------------
+  //-----------------------------------------------------------------
 
-
-  let cart = document.getElementById('cart');
-    cart.addEventListener('click',() => {
-      addToCart(product)
-  })
+  let cart = document.getElementById("cart");
+  cart.addEventListener("click", () => {
+    addToCart(product);
+  });
 
   //-------------------------------------------------------------------
-  let shirtSize = document.getElementsByClassName('circles')
+  let shirtSize = document.getElementsByClassName("circles");
 
-  for(let i = 0; i < shirtSize.length; i++){
-  shirtSize[i].addEventListener('click',() => {
-    addSize(shirtSize[i])
-  })
-}
-
-
-}
-displayData()
+  for (let i = 0; i < shirtSize.length; i++) {
+    shirtSize[i].addEventListener("click", () => {
+      addSize(shirtSize[i]);
+    });
+  }
+};
+displayData();
 
 //----------------------------------------------------------------------------------
 
-let WishListData = localStorage.getItem('WishList');
-if(WishListData === null){
-  localStorage.setItem('WishList',JSON.stringify([]))
+let WishListData = localStorage.getItem("WishList");
+if (WishListData === null) {
+  localStorage.setItem("WishList", JSON.stringify([]));
 }
 
 let SelectedSize;
-const addSize = (data)=>{
-  SelectedSize=data.textContent;
-  WishListData = JSON.parse(localStorage.getItem('WishList'));
-  let newData = WishListData.forEach((data) =>{
-    data.size = SelectedSize
-   // console.log(data)
-  })
- // console.log(newData)
-//  localStorage.setItem("WishList", JSON.stringify(newData));
-}
-
-  
-  
+const addSize = (data) => {
+  SelectedSize = data.textContent;
+  WishListData = JSON.parse(localStorage.getItem("WishList"));
+  let newData = WishListData.forEach((data) => {
+    data.size = SelectedSize;
+    // console.log(data)
+  });
+  // console.log(newData)
+  //  localStorage.setItem("WishList", JSON.stringify(newData));
+};
 
 const addToWishList = (product) => {
-  WishListData = JSON.parse(localStorage.getItem('WishList'))
-  console.log(WishListData)
+  WishListData = JSON.parse(localStorage.getItem("WishList"));
+  console.log(WishListData);
   let checkIfProductExit = WishListData.find((Item) => Item.id === product.id);
 
-  if(!checkIfProductExit){
+  if (!checkIfProductExit) {
     WishListData.push(product);
     localStorage.setItem("WishList", JSON.stringify(WishListData));
   }
-}
-
+};
 
 //---------------------------------------------------------------------------------
 
-let cart = localStorage.getItem('cart');
-if(cart === null){
-  localStorage.setItem('cart',JSON.stringify([]))
+let cart = localStorage.getItem("cart");
+if (cart === null) {
+  localStorage.setItem("cart", JSON.stringify([]));
 }
-
 
 const addToCart = (data) => {
-  let cart = JSON.parse(localStorage.getItem('cart'))
+  let cart = JSON.parse(localStorage.getItem("cart"));
   let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
 
-  if(checkIfProductExit){
-    alert('Item Already in cart')
-  }else{
-      cart.push(data)
-      localStorage.setItem('cart',JSON.stringify(cart))
-}
-}
+  if (checkIfProductExit) {
+    alert("Item Already in cart");
+  } else {
+    cart.push(data);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+};
 //---------------------------------------------------------------------
-
-
-
-
-

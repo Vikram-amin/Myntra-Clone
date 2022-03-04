@@ -24,7 +24,6 @@
   border-radius: 2px;
   border: 3px solid #968d8d;
 }
-
 body {
   font-family: "Whitney", -apple-system, "BlinkMacSystemFont", "Segoe UI",
     "Roboto", Helvetica, Arial, sans-serif;
@@ -32,7 +31,7 @@ body {
   background-color: rgb(250, 251, 253);
 }
 
-/* Navbar section CSS*/
+/* header */
 .header {
   background: #fff;
   z-index: 10;
@@ -289,7 +288,7 @@ body {
   margin: 20px auto 0;
   cursor: pointer;
 }
-.mega-menu .content-6 {
+.mega-menu .content-5 {
   background: #fff;
   position: relative;
   top: 30px;
@@ -301,7 +300,7 @@ body {
   width: fit-content;
   justify-content: space-between;
 }
-.content-6 section p {
+.content-5 section p {
   margin-top: 9.5px;
   font-family: "Whitney";
   font-size: 16px;
@@ -310,18 +309,70 @@ body {
   color: #535766;
 }
 
-/* Footer Starts here*/
+.text-banner-title {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 600;
+}
+.img-link-container-2 img,
+.img-link-container-3 img,
+.img-link-container-4 img,
+.img-link-container-6 img,
+.img-link-container-7 img,
+.img-link-container-8 img,
+.img-link-container-9 img,
+.img-link-container-10 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-link-container-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
 
+.img-link-container-3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+.img-link-container-4,
+.img-link-container-6,
+.img-link-container-7,
+.img-link-container-8,
+.img-link-container-9,
+.img-link-container-10 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+/* Footer */
 .footer-container {
   width: 1080px;
+  height: fit-content;
   margin: 40px auto;
 }
-.footer-image-1,
-.footer-image-2,
-.footer-image-3,
-.footer-image-4 {
+.footer-image-1 {
   width: 100%;
-  margin: 0px auto;
+  margin: 7px auto;
   object-fit: cover;
 }
 .container-1 {
@@ -539,4 +590,110 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* Footer Ends Here */
+
+/* Image Slider CSS */
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  padding: 3.9px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background: gray;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 475px;
+}
+
+.navigation-auto div {
+  border: 2px solid rgba(211, 211, 211, 0.651);
+  padding: 1.9px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: gray;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: gray;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: gray;
+}
+
+/* Side Image */
+.side-image-1 {
+  position: fixed;
+  right: 0;
+  top: 450px;
+  cursor: pointer;
+}
