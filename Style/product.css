@@ -1,229 +1,217 @@
-
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#ProductsParent{
-    width: 95%;
-    height: 100vh;
-    margin: auto;
-    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
+#ProductsParent {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 13vh;
 }
 
-
-
-#ProductsParent div:nth-child(1){
-    color: #282c3f;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 1;
+#ProductsParent div:nth-child(1) {
+  color: #282c3f;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
 }
 
-#ProductsParent div:nth-child(1) > span{
-    font-weight: 500;
+#ProductsParent div:nth-child(1) > span {
+  font-weight: 500;
 }
 
-#ProductsParent div:nth-child(2){
-    color: #282c3f;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 3;
-    font-size: 16px;
-    font-weight: 500;
+#ProductsParent div:nth-child(2) {
+  color: #282c3f;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#ProductsParent div:nth-child(2) > span{
-    font-weight: 100;
+#ProductsParent div:nth-child(2) > span {
+  font-weight: 100;
 }
 
-  /* Select tag */
+/* Select tag */
 
-#filterSelectBoxes{
-   display: flex;
+#filterSelectBoxes {
+  display: flex;
 }
 
-.filterSelectBoxes{
-      margin: -10px;
-      padding: 0;
+.filterSelectBoxes {
+  margin: -10px;
+  padding: 0;
 }
 
-#ProductsParent .fl{
-    width: 20%;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+#ProductsParent .fl {
+  width: 20%;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#ProductsParent .bundel{
-    color: #696969;
-    width: 10%;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: -5px;
+#ProductsParent .bundel {
+  color: #696969;
+  width: 10%;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -5px;
 }
 
-#ProductsParent .bundel > select, #ProductsParent .country > select, #ProductsParent .size > select{
-    border: none;
-    padding: 10px;
-    background-color: white;
+#ProductsParent .bundel > select,
+#ProductsParent .country > select,
+#ProductsParent .size > select {
+  border: none;
+  padding: 10px;
+  background-color: white;
 }
 
-
-#ProductsParent .country{
-    color: #282c3f;
-    width: 12%;
-    font-weight: 400;
-    font-size: 14px;
-   
+#ProductsParent .country {
+  color: #282c3f;
+  width: 12%;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-#ProductsParent .size{
-    color: #282c3f;
-    width: 20%;
-    font-weight: 400;
-    font-size: 14px;
+#ProductsParent .size {
+  color: #282c3f;
+  width: 20%;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-#ProductsParent .ProductSelectBy{
-    width: 40%;
-   display: flex;
-   justify-content: flex-end;
-} 
-
-
-
-.ProductSelectBy select{
-    padding: 9px 14px;
-    font-size: 14px;
-    color: #282c3f;
-    cursor: pointer;
-    width: 255px;
-    border-radius: 2px;
-    border: 1px solid lightgray;
-    background-color: white;
+#ProductsParent .ProductSelectBy {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.ProductSelectBy select {
+  padding: 9px 14px;
+  font-size: 14px;
+  color: #282c3f;
+  cursor: pointer;
+  width: 255px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
 
 /* filter */
 
-#ProductBlock{
-    width: 100%;
-    display: flex;
-    margin-top:10px ;
+#ProductBlock {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
 }
 
-#ProductFilter{
-    width: 20%;
-    min-width: 200px;
-    border-top: 1px solid lightgray;
-    border-right: 1px solid lightgray; 
+#ProductFilter {
+  width: 20%;
+  min-width: 200px;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
-#brandFilter li{
-    list-style: none;
-    margin: 8px;
+#brandFilter li {
+  list-style: none;
+  margin: 8px;
 }
 
 #brandFilter li > span {
-    padding-left:10px;
-    margin-top: -20px;
-    font-size: 14px;
-    color: #282c3f;
-    font-family: sans-serif;
-    min-height: 17px;
+  padding-left: 10px;
+  margin-top: -20px;
+  font-size: 14px;
+  color: #282c3f;
+  font-family: sans-serif;
+  min-height: 17px;
+}
+/* ul */
+#brandFilter #filterButtonBrand {
+  padding-top: 10px;
 }
 
-#brandFilter ul{
-    padding-top: 10px;
-}
-
-#productGrid{
-    width: 80%;
-    border-top: 1px solid lightgray;
+#productGrid {
+  width: 80%;
+  border-top: 1px solid lightgray;
 }
 
 /* product grid */
 
-#productGridItems{
-    display: grid;
-    grid-template-columns: repeat(4,22%);
-    grid-gap : 40px;
-    margin-top: 20px;
-    margin-left: 20px;
-    
+#productGridItems {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-gap: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-#productGridItems #outerDIv{
-    width: 100%;
-    
+#productGridItems #outerDIv {
+  width: 100%;
 }
 
-
-#productGridItems img{
-    width: 100%;
-    margin-bottom: 0;
-    padding: 0;
-    
+#productGridItems img {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
 }
 #products a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-  #products a > div {
-    margin: 5px;
-    padding: 5px;
-    color: black;
-    line-height: 20px;
-  }
-  
-  #products .brandname {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1;
-    color: #282c3f;
-    margin-bottom: -5px;
-    margin-top: 0px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  #products .title {
-    color: #535766;
-    font-size: 14px;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: 400;
-    display: block;
-  }
-  
-  #products .price {
-    font-size: 14px;
-    color: #282c3f;
-    font-weight: 500;
-  }
+#products a > div {
+  margin: 5px;
+  padding: 5px;
+  color: black;
+  line-height: 20px;
+}
 
-  #products .line-through {
-    text-decoration: line-through;
-    color: #7e818c;
-    font-weight: 400;
-    margin-left: 5px;
-    font-size: 12px;
-  }
-  #products .discount {
-    color: #ff905a;
-    font-weight: 400;
-    font-size: 12px;
-    margin-left: 5px;
-  }
+#products .brandname {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 3;
+  color: #282c3f;
+  margin-bottom: -5px;
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
+#products .title {
+  color: #535766;
+  font-size: 14px;
+  line-height: 3;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
 
+#products .price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 500;
+}
 
-  
+#products .line-through {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+#products .discount {
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
