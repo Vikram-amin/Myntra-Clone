@@ -80,11 +80,13 @@ productGridItems.innerHTML=""
 }
 
  //----------------------------------------------------------------
+
  let footerBlock = document.getElementById('footerBlock');
 
  let footerContainer = document.createElement('div');
  footerContainer.innerHTML = footer()
  footerBlock.append(footerContainer)
+
  
  //ProductsContainer.append(footerBlock)
  //---------------------------------------------------------------
