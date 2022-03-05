@@ -4,14 +4,14 @@ let user_name = document.getElementById("user_name");
 let login_btn = document.querySelector(".login_btn");
 
 login_btn.addEventListener("click", registerData);
-
+window.onload(alert("Welcome to Registration Page!"));
 function registerData() {
   if (email.value.length == 0) {
-    alert("please Enter Email");
+    alert("Please enter Email!");
   } else if (password.value.length == 0) {
-    alert("please Enter Password");
+    alert("Please enter Password!");
   } else if (user_name.value.length == 0) {
-    alert("please Enter User Name");
+    alert("Please enter User Name!");
   } else {
     loadData(email.value, password.value, user_name.value);
   }
