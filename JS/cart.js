@@ -100,39 +100,83 @@ displayData(JSON.parse(localStorage.getItem('cart')))
 
 //------------------------------------------------------------------------------------
 
-let cartRight = document.createElement('div');
-cartRight.setAttribute('id','cartRight')
+    let cartRight = document.createElement('div');
+    cartRight.setAttribute('id','cartRight')
 
-let coupensDiv = document.createElement('div');
-coupensDiv.innerHTML =`<div class="coupensDiv">
-<div class="couponsBox">
-    <div>
-        <p class='Cname'>COUPONS</p>
-    </div>
-    <div class='Capply'>
-        <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLSididhxOn_gqSKHQ_QWoDHQiFq6_CVDWjA&usqp=CAU'/> <span> Apply Coupons </span>  <button onclick="applyOffers()" id="applyOffer"><b>Apply</b></button> </div>
+    let coupensDiv = document.createElement('div');
+    coupensDiv.innerHTML =`<div class="coupensDiv">
+    <div class="couponsBox">
         <div>
-           </div>
+            <p class='Cname'>COUPONS</p>
+        </div>
+        <div class='Capply'>
+            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLSididhxOn_gqSKHQ_QWoDHQiFq6_CVDWjA&usqp=CAU'/> <span> Apply Coupons </span>  <button id="applyCoupensbtn"><b>Apply</b></button> </div>
+            <div>
+            </div>
+        </div>
     </div>
-</div>
-</div>`
+    </div>`
 
-cartRight.append(coupensDiv)
+    cartRight.append(coupensDiv)
 
-let giftsDiv = document.createElement('div');
-giftsDiv.innerHTML=`    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
-<div class="gifting">
-<div><img src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp" alt="" ></div>
-<div>
-    <p>Buying for a loved one?</p>
-    <p>Gift wrap and personalised message on card <br> Only 25 RS.</p>
-    <button onclick="applyNow()" id="applyNow"><b>Add Gift Wrap</b></button>
-</div>
-</div>`
+    let giftsDiv = document.createElement('div');
+    giftsDiv.innerHTML=`    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
+    <div class="gifting">
+    <div><img src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp" alt="" ></div>
+    <div>
+        <p>Buying for a loved one?</p>
+        <p>Gift wrap and personalised message on card <br> Only 25 RS.</p>
+        <button onclick="applyNow()" id="applyNow"><b>Add Gift Wrap</b></button>
+    </div>
+    </div>`
 
-cartRight.append(giftsDiv)
+    cartRight.append(giftsDiv);
 
-cartParent.append(cartLeft,cartRight)
+    let priceDetailsContainer = document.createElement('div');
+    priceDetailsContainer.setAttribute('id','priceDetailsContainer')
+
+    priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span id="Pcount">( 0 Items )<span></div>
+    <div class="priceDetailDIv">
+
+      <div class="totalDiv">
+        <div>Total MRP</div>
+        <div id="totalPrice">₹ 0</div>
+      </div>
+
+      <div class="totalDiv">
+        <div>Discount On MRP</div>
+        <div class="greenText" id="discountPrice">-₹ 0</div>
+      </div>
+
+      <div class="totalDiv">
+        <div>Coupon Discount</div>
+        <button id="applyCoupensbtn" class><b>Apply Coupen</b></button>
+      </div>
+
+      <div class="totalDiv">
+        <div>Convinience Fee<span class="knowMore">  Know More</span></div>
+        <div class="greenText">FREE</div>
+      </div>
+
+      <br/><hr/>
+
+      <div class="totalAmountDiv totalDiv" >
+        <div>Total Amount</div>
+        <div id="totalAmount">₹ 0</div>
+      </div>
+
+      <div class="noConFeeImg">
+      <img src="../IMAGES/cart/noConvFee.jpg"/>
+    </div>
+
+    <button id="placeOrder">PLACE ORDER</button>
+
+    </div>`
+
+    cartRight.append(priceDetailsContainer);
+
+
+    cartParent.append(cartLeft,cartRight)
 
 
 //-------------------------------------------------------------------------------------
@@ -158,7 +202,7 @@ function showMore() {
     }
 }
 
-//---------------------------------------------------------------------------------------
+//-------------------------------------------------------remove item from cart
 
 const removeCartList = (id) => {
     // console.log(id)
@@ -168,3 +212,50 @@ const removeCartList = (id) => {
     location.reload();
   };
   displayData(JSON.parse(localStorage.getItem("cart")));
+
+  /////--------------------------------------------------update count
+
+
+  let cartCount = document.getElementById('Pcount')
+
+const updateCartCount = (cart) => {
+  cartCount.textContent = `( ${cart.length} Items)`
+}
+
+updateCartCount(JSON.parse(localStorage.getItem('cart')))
+
+
+/// -------------------------------------------------------cart total
+
+const cartTotal = ()  => {
+    let data = JSON.parse(localStorage.getItem("cart"));
+    let sum1 = 0
+    let sum2 = 0
+    let sum3 = 0
+    for (let i = 0; i < data.length; i++) {
+      sum1 += Number(data[i].off_price);
+      sum2 += Number(data[i].price);
+      sum3 += (data[i].off_price- data[i].price)
+    }
+    let total1 = sum1.toFixed(2)
+    let total2 = sum2.toFixed(2)
+    let discount = sum3.toFixed(2)
+    //console.log(sum)
+    document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
+    document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+    document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
+  
+    localStorage.setItem("total", JSON.stringify(total2));
+  }
+  cartTotal();
+
+  //----------------------------------------------------------apply Coupen
+
+//   let applyCoupensbtn = docume.getElementById('applyCoupensbtn');
+//   applyCoupensbtn.addEventListener('click',()=>{
+//       addDiscount()
+//   })
+
+//   const addDiscount = () => {
+//       console.log("hi")
+//   }

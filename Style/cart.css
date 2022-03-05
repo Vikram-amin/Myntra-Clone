@@ -191,7 +191,7 @@
     font-weight: 600;
     color: #535766;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
  }
 
  .Capply{  
@@ -270,4 +270,73 @@
     border: none;
     padding-left: 15px;
 
+}
+
+/* // price detail */
+
+#priceDetailsContainer{
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;;
+}
+
+.priceDetails{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    color: #535766;
+}
+
+.totalDiv{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.greenText{
+    color: #03a685;
+}
+
+.totalDiv button{ 
+    color: #ff3f6c;
+    cursor: pointer;
+    border: none;
+}
+
+.knowMore{
+    font-weight: 700;
+    color: #ff3f6c;
+}
+
+.totalAmountDiv{
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 16px;
+    line-height: 16px;
+    padding-bottom: 16px;
+}
+
+.noConFeeImg img{
+    width: 100%;
+    margin: auto;
+}
+
+#placeOrder{
+    margin-left: 10px;
+    width: 95%;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: #ff3f6c;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
