@@ -259,3 +259,16 @@ const cartTotal = ()  => {
 //   const addDiscount = () => {
 //       console.log("hi")
 //   }
+
+
+//----------------------------------------------------------
+
+ let placeOrder= document.getElementById('placeOrder');
+ placeOrder.addEventListener('click',() => {
+     goToAddressPage()
+ })
+
+ const  goToAddressPage =() => {
+
+    window.location.href = "../HTML/address.html";
+ }
