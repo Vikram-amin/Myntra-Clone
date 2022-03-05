@@ -73,6 +73,8 @@
     font-size: 14px;
     color: #282c3f;
     font-weight: 500;
+    white-space: nowrap
+    
   }
 
   #productCOntainerItems #products .line-through {
@@ -87,4 +89,6 @@
     font-weight: 400;
     font-size: 12px;
     margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }

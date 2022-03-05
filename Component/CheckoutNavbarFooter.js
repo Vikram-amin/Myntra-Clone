@@ -6,11 +6,11 @@ function navbar() {
     <nav>
         <ul>
             <li>
-                <a href="./Shopping Bag.html" id="currentBag"><b>BAG</b></a></li>
+                <a href="../HTML/cart.html" id="currentBag"><b>BAG</b></a></li>
             <li>----------</li>
-            <li><a href="./Address.html" id="curentAdress">ADDRESS</a></li>
+            <li><a href="../HTML/address.html" id="curentAdress">ADDRESS</a></li>
             <li>----------</li>
-            <li><a href="Payment.html" id="curentPayment">PAYMENT</a></li>
+            <li><a href="../HTML/payment.html" id="curentPayment">PAYMENT</a></li>
         </ul>
     </nav>
     <div class="secure-logo">

@@ -1,4 +1,6 @@
 import {navbar,footer} from '../Component/CheckoutNavbarFooter.js'
+import { displaySimilarProducts } from "../Script/showData.js";
+import { items } from "../Component/similarProducs.js";
 
 let headerEl = document.getElementById('headerEl');
 headerEl.innerHTML = navbar()
@@ -175,11 +177,37 @@ displayData(JSON.parse(localStorage.getItem('cart')))
 
     cartRight.append(priceDetailsContainer);
 
-
     cartParent.append(cartLeft,cartRight)
 
 
-//-------------------------------------------------------------------------------------
+
+
+  //----------------------------------------------------------------
+  //sililar product
+let cartContainer = document.getElementById('cartContainer')
+  let SimilarProductontainer = document.createElement("div");
+
+  let Cpara = document.createElement("div");
+  Cpara.innerHTML =` <div class="container" id="suggestions">
+      <h4 >You May Also Like:</h4>
+      <button class="myBtn1">All</button>
+      <button class="myBtn">Shoes</button>
+      <button class="myBtn">Beauty Accesories</button>
+      <button class="myBtn">Lipsticks</button>
+  </div>`
+
+  Cpara.setAttribute("class", "Cpara");
+
+  let productCOntainerItems = document.createElement("div");
+  productCOntainerItems.setAttribute("id", "productCOntainerItems");
+
+  displaySimilarProducts(items, productCOntainerItems); //import
+
+  SimilarProductontainer.append(Cpara);
+  SimilarProductontainer.append(productCOntainerItems);
+  cartContainer.append(SimilarProductontainer);
+
+  //-------------------------------------------------------------------------------------
 
 
 document.getElementById('showMoreOffer').addEventListener('click',()=>{

@@ -542,7 +542,7 @@ function navbar() {
   </div>
 
   <div>
-    <a href="">
+    <a href="../HTML/cart.html">
       <img
         id="svg"
         src="https://www.svgrepo.com/show/17522/bag.svg"
