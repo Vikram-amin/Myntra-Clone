@@ -254,3 +254,98 @@ body {
 .add-to-cart-btn:hover{
   color: var(--fire-bush);
 } */
+
+.img_div {
+  position: relative;
+  justify-content: center;
+ }
+
+
+/* .wishbtn {
+  visibility: hidden;
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+      left: 3px; 
+      height: 28px;
+  width: 95%;
+  z-index: 5;
+}  */
+/* .wishbtn span {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin: 4px;
+  padding: 3px;
+} */
+/* .wishbtn > :nth-child(2) {
+  font-size: 17px;
+
+  /* background-color: red; */
+  /* margin-top: -25px; */
+/* //}  */
+
+#wishListDiv{
+  visibility: hidden;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-bottom: -5px;
+  visibility: hidden;
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  z-index: 5;
+  color: lightgray;
+  border: 1px solid lightgray;
+}
+
+#wishListBtn {
+  border: 1px solid lightgray;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  width: 85%;
+  border-radius: 2px;
+  border: 1px solid #d4d5d9;
+  color: #282c3f;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 10px;
+ 
+} 
+#wishListBtn span  {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px;
+}
+
+
+ .wishbtn > :nth-child(2) {
+  font-size: 17px;
+
+  /* background-color: red; */
+  /* margin-top: -25px; */
+} 
+

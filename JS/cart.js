@@ -93,9 +93,6 @@ const displayData =(data) =>{
        undo.addEventListener("click", () => {
         removeCartList(el.id);
       });
-
-   
-
      
     });
     cartLeft.append(dataDiv)
@@ -253,7 +250,14 @@ const updateCartCount = (cart) => {
 updateCartCount(JSON.parse(localStorage.getItem('cart')))
 
 /// -------------------------------------------------------cart total
-// quantity = document.getElementById('quantity').ariaValueMaxco
+
+
+
+
+
+// window.reload(){
+
+// }
 
 const cartTotal = ()  => {
     let data = JSON.parse(localStorage.getItem("cart"));
@@ -292,17 +296,8 @@ const cartTotal = ()  => {
 //----------------------------------------------------------
 
 
-  let Quantity = document.getElementById('quantity');
-  Quantity.addEventListener('onchange',()=>{
-    console.log(Quantity.value )
-  })
 
 
-
-// let fQuantityButton = document.getElementById("quantity");
-// const getQuantity = () => {
-// console.log("hi")
-// }
 
 
 //------------------------------------------------------------
