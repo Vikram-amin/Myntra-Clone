@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, Helvetica, Arial, sans-serif!important;
 }
 
 .header {
@@ -42,8 +43,7 @@ a {
 .footer_container {
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin-block-end: 40px;
+    padding: 10px;
     padding-right: 50px;
     font-family: "Whitney", Helvetica, Arial, sans-serif!important;
 }
@@ -72,10 +72,11 @@ h4 {
     margin-left: 5px;
 }
 
-.address {
-    border: 1px solid #F5F5F6;
-    width: 36%;
-    margin: 40px 40px 40px 250px;
+.address1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .container1 {
@@ -100,28 +101,18 @@ h4 {
     display: inline-block;
     width: 45%;
     height: 40px;
-    border: none;
-    background-color: rgb(229, 226, 226);
+    border-width: thin;
+    border: 1px solid #dcdcdf;
+    background-color: transparent;
+    border-radius: 2px;
     padding-left: 13px;
 }
 
 #data2 {
+    border-width: thin;
+    border: 1px solid #dcdcdf;
+    background-color: transparent;
     margin-right: 10px;
-}
-
-.button1 {
-    background-color: white;
-    border: 1px solid #ff3f6c;
-    color: #ff3f6c;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 30px;
-    width: 90px;
-    height: 35px;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 
 .container2 {
@@ -152,6 +143,7 @@ h3 {
     font-weight: 600;
     color: #282c3f;
     text-rendering: optimizeLegibility;
+    padding-bottom: 8px;
 }
 
 #current_step {
@@ -159,13 +151,68 @@ h3 {
 }
 
 .main_content {
+    width: 100%;
     height: 90%;
-    display: flex;
-    justify-items: center;
+    justify-content: center;
+    clear: both;
+    min-height: 420px;
 }
 
-.payments_details {
-    padding: 20px;
+.main_content-container {
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#estimate-delivery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-estimate-text {
+    padding-bottom: 0;
+}
+
+.delivery-estimate-info-box {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.delivery-estimate-info {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.deliery-date {
+    margin-left: 12px;
+    color: #282c3f;
+    font-size: 12px;
+    max-width: calc(100% - 48px);
+}
+
+.left-side {
+    width: 32.5%;
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+#deafault_add {
+    border: 1px solid #eaeaec;
+    padding: 10px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+#xyz-add {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
 }
 
 #Place_Order {
@@ -183,4 +230,159 @@ h3 {
     letter-spacing: 1px;
     width: 100%;
     border: none;
+}
+
+#select_add {
+    margin-bottom: 12px;
+    height: 45px;
+}
+
+#select_add-text {
+    float: left;
+    font-weight: 600;
+    color: #282c3f;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+#select_add-text>h3 {
+    font-family: Whitney, Helvetica, Arial;
+    font-size: 24px;
+}
+
+#select_add-btn {
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #282c3f;
+    margin: 7px 0 6px;
+    padding: 8px 16px 7px;
+    border-radius: 4px;
+}
+
+#myBtn {
+    font-family: Whitney, Helvetica, Arial, sans-serif!important;
+    color: #424553;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#default_add {
+    border: 1px solid #eaeaec;
+    margin-bottom: 8px;
+    vertical-align: top;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+#default_add-head {
+    font-size: 18px;
+    font-weight: 600;
+    color: #535766;
+    text-align: left;
+    padding: 10px;
+}
+
+#add_add {
+    box-shadow: 0 0 4px rgb(40 44 63 / 8%);
+    height: 72px;
+    padding: 27px 0 26px 19px;
+    margin-bottom: 25px;
+    vertical-align: top;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    border: 1px dashed #d4d5d9;
+}
+
+#myBtn2 {
+    background-color: white;
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ff3f6c;
+    cursor: pointer;
+    border: none;
+}
+
+.address {
+    width: 67.5%;
+    vertical-align: top;
+    padding-right: 35px;
+    padding-top: 12px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeBtn2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn2:hover,
+.closeBtn2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./Address.css">
-    <title>SHOPPING BAG</title>
+    <title>ADDRESS</title>
 </head>
 
 <body>
     <div class="layout">
         <div class="header">
             <div class="logo">
-                <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt="Myntra" height="64px" width="84px">
+                <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt="Myntra" height="40px" width="40px">
             </div>
             <nav>
                 <ul>
@@ -33,57 +33,182 @@
         <hr>
         <!-- Main Address Input -->
         <div class="main_content">
-            <div class="address">
-                <form id="addressForm">
-                    <div class="container1">
-                        <h3>CONTACT DETAILS</h3>
+            <div class="main_content-container">
+                <div class="address">
+                    <div id="select_add">
+                        <div id="select_add-text" style="float: left;
+                        font-weight: 600;
+                        color: #282c3f;
+                        font-size: 18px;
+                        margin: 12px 0;">
+                            Select Delivery Address
+                        </div>
+                        <div id="select_add-btn">
+                            <button id="myBtn"> ADD NEW ADDRESS</button>
+                            <div id="myModal" class="modal">
 
-                        <input class="name" id="name" type="text" placeholder="NAME*" /><br /><br />
-                        <input class="name" id="mobileNo" type="number" placeholder="Mobile No*" /><br /><br />
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="address1">
+                                        <form id="addressForm">
+                                            <div class="container1">
+                                                <h3>CONTACT DETAILS</h3>
+
+                                                <input class="name" id="name" type="text" placeholder="NAME*" /><br /><br />
+                                                <input class="name" id="mobileNo" type="number" placeholder="Mobile No*" /><br /><br />
+                                            </div>
+                                            <div class="container1">
+                                                <h3>ADDRESS</h3>
+
+                                                <input class="name" id="pincode" type="number" placeholder="Pin Code*" /><br /><br />
+                                                <input class="name" id="address" type="text" placeholder="Address(House No, Building, Street, Area)*" /><br /><br />
+                                                <input class="name" id="location" type="text" placeholder="Location/Town*" /><br /><br />
+                                                <input class="data" id="data2" type="text" placeholder="City*" />
+                                                <input class="data" id="data1" type="text" placeholder="State*" />
+                                            </div>
+                                        </form>
+                                        <div class="container1">
+                                            <input type="checkbox" id="checkBox" />
+                                            <label for="checkBox" style="font-size: 14px; margin-left: 8px">Make this my Default Address</label>
+
+                                        </div>
+                                        <div class="container2">
+                                            <button class="button2" onclick="addAddress()">ADD ADDRESS</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="container1">
-                        <h3>ADDRESS</h3>
-
-                        <input class="name" id="pincode" type="number" placeholder="Pin Code*" /><br /><br />
-                        <input class="name" id="address" type="text" placeholder="Address(House No, Building, Street, Area)*" /><br /><br />
-                        <input class="name" id="location" type="text" placeholder="Location/Town*" /><br /><br />
-                        <input class="data" id="data2" type="text" placeholder="City*" />
-                        <input class="data" id="data1" type="text" placeholder="State*" />
+                    <div id="default_add-head">
+                        DEFAULT ADDRESS
                     </div>
-                </form>
-                <div class="container1">
-                    <h3>SAVE ADDRESS AS</h3>
-                    <button class="button1">Home</button>
-                    <button class="button1">Work</button><br /><br />
-                    <input type="checkbox" id="checkBox" />
-                    <label for="checkBox" style="font-size: 14px; margin-left: 8px">Make this my Default Address</label>
+                    <div id="default_add">
+                        <div style="display: flex;padding: 10px;  padding-left: 20px;">
+                            <h2 style="    font-weight: 600;font-size: 14px;color: #282c3f;">FirstName LastName</h2> <button disabled="disabled" style=" font-size: 10px;
+                            background-color: white;
+                            padding: 2px 8px;
+                            border-radius: 20px;
+                            color: #03a685;
+                            font-weight: 600;
+                            border: 1px solid #03a685;
+                            margin-left: 8px;
+                            line-height: 12px;">HOME</button> </div>
+                        <div style="padding-left: 20px;">
+                            <ul style="padding: 5px;">
+                                <li id="xyz-add">B/24, Clinton Residency, Malabar Hill </li>
+                                <li id="xyz-add">Mumbai, Maharashtra - 400072</li>
+                                <li id="xyz-add">Mobile: <b>9869869869</b></li>
+                                <li id="xyz-add"></li>
+                                <li id="xyz-add">Pay On Delivery</li>
+                            </ul>
 
-                </div>
-                <div class="container2">
-                    <button class="button2" onclick="addAddress()">ADD ADDRESS</button>
+                            <button style="
+                                background-color: white;color: #282c3f;
+                                font-weight: 600; font-size: 12px;  letter-spacing: .5px; background: transparent; cursor: pointer; border: 1px solid #282c3f;border-radius: 4px;padding: 6.5px 16px; width: 80px;margin: 10px;">Remove</button>
+                        </div>
+                    </div>
+
+                    <div id="add_add">
+                        <button id="myBtn2">+ ADD NEW ADDRESS</button>
+                        <div id="myModal2" class="modal2">
+
+                            <div class="modal-content2">
+                                <span class="closeBtn2">&times;</span>
+                                <div class="address1">
+                                    <form id="addressForm">
+                                        <div class="container1">
+                                            <h3>CONTACT DETAILS</h3>
+
+                                            <input class="name" id="name" type="text" placeholder="NAME*" /><br /><br />
+                                            <input class="name" id="mobileNo" type="number" placeholder="Mobile No*" /><br /><br />
+                                        </div>
+                                        <div class="container1">
+                                            <h3>ADDRESS</h3>
+
+                                            <input class="name" id="pincode" type="number" placeholder="Pin Code*" /><br /><br />
+                                            <input class="name" id="address" type="text" placeholder="Address(House No, Building, Street, Area)*" /><br /><br />
+                                            <input class="name" id="location" type="text" placeholder="Location/Town*" /><br /><br />
+                                            <input class="data" id="data2" type="text" placeholder="City*" />
+                                            <input class="data" id="data1" type="text" placeholder="State*" />
+                                        </div>
+                                    </form>
+                                    <div class="container1">
+                                        <input type="checkbox" id="checkBox" />
+                                        <label for="checkBox" style="font-size: 14px; margin-left: 8px">Make this my Default Address</label>
+
+                                    </div>
+                                    <div class="container2">
+                                        <button class="button2" onclick="addAddress()">ADD ADDRESS</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
+
+
+                <div id="left-side">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="estimate-delivery-container">
+                        <div class="delivery-estimate-text">DELIVERY ESTIMATES</div>
+                        <div class="delivery-estimate-info-box">
+                            <div class="delivery-estimate-info">
+                                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/6598981/2021/1/25/095f8053-8ab0-4c63-8c40-616b45c643021611579818851-Yufta-Women-Maroon-Embroidered-Tiered-Anarkali-Kurta-2081611-1.jpg" alt="product"
+                                    style="height: 48px;width: 36px;display: inline-block;">
+                                <div class="deliery-date">
+                                    <div>
+                                        <span style="font-family:Whitney,Helvetica,Arial">ESTIMATED DELIVERY</span>
+                                        <span style="font-family:Whitney,Helvetica,Arial ;font-weight: 600">11 MAR 2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payments_details">
+
+
+                        <h2 style="color: rgb(61, 61, 61); font-size:18px;padding: 10px;">Price Details</h2>
+                        <hr>
+                        <div style="color: rgb(36, 36, 36); font-size: 13px;display: flex;justify-content: space-between;padding: 10px;">
+                            <div>Total MRP</div>
+                            <div> RS2499</div>
+                        </div>
+                        <div style="color: rgb(36, 36, 36); font-size: 13px; display: flex;justify-content: space-between;padding: 10px;">
+                            <div>Discounted on</div>
+                            <div>MRP -RS1500</div>
+                        </div>
+                        <div style="color: rgb(36, 36, 36); font-size: 13px;display: flex;justify-content: space-between;padding: 10px;">
+                            <div>Convenience fee</div>
+                            <div><b>Free</b></div>
+                        </div>
+                        <hr>
+                        <div style="color: rgb(36, 36, 36); font-size: 20px;font-weight: 400px; display: flex;justify-content: space-between;padding: 10px;">
+                            <div>Total</div>
+                            <div>Rs. 999</div>
+                        </div>
+                        <hr>
+                        <button id="Place_Order"><a href="./Payment.html" style="color: white;">Make Payment</a></button>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="payments_details">
-                <h2 style="color: rgb(61, 61, 61)">Price Details</h2>
-                <hr>
-                <pre>
-            <h1 style="color: gray; font-size: 18px;">Total MRP               RS2499</h1>
-            <h1 style="color: gray; font-size: 18px;">Discounted on MRP      -RS1500</h1>
-            <h1 style="color: gray; font-size: 18px;">Convenience fee         <b>Free</b></h1>
-            <hr>
-            <h2 style="color: rgb(61, 61, 61)">Total Amount:            RS999</h2></pre>
-                <hr>
-                <button id="Place_Order"><a href="./Payment.html" style="color: white;">Make Payment</a></button>
-
-            </div>
         </div>
 
 
+
         <!-- footer -->
-        <hr>
-        <div class="footer">
+
+        <div class="footer" style=" position: fixed;left: 0; bottom: 0;  width: 100%;">
             <div class="footer_container">
                 <div class="footer-images">
                     <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" width="70" height="37">
@@ -104,6 +229,7 @@
         </div>
     </div>
 
+    <script src="./Address.js"></script>
 
 </body>
 
