@@ -252,13 +252,6 @@ updateCartCount(JSON.parse(localStorage.getItem('cart')))
 /// -------------------------------------------------------cart total
 
 
-
-
-
-// window.reload(){
-
-// }
-
 const cartTotal = ()  => {
     let data = JSON.parse(localStorage.getItem("cart"));
     let sum1 = 0

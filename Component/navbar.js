@@ -1,10 +1,10 @@
 function navbar() {
   return ` <header class="header">
-  <a style="margin-left: 27px;" href="#" class="logo"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt=""></a>
+  <a style="margin-left: 27px;cursor:pointer;" href="../HTML/home.html" class="logo"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt=""></a>
 <nav>
   <ul class="menu-items">
     <li>
-      <a href="home.html" class="menu-item-1">MEN</a>
+      <a href="../HTML/home.html" class="menu-item-1">MEN</a>
       <div class="mega-menu">
         <div class="content">
           <div class="col">
@@ -94,7 +94,7 @@ function navbar() {
       </div>
     </li>
     <li>
-      <a href="Women.html" class="menu-item-2">WOMEN</a>
+      <a href="../HTML/Women.html" class="menu-item-2">WOMEN</a>
       <div class="mega-menu">
         <div class="content">
           <div class="col">
@@ -176,7 +176,7 @@ function navbar() {
       </div>
     </li>
     <li>
-      <a href="./Kids.html" class="menu-item-3">KIDS</a>
+      <a href="../HTML/Kids.html" class="menu-item-3">KIDS</a>
       <div class="mega-menu">
         <div class="content">
           <div class="col">
@@ -263,7 +263,7 @@ function navbar() {
       </div>
     </li>
     <li>
-      <a href="Home&Living.html" class="menu-item-4">HOME & LIVING</a>
+      <a href="../HTML/Home&Living.html" class="menu-item-4">HOME & LIVING</a>
       <div class="mega-menu">
         <div class="content4">
           <div class="col">
@@ -516,47 +516,64 @@ function navbar() {
     placeholder="Search for products, brands and more"
   />
 </div>
+
 <div class="nav-last">
-  <div>
-    <a href="">
-      <img
-        id="svg"
-        src="https://www.svgrepo.com/show/198180/user-profile.svg"
-        alt=""
-      />
-    </a>
+<div>
+  <a href="">
+    <img
+      id="svg"
+      src="https://www.svgrepo.com/show/198180/user-profile.svg"
+      alt=""
+    />
+  </a>
 
-    <div>Profile</div>
+   <div class="dropdown">
+    <button class="dropbtn">Profile</button>
+    <div class="dropdown-content">
+      <h3>Welcome</h3>
+      <p>To access account and mange orders</p>
+      <button class="btn-redirect"> <a href="../HTML/Registration.html" class="login-btn">LOGIN / SIGNUP</a> </button>
+      <hr class="hr1">
+      <a href="../HTML/cart.html">Orders</a>
+      <a href="../HTML/WishList.html">Wishlist</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Myntra Insider <span class="new">New</span></a>
+      <hr class="hr2">
+      <a href="#">Myntra Credit</a>
+      <a href="#">Coupons</a>
+      <a href="#">Saved Cards</a>
+      <a href="#">Saved Addresses</a>
+    </div>
   </div>
+</div>
 
-  <div>
-  <a href="../HTML/WishList.html">                                                                                                                                                                                                                                                                                                                                        
-      <img
-        id="svg"
-        src="https://www.svgrepo.com/show/14970/heart.svg"
-        alt=""
-      />
-    </a>
+<div>
+  <a href="../HTML/WishList.html">
+    <img
+      id="svg"
+      src="https://www.svgrepo.com/show/14970/heart.svg"
+      alt=""
+    />
+  </a>
 
-    <div>Wishlist</div>
-  </div>
+  <div>Wishlist</div>
+</div>
 
-  <div>
-    <a href="../HTML/cart.html">
-      <img
-        id="svg"
-        src="https://www.svgrepo.com/show/17522/bag.svg"
-        alt=""
-      />
-    </a>
-    <span id = "cart-count-info">0</span>
-    <div id='bagCount'>Bag</div>
-  </div>
+<div>
+  <a href="../HTML/cart.html">
+    <img
+      id="svg"
+      src="https://www.svgrepo.com/show/17522/bag.svg"
+      alt=""
+    />
+  </a>
+
+  <div>Bag</div>
+  <span id = "cart-count-info">0</span>
+</div>
 </div>
 </header>`;
 }
-
-
-
 
 export { navbar };
