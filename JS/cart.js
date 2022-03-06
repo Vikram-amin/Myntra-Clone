@@ -271,6 +271,7 @@ const cartTotal = ()  => {
     document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
   
     localStorage.setItem("total", JSON.stringify(total2));
+    localStorage.setItem("discount", JSON.stringify(discount));
   }
   cartTotal();
 

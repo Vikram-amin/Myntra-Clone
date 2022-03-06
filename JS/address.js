@@ -9,12 +9,15 @@ footerEl.innerHTML = footer();
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
+
 btn.onclick = function () {
   modal.style.display = "block";
 };
+
 span.onclick = function () {
   modal.style.display = "none";
 };
+
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -26,14 +29,17 @@ var span2 = document.getElementsByClassName("closeBtn2")[0];
 btn2.onclick = function () {
   modal2.style.display = "block";
 };
+
 span2.onclick = function () {
   modal2.style.display = "none";
 };
+
 window.onclick = function (event) {
   if (event.target == modal2) {
     modal2.style.display = "none";
   }
 };
+
 var photo = JSON.parse(localStorage.getItem("cart"));
 let discountPrice = JSON.parse(localStorage.getItem("total"));
 let total = 0;
@@ -72,6 +78,10 @@ function deliveryUpdates() {
   }
 }
 deliveryUpdates();
+
+
+
+
 // price_details.innerHTML = ` <h2 style="color: rgb(61, 61, 61); font-size: 18px; padding: 10px">
 // Price Details
 // </h2>
@@ -128,8 +138,10 @@ deliveryUpdates();
 // </div>
 // <hr />
 // <button id="Place_Order">
-// <a href="../HTML/Payment.html" style="color: white"
+// <a href="../HTML/address.html"; style="color: white"
 //   >Make Payment</a
 // >
 // </button>
 // `;
+
+
