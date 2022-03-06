@@ -82,10 +82,15 @@ displayWishListProducts(JSON.parse(localStorage.getItem("WishList")));
 
 function addToCart(data) {
   let cart = JSON.parse(localStorage.getItem("cart"));
- // let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
     cart.push(data);
     localStorage.setItem("cart", JSON.stringify(cart));
+
+
+    let wishListdata = JSON.parse(localStorage.getItem("WishList"));
+    const newData = wishListdata.filter((item) => item.id != data.id);
+    localStorage.setItem("WishList", JSON.stringify(newData));
     location.reload();
+ 
   
 }
 
