@@ -31,6 +31,7 @@ const displayProducts = (data) => {
 
     let img = document.createElement("img");
     img.src = product.images.image1;
+ 
 
     div.innerHTML = `<a>
     <div>
@@ -63,6 +64,7 @@ const displayProducts = (data) => {
     }
 
     image_div.append(img);
+
     outer_div.append(image_div, div);
 
     outer_div.addEventListener("click", () => {
@@ -162,3 +164,7 @@ FilterPrice.addEventListener("click", (event) => {
     displayProducts(updatedProductList);
   }
 });
+
+const cartCountInfo = document.getElementById('cart-count-info');
+let count = JSON.parse(localStorage.getItem('cart'));
+cartCountInfo.textContent = count.length

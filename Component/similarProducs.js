@@ -131,72 +131,84 @@ let items = [
     count: 41.5,
   },
 
-    {
-        id: 101,
-        categories: 'shirt',
-        size: 'Sizes : 39, 40, 42, 44...',
-        title: 'Men Pink Slim Fit White Vertical Stripes Formal Shirt',
-        price: 2980,
-        gender: 'men',
-        description: 'Pink white vertical stripes opaque formal  shirt ,has a spread collar, button placket, patch pocket, long sleeve  straight hem.',
-        brand: 'Roadster',
-        color: 'pink',
-        discount: 11,
-        off_price: 3349,
-        images: {
-          image1: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/3ec609b9-d503-4018-9b44-8973a43817391624115526512-1.jpg',
-          image2: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/4f34f640-5fff-4629-9734-137a56c705701624115526552-5.jpg',
-          image3: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/83e7a941-1882-4541-b740-995a5565047f1624115526542-4.jpg',
-          image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/6/19/91bae618-50fc-4547-b2d9-a1f5387ffd2f1624115526522-2.jpg',
-        },
-        rating: 3.9,
-  
-        count: 29.5,
-      },
+  {
+    id: 101,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men Black Brand Logo Cloudspun Training or Gym T-shirt",
+    price: 2999,
+    gender: "men",
+    description: "Men Black Brand Logo Cloudspun Training or Gym T-shirt",
+    brand: "Puma",
+    color: "Black",
+    discount: 5,
+    off_price: 3250,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16848292/2022/2/3/213d6e5d-f54b-4a7a-a28c-3647c48206fc1643864863747-Puma-Men-Black-Brand-Logo-Training-or-Gym-T-shirt-3461643864-1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16848292/2022/2/3/e105d206-5f55-45c6-a8f7-c06af95b48e81643864863725-Puma-Men-Black-Brand-Logo-Training-or-Gym-T-shirt-3461643864-2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16848292/2022/2/3/048d1e12-ef69-4415-acdb-64b3163859161643864863716-Puma-Men-Black-Brand-Logo-Training-or-Gym-T-shirt-3461643864-3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16848292/2022/2/3/4145b614-6c89-4f39-bd8e-ee359c467c311643864863693-Puma-Men-Black-Brand-Logo-Training-or-Gym-T-shirt-3461643864-5.jpg",
+    },
+    rating: 5,
+    count: 2.6,
+  },
 
-       
-      {
-        id: 102,
-        categories: 'shoes',
-        size: 'Sizes : 39, 40, 42, 44...',
-        title: 'Men Tan Mouse High Cushioning Running Shoes',
-        price: 749,
-        gender: 'men',
-        description: 'Textured and patterned outsole',
-        brand: 'Roadster',
-        color: 'red',
-        discount: 25,
-        off_price: 999,
-        images: {
-          image1: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15497558/2021/9/16/03c95244-17fa-4509-a49a-0c3eb25b40171631785441918CLYMBMenTan1.jpg',
-          image2: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15497558/2021/9/16/9456b860-90b7-4b68-9bbf-2fbeead4b4e71631785441910CLYMBMenTan2.jpg',
-          image3: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15497558/2021/9/16/80d1d0fd-7309-4f20-9122-2cd39a8e09ee1631785441586CLYMBMenTan5.jpg',
-          image4: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15497558/2021/9/16/77547986-1f86-4b62-9687-b6f0333609781631785442064CLYMBMenTan7.jpg',
-        },
-        rating: 2.9,
-        count: 8.2,
-      },
-      {
-        id: 103,
-        categories: 'shoes',
-        size: 'Sizes : 39, 40, 42, 44...',
-        title: 'Unisex Black Precision V Basketball Shoes',
-        price: 4599,
-        gender: 'men',
-        description: '',
-        brand: 'Roadster',
-        color: 'black',
-        discount: 25,
-        off_price: 4999,
-        images: {
-          image1: 'https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/73fc1074-0a84-4845-b452-9a6a080be4cb1635336510062-Nike-Precision-5-Basketball-Shoes-5381635336509646-1.jpg',
-          image2: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/2cd4e8e1-4b3c-4b45-895a-ac5144e824b81635336510034-Nike-Precision-5-Basketball-Shoes-5381635336509646-4.jpg',
-          image3: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/99432808-e710-43b9-ab8e-718c9b1a1a001635336510023-Nike-Precision-5-Basketball-Shoes-5381635336509646-5.jpg',
-          image4: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15384986/2021/10/27/99432808-e710-43b9-ab8e-718c9b1a1a001635336510023-Nike-Precision-5-Basketball-Shoes-5381635336509646-5.jpg',
-        },
-        rating: 3.2,
-        count: 73.5,
-      },
+
+  {
+    id: 102,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men White Solid Round Neck T-shirt",
+    price: 539,
+    gender: "men",
+    description: "Men White Solid Round Neck T-shirt",
+    brand: "Puma",
+    color: "White",
+    discount: 10,
+    off_price: 599,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2351855/2021/2/18/6fdb605c-0ce8-4390-8cb2-80a8698540d91613630910532-Puma-Men-White-Solid-Round-Neck-T-shirt-6121613630909272-1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2351855/2021/2/18/584efdd2-a59c-4741-b989-fac36e53037e1613630910513-Puma-Men-White-Solid-Round-Neck-T-shirt-6121613630909272-2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2351855/2021/2/18/5f69fedd-7a3e-4512-962b-e9bcf0400fc51613630910494-Puma-Men-White-Solid-Round-Neck-T-shirt-6121613630909272-3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2351855/2021/2/18/c7c5b528-f274-4d07-a370-58060c49c00f1613630910442-Puma-Men-White-Solid-Round-Neck-T-shirt-6121613630909272-5.jpg",
+    },
+    rating: 8,
+    count: 12.8,
+  },
+
+  {
+    id: 103,
+    categories: "tshirt",
+    size: "Sizes : 39, 40, 42, 44...",
+    title: "Men White Floral Printed Polo Collar Pure Cotton T-shirt",
+    price: 6000,
+    gender: "men",
+    description: "Men White Floral Printed Polo Collar Pure Cotton T-shirt",
+    brand: "Louis Philippe Sport",
+    color: "White",
+    discount: 5,
+    off_price: 6250,
+    images: {
+      image1:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15269134/2021/8/26/3ffccc55-c137-4ea2-aad8-7554d146fece1629979974254LouisPhilippeSportMenWhiteFloralPrintedPoloCollarPocketsT-sh1.jpg",
+      image2:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15269134/2021/8/26/b93afc3e-332a-40ef-9d72-1863e3d27f391629979974041LouisPhilippeSportMenWhiteFloralPrintedPoloCollarPocketsT-sh2.jpg",
+      image3:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15269134/2021/8/26/ce5f5405-d3bc-4627-8ec4-5102c3089f6d1629979973658LouisPhilippeSportMenWhiteFloralPrintedPoloCollarPocketsT-sh3.jpg",
+      image4:
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15269134/2021/8/26/97fe30c7-1ec5-4e9b-9e2e-ce5924b0825d1629979974246LouisPhilippeSportMenWhiteFloralPrintedPoloCollarPocketsT-sh5.jpg",
+    },
+    rating: 7,
+    count: 4.8,
+  },
         
       {
         id: 104,
@@ -205,7 +217,6 @@ let items = [
         gender: 'men',
         description: 'Lightweight jacket provides insulation and helps maintain body temperature in mild cold Breathable fabric helps sweat dry fast.',
         Colour: 'green',
-  
         categories: 'shirt',
         brand: 'roadster',
         color: 'Olive Green',

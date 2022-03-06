@@ -42,11 +42,11 @@ const displayData = () => {
     <div class="Pleaseselectsize">Please select a size</div>
 
     <div class="productSizesdiv">
-    <div class="circles">S</div>
-    <div class="circles">M</div>
-    <div class="circles">L</div>
-    <div class="circles">XL</div>
-    <div class="circles">XXL</div>
+    <button class="circles">S</button>
+    <button class="circles">M</button>
+    <button class="circles">L</button>
+    <button class="circles">XL</button>
+    <button class="circles">XXL</button>
     </div>
 
     <div id="Buttons">
@@ -136,6 +136,8 @@ const displayData = () => {
   let cart = document.getElementById("cart");
   cart.addEventListener("click", () => {
     addToCart(product);
+   // cart.innerHTML = 'GO TO BAG ->'
+   window.location.href = "../HTML/cart.html";
   });
 
   //-------------------------------------------------------------------
@@ -187,14 +189,20 @@ if (cart === null) {
 }
 
 const addToCart = (data) => {
+  let cartbtn = document.getElementById("cart");
   let cart = JSON.parse(localStorage.getItem("cart"));
   let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
-
-  if (checkIfProductExit) {
-    alert("Item Already in cart");
-  } else {
     cart.push(data);
     localStorage.setItem("cart", JSON.stringify(cart));
-  }
+    cartbtn.innerHTML='GO TO BAG ->'
+    location.reload();
+  
+    cartbtn.addEventListener('click',()=>{
+      window.location.href = "../HTML/cart.html";
+    })
+ 
 };
 //---------------------------------------------------------------------
+const cartCountInfo = document.getElementById('cart-count-info');
+let count = JSON.parse(localStorage.getItem('cart'));
+cartCountInfo.textContent = count.length

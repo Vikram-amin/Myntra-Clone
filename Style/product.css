@@ -15,7 +15,6 @@ body {
 
 #ProductsParent div:nth-child(1) {
   color: #282c3f;
-  cursor: pointer;
   font-size: 14px;
   line-height: 1;
 }
@@ -26,7 +25,6 @@ body {
 
 #ProductsParent div:nth-child(2) {
   color: #282c3f;
-  cursor: pointer;
   font-size: 14px;
   font-size: 16px;
   font-weight: 500;
@@ -61,7 +59,6 @@ body {
   width: 10%;
   font-weight: 400;
   font-size: 14px;
-  margin-top: -5px;
 }
 
 #ProductsParent .bundel > select,
@@ -96,7 +93,6 @@ body {
   padding: 9px 14px;
   font-size: 14px;
   color: #282c3f;
-  cursor: pointer;
   width: 255px;
   border-radius: 2px;
   border: 1px solid lightgray;
@@ -139,6 +135,14 @@ body {
 #productGrid {
   width: 80%;
   border-top: 1px solid lightgray;
+}
+
+#brandFilter #filterButtonDiscount {
+  margin-top: 10px;
+}
+
+#filterButtonDiscount li{
+  letter-spacing: 1px;
 }
 
 /* product grid */
@@ -215,3 +219,38 @@ body {
   font-size: 12px;
   margin-left: 5px;
 }
+
+
+/* .add-to-cart-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1.05rem;
+  background-color: var(--baltic-sea);
+  color: #fff;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+  opacity: 0;
+}
+.product-item:hover .add-to-cart-btn{
+  opacity: 1;
+}
+.add-to-cart-btn .fas{
+  margin-right: 0.4rem;
+}
+.add-to-cart-btn:hover{
+  background-color: #23272a;
+}
+.add-to-cart-btn:hover{
+  color: var(--fire-bush);
+} */

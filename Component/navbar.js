@@ -530,7 +530,7 @@ function navbar() {
   </div>
 
   <div>
-    <a href="">
+  <a href="../HTML/WishList.html">                                                                                                                                                                                                                                                                                                                                        
       <img
         id="svg"
         src="https://www.svgrepo.com/show/14970/heart.svg"
@@ -549,11 +549,14 @@ function navbar() {
         alt=""
       />
     </a>
-
-    <div>Bag</div>
+    <span id = "cart-count-info">0</span>
+    <div id='bagCount'>Bag</div>
   </div>
 </div>
 </header>`;
 }
+
+
+
 
 export { navbar };

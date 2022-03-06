@@ -93,6 +93,9 @@ const displayData =(data) =>{
        undo.addEventListener("click", () => {
         removeCartList(el.id);
       });
+
+   
+
      
     });
     cartLeft.append(dataDiv)
@@ -173,7 +176,7 @@ displayData(JSON.parse(localStorage.getItem('cart')))
 
     <button id="placeOrder">PLACE ORDER</button>
 
-    </div>`
+    </div> <br> <br>`
 
     cartRight.append(priceDetailsContainer);
 
@@ -243,17 +246,14 @@ const removeCartList = (id) => {
 
   /////--------------------------------------------------update count
 
-
-  let cartCount = document.getElementById('Pcount')
-
+let cartCount = document.getElementById('Pcount')
 const updateCartCount = (cart) => {
   cartCount.textContent = `( ${cart.length} Items)`
 }
-
 updateCartCount(JSON.parse(localStorage.getItem('cart')))
 
-
 /// -------------------------------------------------------cart total
+// quantity = document.getElementById('quantity').ariaValueMaxco
 
 const cartTotal = ()  => {
     let data = JSON.parse(localStorage.getItem("cart"));
@@ -291,12 +291,27 @@ const cartTotal = ()  => {
 
 //----------------------------------------------------------
 
+
+  let Quantity = document.getElementById('quantity');
+  Quantity.addEventListener('onchange',()=>{
+    console.log(Quantity.value )
+  })
+
+
+
+// let fQuantityButton = document.getElementById("quantity");
+// const getQuantity = () => {
+// console.log("hi")
+// }
+
+
+//------------------------------------------------------------
+
  let placeOrder= document.getElementById('placeOrder');
  placeOrder.addEventListener('click',() => {
      goToAddressPage()
  })
 
  const  goToAddressPage =() => {
-
     window.location.href = "../HTML/address.html";
  }

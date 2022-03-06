@@ -82,12 +82,15 @@ displayWishListProducts(JSON.parse(localStorage.getItem("WishList")));
 
 function addToCart(data) {
   let cart = JSON.parse(localStorage.getItem("cart"));
-  let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
-
-  if (checkIfProductExit) {
-    alert("Item Already in cart");
-  } else {
+ // let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
     cart.push(data);
     localStorage.setItem("cart", JSON.stringify(cart));
-  }
+    location.reload();
+  
 }
+
+//-----------------------------
+
+const cartCountInfo = document.getElementById('cart-count-info');
+let count = JSON.parse(localStorage.getItem('cart'));
+cartCountInfo.textContent = count.length
