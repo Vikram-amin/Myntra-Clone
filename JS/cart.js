@@ -302,5 +302,5 @@ const cartTotal = ()  => {
  })
 
  const  goToAddressPage =() => {
-    window.location.href = "../HTML/address.html";
+    window.location.href = "../HTML/addressInput.html";
  }

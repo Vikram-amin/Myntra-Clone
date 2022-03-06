@@ -60,3 +60,71 @@ priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span 
     localStorage.setItem("discount", JSON.stringify(discount));
   }
   cartTotal();
+
+  //---------------------------------------------------------------
+
+  let addressBtn = document.getElementById("addAdress")
+  addressBtn.addEventListener('click',()=>{
+    addAddress(event)
+});
+
+  let data = localStorage.getItem('address')
+  if(data === null){
+      localStorage.setItem("address",JSON.stringify([]))
+  }
+ 
+      function addAddress(event){
+           event.preventDefault();
+          let name = document.getElementById("name").value;
+          let mobileNum = document.getElementById("mobileNo").value;
+          let  pincode= document.getElementById("pincode").value;
+          let  address = document.getElementById("address").value;
+          let  location = document.getElementById("location").value;
+          let  city = document.getElementById("city").value;
+          let  state = document.getElementById("state").value;
+          
+
+          let addressData ={
+              name,
+              mobileNum,
+              pincode,
+              address,
+              location,
+              city,
+              state,
+          }
+
+          let data = JSON.parse(localStorage.getItem('address'))
+          if(name.length > 0){
+              data.push(addressData)
+          }
+          localStorage.setItem("address",JSON.stringify(data))
+
+          if(name &&
+            mobileNum &&
+            pincode &&
+            address &&
+            location &&
+            city &&
+            state){
+              goToAdressPage()
+            }else{
+              alert('Please Fill all boxes')
+            }
+
+         
+
+           document.getElementById("name").value;
+           document.getElementById("mobileNo").value;
+           document.getElementById("pincode").value;
+           document.getElementById("address").value;
+           document.getElementById("location").value;
+           document.getElementById("city").value;
+           document.getElementById("state").value;
+
+
+      }
+
+      function goToAdressPage(){
+        window.location.href ='../HTML/address.html'
+      }
