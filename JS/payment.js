@@ -59,13 +59,13 @@ btn.addEventListener("click", () => {
   ) {
     alert("Please Fill all Feilds!");
   } else {
-    alert("Redirecting to Thankyou Page!");
+    // alert("Redirecting to Thankyou Page!");
     redirect_Page();
     function redirect_Page() {
       let tID = setTimeout(function () {
         window.location.href = "../HTML/thankyou.html";
         window.clearTimeout(tID);
-      }, 1500);
+      }, 2000);
     }
   }
 });
