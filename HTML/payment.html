@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../Style/Payment.css" />
+    <link rel="stylesheet" href="../Style/payment.css" />
     <link rel="icon" href="../IMAGES/Logo/myntra.svg" />
     <title>PAYMENT PAGE</title>
   </head>
@@ -23,13 +23,13 @@
       <nav>
         <ul>
           <li>
-            <a href="../HTML/cart.html">BAG</a>
+            <a>BAG</a>
           </li>
           <li>----------</li>
-          <li><a href="../HTML/address.html">ADDRESS</a></li>
+          <li><a>ADDRESS</a></li>
           <li>----------</li>
           <li>
-            <a href="../HTML/Payment.html" id="current_step">PAYMENT</a>
+            <a id="current_step">PAYMENT</a>
           </li>
         </ul>
       </nav>
@@ -93,24 +93,19 @@
         <div class="accordion-item-header">Cash On Delivery(Cash/Card/UPI)</div>
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
-            <h2>
-              Pay on delivery <br />
-              (Cash/Card/UPI)
-            </h2>
+            <h2>Pay on delivery</h2>
 
             <input
-              type="text"
+              type="password"
               class="item-1-input"
               placeholder="Enter your Password"
             />
 
             <p>
-              You can pay via Cash/Card or UPI enabled app at the time of
-              delivery. Ask your delivery executive for these options.
+              You can pay via Cash/Card at the time of delivery. Ask your
+              delivery executive for these options.
             </p>
-            <button>
-              <a href="../HTML/thankyou.html" class="btn-item-1">PLACE ORDER</a>
-            </button>
+            <button class="btn-item-1">PLACE ORDER</button>
           </div>
         </div>
       </div>
@@ -123,11 +118,13 @@
               <input
                 type="number"
                 class="btn-item-2"
+                id="item-1"
                 placeholder="Card Number"
               />
               <input
                 type="text"
                 class="btn-item-2"
+                id="item-2"
                 placeholder="Name on card"
               />
             </div>
@@ -135,17 +132,26 @@
               <input
                 type="number"
                 class="btn-item-3"
-                placeholder="Valid Thre(MM/YY)"
+                id="item-3"
+                placeholder="Valid Thru(MM/YY)"
               />
-              <input type="number" class="btn-item-3" placeholder="CVV" />
+              <input
+                type="number"
+                class="btn-item-3"
+                id="item-4"
+                placeholder="CVV"
+              />
             </div>
             <div class="thirddiv">
-              <input type="checkbox" class="btn-item-4" />
+              <input
+                type="checkbox"
+                id="item-5"
+                class="btn-item-4"
+                name="save"
+              />
               <p class="item-4-text">Save this card for faster payments</p>
             </div>
-            <button class="btn-1">
-              <a href="../HTML/thankyou.html" class="btn-item-1">PAY NOW</a>
-            </button>
+            <button class="btn-1">PAY NOW</button>
           </div>
         </div>
       </div>
@@ -231,6 +237,6 @@
       </div>
     </div>
 
-    <script src="../JS/Payment.js"></script>
+    <script src="../JS/payment.js"></script>
   </body>
 </html>

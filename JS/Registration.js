@@ -27,5 +27,5 @@ async function loadData(email, password, username) {
   console.log(obj);
   localStorage.setItem("id-details", JSON.stringify(obj));
   alert("Registration Successfull!");
-  window.location.href = "./login.html";
+  window.location.href = "../HTML/Login.html";
 }

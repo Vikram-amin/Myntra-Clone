@@ -71,20 +71,6 @@ h1 {
   background-color: #df4156;
 }
 
-/* @media (min-width: 600px) {
-  .content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .wrapper-1 {
-    height: initial;
-    max-width: 620px;
-    margin: 0 auto;
-    margin-top: 50px;
-    box-shadow: 4px 8px 40px 8px rgba(255, 88, 130, 0.2);
-  }
-} */
-
 @-webkit-keyframes bang {
   from {
     box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,

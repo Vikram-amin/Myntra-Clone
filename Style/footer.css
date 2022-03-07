@@ -1,0 +1,349 @@
+.footer-container {
+  width: 1080px;
+  margin: 40px auto;
+}
+.footer-image-1,
+.footer-image-2,
+.footer-image-3,
+.footer-image-4 {
+  width: 100%;
+  margin: 0px auto;
+  object-fit: cover;
+}
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.container-1 .item-1 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.container-1 .item-1 h3 {
+  font-weight: 500;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container-1 .item-1 ul li {
+  list-style: none;
+  font-size: small;
+  color: #aaa;
+}
+.container-1 .item-1 ul li a {
+  text-decoration: none;
+}
+.container-1 .item-1 .new {
+  padding: 0px 3.9px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+}
+.container-1 .item-2 {
+  display: flex;
+  flex-direction: column;
+}
+.container-1 .item-2 h3 {
+  font-weight: 500;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container-1 .item-2 ul li {
+  list-style: none;
+  font-size: small;
+  color: #aaa;
+}
+.container-1 .item-2 ul li a {
+  text-decoration: none;
+}
+.container-1 .item-3 {
+  display: flex;
+  flex-direction: column;
+}
+.container-1 .item-3 h3 {
+  font-weight: 500;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.container-1 .item-3 .footer-image-1 img {
+  width: 140px;
+  height: 42px;
+  margin-bottom: 20px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.container-1 .item-3 .footer-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.container-1 .item-3 .item-3-title {
+  margin-bottom: 13px;
+}
+.container-1 .item-4 {
+  display: flex;
+  flex-direction: column;
+}
+.container-1 .item-4 img {
+  width: 48px;
+  height: 40px;
+}
+.container-1 .item-4 .item-4-title-1 {
+  display: flex;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+.container-1 .item-4 .item-4-title-2 {
+  display: flex;
+  max-width: 500px;
+}
+.container-1 .item-4 .item-4-title-1 h3,
+.container-1 .item-4 .item-4-title-2 h3 {
+  margin-left: 5px;
+  font-size: 13px;
+}
+.container-1 .item-4 .item-4-title-1 p,
+.container-1 .item-4 .item-4-title-2 p {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.container-1 .item-4 .item-4-title-1 .span-title {
+  position: relative;
+  top: 20px;
+  right: 170px;
+}
+.container-1 .item-4 .item-4-title-2 .span-title {
+  position: relative;
+  top: 20px;
+  right: 150px;
+}
+
+.container-2 .item-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.container-2 .item-1 h3 {
+  font-weight: 400;
+  font-size: small;
+  font-weight: bold;
+}
+.container-2 .item-1 .item-1-hr {
+  border: 0.5px solid rgba(211, 211, 211, 0.507);
+  background-color: rgba(211, 211, 211, 0.507);
+  border-radius: 2px;
+  width: 85%;
+  position: relative;
+  bottom: 8px;
+  left: 140px;
+}
+.container-2 .item-2 .item-2-link {
+  cursor: pointer;
+  font-weight: 200;
+  font-size: small;
+  color: gray;
+  border-right: 1.6px solid rgba(211, 211, 211, 0.719);
+  padding-right: 5px;
+  margin-right: 3px;
+}
+.container-2 .item-3 {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.container-2 .item-3 .item-3-title-1 {
+  display: flex;
+}
+.container-2 .item-3 .item-3-title-1 p {
+  font-weight: 200;
+  font-size: small;
+  color: gray;
+}
+.container-2 .item-3 .item-3-title-1 .contact {
+  font-weight: 400;
+  font-size: small;
+  color: blue;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.container-2 .item-3 .item-3-title-2 p {
+  font-weight: 200;
+  font-size: small;
+  color: gray;
+}
+.container-2 .item-4-hr,
+.item-4-hr {
+  border: 0.5px solid rgba(211, 211, 211, 0.507);
+  background-color: rgba(211, 211, 211, 0.507);
+  border-radius: 2px;
+  display: flex;
+  margin-top: 20px;
+}
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.container-3 .item-1 h3 {
+  font-weight: 400;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.container-3 .item-1 ul li {
+  list-style: none;
+  font-size: small;
+  color: #aaa;
+}
+.container-3 .item-2 {
+  margin-top: 125px;
+}
+.container-3 .item-2 p {
+  font-size: small;
+  color: #aaa;
+}
+.container-3 .item-2 span {
+  font-size: small;
+  color: #aaa;
+}
+.container-3 .item-2 .contact-no {
+  font-size: small;
+  color: rgba(0, 0, 255, 0.884);
+  cursor: pointer;
+}
+.container-3 .item-3-hr {
+  border: 0.5px solid rgba(211, 211, 211, 0.507);
+  background-color: rgba(211, 211, 211, 0.507);
+  border-radius: 2px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/* Footer Ends Here */
+
+#bagCount {
+  position: relative;
+}
+
+#cart-count-info {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -8px;
+  right: 18px;
+  background-color: #f16565;
+  color: #fff;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Home Screen Drop Down Menu for Profile Section */
+.dropbtn {
+  color: black;
+  background-color: transparent;
+  padding: 0;
+  font-size: 13px !important;
+  outline: none;
+  font-weight: 700;
+  font-family: inherit;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  right: 50px;
+  background-color: #fff;
+  min-width: 240px;
+  min-height: fit-content;
+  box-shadow: 1px 1px 25px -4px rgba(207, 28, 28, 0.54);
+  z-index: 1;
+}
+.dropdown-content h3,
+.dropdown-content p,
+.dropdown-content .btn-redirect {
+  padding: 5px 12px 5px 20px;
+  text-align: left;
+}
+.dropdown-content h3 {
+  font-size: 16px;
+}
+.dropdown-content p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 12px 10px 20px !important;
+}
+.hr1,
+.hr2 {
+  width: 230px;
+  margin: 14px auto 10px auto;
+  border-radius: 2px;
+  background-color: rgba(211, 211, 211, 0.452);
+}
+.btn-redirect {
+  position: relative;
+  right: 25px;
+  background-color: transparent;
+  outline: none;
+  border-width: 1px;
+}
+.btn-redirect .login-btn {
+  color: #ff3f6c !important;
+  font-weight: 500 !important;
+}
+.btn-redirect:hover {
+  border: 1px solid #ff3f6c;
+}
+.btn-redirect .login-btn:hover {
+  font-weight: 600;
+}
+.dropdown-content a {
+  color: gray;
+  padding: 5px 12px 5px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dropdown-content a:hover {
+  font-weight: 500;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  padding-bottom: 18px !important;
+  border-bottom: 3px solid #ee5f73;
+}
+.new {
+  background-color: #ff3f6c;
+  border-radius: 4px 0 4px 0;
+  margin-left: 9px;
+  font-weight: 700;
+  color: white;
+  padding: 1px;
+}

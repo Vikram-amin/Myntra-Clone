@@ -11,7 +11,7 @@ function navbar() {
             <section>
               <h2 class="item-1-heading">Topwear</h2>
               <ul class="mega-links">
-                <li><a href="#">T-Shirts</a></li>
+                <li><a href="../HTML/product.html">T-Shirts</a></li>
                 <li><a href="#">Casual Shirts</a></li>
                 <li><a href="#">Formal Shirts</a></li>
                 <li><a href="#">SweatShirts</a></li>
@@ -488,7 +488,7 @@ function navbar() {
       </div>
     </li>
     <li>
-      <a href="#" class="menu-item-6">Studio <Span class="sup-part">NEW</Span></a>
+      <a href="#" class="menu-item-6">STUDIO<Span class="sup-part">NEW</Span></a>
       <div class="mega-menu">
         <div class="content-6">
           <div class="col">
@@ -496,7 +496,7 @@ function navbar() {
              <img class="image-1" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg" alt="">
              <p>Your daily insipiration for everything fashion </p>
              <img class="image-2" src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
-             <img src="../../IMAGES/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
+             <img src="../IMAGES/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
             </section>
           </div>
         </div>
