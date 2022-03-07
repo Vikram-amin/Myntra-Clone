@@ -1,0 +1,133 @@
+#current_step-1,
+#current_step-3 {
+  border: none !important;
+}
+.CheckoutFootercontainer {
+  margin-top: 3% !important;
+  margin-bottom: 0px !important;
+  padding-right: 0px !important;
+}
+#addressContainer {
+  width: 60%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+}
+
+#adreeParent {
+  width: 50%;
+  border: 1px solid lightgray;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #282c3f;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.container1 {
+  margin: 15px;
+}
+
+.name {
+  width: 98%;
+  height: 40px;
+  border-width: thin;
+  border: 1px solid #dcdcdf;
+  border-radius: 2px;
+  padding-left: 13px;
+}
+
+.data {
+  width: 45%;
+  height: 40px;
+  border-width: thin;
+  border: 1px solid #dcdcdf;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-left: 13px;
+}
+
+.container2 {
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 -1px 4px 0 #1f1e1e4d;
+}
+
+.button2 {
+  background-color: #ff3f6c !important;
+  font-size: 14px !important;
+  border-radius: 4px !important;
+  padding: 14px !important;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  border: none;
+}
+
+#totalAdress {
+  width: 40%;
+  margin-left: 10%;
+}
+
+#priceDetailsContainer {
+  margin-top: 25px;
+  font-family: Whitney, Helvetica, Arial, sans-serif !important;
+}
+
+.priceDetails {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+  color: #535766;
+}
+
+.totalDiv {
+  display: flex;
+  justify-content: space-between;
+  line-height: 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #282c3f;
+}
+
+.greenText {
+  color: #03a685;
+}
+
+.totalDiv button {
+  color: #ff3f6c;
+  cursor: pointer;
+  border: none;
+}
+
+.knowMore {
+  font-weight: 700;
+  color: #ff3f6c;
+  font-size: 11px;
+  position: relative;
+  bottom: 7px;
+}
+
+.totalAmountDiv {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 16px;
+  line-height: 16px;
+  padding-bottom: 16px;
+}
+
+#footerEl {
+  padding: 0;
+  margin: 0;
+}

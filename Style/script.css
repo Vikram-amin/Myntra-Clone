@@ -1,0 +1,86 @@
+.Spara {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  color: #282c3f;
+  margin: 0 0 24px;
+  padding-left: 16px;
+}
+
+#productCOntainerItems {
+  display: grid;
+  grid-template-columns: repeat(5, 17%);
+  grid-gap: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#productCOntainerItems #outerDIv {
+  width: 100%;
+}
+
+#productCOntainerItems img {
+  width: 100%;
+  margin-bottom: -10px;
+  padding: 0;
+}
+#productCOntainerItems #products a {
+  text-decoration: none;
+}
+
+#productCOntainerItems #products a > div {
+  margin: 5px;
+  padding: 5px;
+  color: black;
+  line-height: 30px;
+}
+
+#productCOntainerItems #products .brandname {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #282c3f;
+  margin-bottom: -5px;
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+}
+
+#productCOntainerItems #products .title {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+
+#productCOntainerItems #products .price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#productCOntainerItems #products .line-through {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+#productCOntainerItems #products .discount {
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

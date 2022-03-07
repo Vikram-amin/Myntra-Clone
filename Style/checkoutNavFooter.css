@@ -1,0 +1,111 @@
+/* ....................................Navbar */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  scrollbar-width: none;
+  scrollbar-color: #88858a #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #88858a;
+  border-radius: 2px;
+  border: 3px solid #968d8d;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  font-family: "Whitney", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 10px 50px;
+  margin-top: 0.8%;
+}
+.hr1 {
+  width: 1450px;
+  margin: 0 auto;
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #696b79;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Whitney", Arial, Helvetica, sans-serif;
+}
+
+.secure-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: #696b79;
+}
+.secure-logo p {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #696b79;
+}
+
+#current_step-1,
+#current_step-2,
+#current_step-3 {
+  color: rgb(43, 160, 92);
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(43, 160, 92);
+}
+
+/* ...................................footer  */
+
+.CheckoutFooter {
+  width: 75%;
+  margin: auto;
+}
+
+.CheckoutFootercontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 21.5%;
+  margin-block-end: 40px;
+  padding-right: 50px;
+  font-family: "Whitney", Helvetica, Arial, sans-serif !important;
+}
+
+.Help {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.CheckoutFooterimages img {
+  width: 60px;
+  height: 38px;
+}
