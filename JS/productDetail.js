@@ -136,8 +136,7 @@ const displayData = () => {
   let cart = document.getElementById("cart");
   cart.addEventListener("click", () => {
     addToCart(product);
-    // cart.innerHTML = 'GO TO BAG ->'
-    window.location.href = "../HTML/cart.html";
+   
   });
 
 

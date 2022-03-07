@@ -47,25 +47,13 @@ priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span 
   updateCartCount(JSON.parse(localStorage.getItem('cart')))
 
   const cartTotal = ()  => {
-    let data = JSON.parse(localStorage.getItem("cart"));
-    let sum1 = 0
-    let sum2 = 0
-    let sum3 = 0
-    for (let i = 0; i < data.length; i++) {
-      sum1 += Number(data[i].off_price);
-      sum2 += Number(data[i].price);
-      sum3 += (data[i].off_price- data[i].price)
-    }
-    let total1 = sum1.toFixed(2)
-    let total2 = sum2.toFixed(2)
-    let discount = sum3.toFixed(2)
+    let totalMRP = JSON.parse(localStorage.getItem('totalMRP'));
+    let total = JSON.parse(localStorage.getItem('total'));
+    let discount = JSON.parse(localStorage.getItem('discount'));
     //console.log(sum)
-    document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
-    document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+    document.getElementById("totalPrice").innerHTML = " ₹ " + totalMRP ;
+    document.getElementById("totalAmount").innerHTML = " ₹ " + total;
     document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
-  
-    localStorage.setItem("total", JSON.stringify(total2));
-    localStorage.setItem("discount", JSON.stringify(discount));
   }
   cartTotal();
 
