@@ -136,8 +136,8 @@ const displayData = () => {
   let cart = document.getElementById("cart");
   cart.addEventListener("click", () => {
     addToCart(product);
-  //  cart.innerHTML = 'GO TO BAG ->'
-  // window.location.href = "../HTML/cart.html";
+    // cart.innerHTML = 'GO TO BAG ->'
+    window.location.href = "../HTML/cart.html";
   });
 
 
@@ -208,6 +208,6 @@ const addToCart = (data) => {
 //   window.location.href = "../HTML/cart.html";
 // })
 //---------------------------------------------------------------------
-const cartCountInfo = document.getElementById('cart-count-info');
-let count = JSON.parse(localStorage.getItem('cart'));
-cartCountInfo.textContent = count.length
+const cartCountInfo = document.getElementById("cart-count-info");
+let count = JSON.parse(localStorage.getItem("cart"));
+cartCountInfo.textContent = count.length;

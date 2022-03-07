@@ -174,20 +174,3 @@ function footer() {
 }
 
 export { footer };
-
-// <div class="item-1">
-//   <h3>Registered Office Address</h3>
-//   <ul class="ulList>
-//     <li>Buildings Alyssa,</li>
-//     <li>Begonia and Clover situated in Embassy Tech Village,</li>
-//     <li>Outer Ring Road,</li>
-//     <li>Devarabeesanahalli Village,</li>
-//     <li>Varthur Hobli,</li>
-//     <li>Bengaluru - 560103, India</li>
-//   </ul>
-// </div>
-// <div class="item-2">
-//   <p>CIN: U72300KA2007PTC041799</p>
-//   <span>Telephone:</span>
-//   <span class="contact-no">+91-80-61561999</span>
-// </div>

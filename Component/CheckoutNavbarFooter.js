@@ -11,13 +11,13 @@ function navbar() {
   <nav>
     <ul>
       <li>
-        <a href="../HTML/cart.html" id="current_step-1">BAG</a>
+        <a id="current_step-1">BAG</a>
       </li>
       <li>----------</li>
-      <li><a href="../HTML/address.html" id="current_step-2">ADDRESS</a></li>
+      <li><a id="current_step-2">ADDRESS</a></li>
       <li>----------</li>
       <li>
-        <a href="../HTML/Payment.html" id="current_step-3">PAYMENT</a>
+        <a id="current_step-3">PAYMENT</a>
       </li>
     </ul>
   </nav>

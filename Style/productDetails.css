@@ -205,14 +205,16 @@ hr {
 
 .circles:hover {
   border: 1px solid #ff3e6c;
-  color: #ff3e6c;
+  background-color: #ff3e6c;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .circles:active {
   border: 1px solid #ff3e6c;
   color: #ff3e6c;
-  cursor: pointer;
+  background-color: #fff;
 }
 
 #right #Buttons {
@@ -237,7 +239,7 @@ hr {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-.cartbtn:active{
+.cartbtn:active {
   background-color: #ff3e6c;
   border: 2px solid black;
 }
@@ -258,9 +260,8 @@ hr {
   background-color: #fff;
   color: #282c3f;
 }
-.wishbtn:active{
+.wishbtn:active {
   border: 1px solid black;
-
 }
 
 .wishbtn:hover {

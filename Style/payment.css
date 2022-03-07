@@ -91,7 +91,6 @@ a {
   width: 20px;
   height: 20px;
 }
-
 #more {
   display: none;
 }
@@ -181,9 +180,10 @@ h1 {
   margin-bottom: 9px;
 }
 .item-1-input {
-  padding: 7px 0 7px 25px;
+  padding: 1.01rem;
   border-radius: 5px;
   outline: none;
+  font-size: 18px;
   border-width: 1px;
   margin: 9px 0 9px 0;
   color: black;
@@ -200,7 +200,7 @@ h1 {
   border-radius: 5px;
   background-color: #ff3f6c;
 }
-.accordion-item-body-content button .btn-item-1 {
+.accordion-item-body-content .btn-item-1 {
   color: #fff;
   font-size: medium;
   font-weight: bold;
