@@ -1,18 +1,20 @@
+Good evening everyone. We are team Myntra and we have build a clone of the myntra website. which is an e-commerce website where people can buy from wide range of products which aims at providing a hassle free and enjoyable shopping experience.
+
 # Myntra Clone
 
-About _Myntra_:- Myntra is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
-Our team was given a task to Clone the Myntra Website.
-This was a frontend project which includes HTML ,CSS and JavaScript with no usage of external libraries
-This project was completed under 6 days with a team of 3.
+About _Myntra_:- India's largest e-commerce store for fashion and lifestyle products, which aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
 
 ## Tech Stack Used:
+
+Our team was given a task to Clone the Myntra Website.
+This was a frontend project which includes HTML ,CSS and JavaScript with no usage of external libraries.
+This project was completed under 6 days with a team of 3.
 
 **Client:** HTML, CSS, JavaScript
 "https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png"
 
 How to run the project 📑
 You can also take the glimpse of our Project,just follow the below steps:
-
 1.Clone the repo using https://github.com/Vikram-amin/Myntra-Clone.git.
 
 2.Open the home.html page on your browser.
@@ -30,7 +32,6 @@ You can also take the glimpse of our Project,just follow the below steps:
 7.) In the Kids Section and Home&Living Section all have their different set of products with their offers which have been showcased in their individual pages
 8.) At the bottom section there is a footer, all the footer used for each individual section is different.
 Navbar section is common to all its individual sections.
-
 <u>Demo</u>
 Demo For HomePage ,Kids, Women ,Home&Living Sections
 
