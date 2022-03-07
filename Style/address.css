@@ -254,6 +254,15 @@
 
 /* add new adress modal */
 
+#RightPart {
+  width: 40%;
+  padding-left: 10px;
+  border-left: 1px solid lightgray;
+  margin-left: 20px;
+}
+
+/* add new adress modal */
+
 #shade,
 #modal {
   display: none;
@@ -270,8 +279,9 @@
 
 #modal {
   position: fixed;
+  padding: 50px;
   z-index: 101;
-  top: 10%;
+  top: 5%;
   left: 32%;
   width: 100%;
 }

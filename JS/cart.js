@@ -110,7 +110,7 @@ coupensDiv.innerHTML = `<div class="coupensDiv">
             <p class='Cname'>COUPONS</p>
         </div>
         <div class='Capply'>
-            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLSididhxOn_gqSKHQ_QWoDHQiFq6_CVDWjA&usqp=CAU'/> <span> Apply Coupons </span>  <button id="applyCoupensbtn"><b>Apply</b></button> </div>
+            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLSididhxOn_gqSKHQ_QWoDHQiFq6_CVDWjA&usqp=CAU'/> <span> Apply Coupons </span>  <button id="applyNow" id="applyCoupensbtn" ><b>Apply</b></button> </div>
             <div>
             </div>
         </div>
@@ -126,7 +126,7 @@ giftsDiv.innerHTML = `    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
     <div>
         <p>Buying for a loved one?</p>
         <p>Gift wrap and personalised message on card <br> Only 25 RS.</p>
-        <button onclick="applyNow()" id="applyNow"><b>Add Gift Wrap</b></button>
+        <button  id="applyNowG" ><b>Add Gift Wrap</b></button>
     </div>
     </div>`;
 
@@ -264,22 +264,76 @@ const cartTotal = () => {
   document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
 
   localStorage.setItem("total", JSON.stringify(total2));
+  localStorage.setItem("totalMRP", JSON.stringify(total1));
   localStorage.setItem("discount", JSON.stringify(discount));
 };
+let total1 = sum1.toFixed(2);
+let total2 = sum2.toFixed(2);
+let discount = sum3.toFixed(2);
+//console.log(sum)
+document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
+document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
+
+localStorage.setItem("total", JSON.stringify(total2));
+localStorage.setItem("discount", JSON.stringify(discount));
+
 cartTotal();
 
 //----------------------------------------------------------apply Coupen
 
-//   let applyCoupensbtn = docume.getElementById('applyCoupensbtn');
-//   applyCoupensbtn.addEventListener('click',()=>{
-//       addDiscount()
-//   })
+let applyCoupenButton = document.getElementById("applyCoupenSub");
+applyCoupenButton.addEventListener("click", sub);
 
-//   const addDiscount = () => {
-//       console.log("hi")
-//   }
+function sub() {
+  console.log("hi");
+  let amt = document.getElementById("totalAmount");
+  let promo = document.getElementById("promo").value;
+
+  let total = JSON.parse(localStorage.getItem("total"));
+  let discountAmt = JSON.parse(localStorage.getItem("discount"));
+
+  let num = Number(total);
+  let Dnum = Number(discountAmt);
+  // console.log(num)
+
+  if (promo == "masai30") {
+    let discount = num * (30 / 100);
+    let totalprice = (num - discount).toFixed(2);
+    document.getElementById("totalAmount").innerHTML = " ₹ " + totalprice;
+    let totalDiscount = Dnum + discount;
+
+    document.getElementById("discountPrice").innerHTML =
+      " - ₹ " + totalDiscount;
+
+    localStorage.setItem("total", JSON.stringify(totalprice));
+    localStorage.setItem("discount", JSON.stringify(totalDiscount));
+  } else {
+    alert("Promo Code not Valid");
+  }
+}
 
 //----------------------------------------------------------
+
+var modal3 = document.getElementById("myModal3");
+var btn3 = document.getElementById("applyNow");
+var span3 = document.getElementsByClassName("closeBtn3")[0];
+let applyCoupenButtonA = document.getElementById("applyCoupenSub");
+btn3.onclick = function () {
+  modal3.style.display = "block";
+};
+span3.onclick = function () {
+  modal3.style.display = "none";
+};
+
+applyCoupenButtonA.onclick = function () {
+  modal3.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+};
 
 //------------------------------------------------------------
 

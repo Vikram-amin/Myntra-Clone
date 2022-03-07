@@ -149,39 +149,28 @@ const updateCartCount = (cart) => {
 updateCartCount(JSON.parse(localStorage.getItem("cart")));
 
 const cartTotal = () => {
-  let data = JSON.parse(localStorage.getItem("cart"));
-  let sum1 = 0;
-  let sum2 = 0;
-  let sum3 = 0;
-  for (let i = 0; i < data.length; i++) {
-    sum1 += Number(data[i].off_price);
-    sum2 += Number(data[i].price);
-    sum3 += data[i].off_price - data[i].price;
-  }
-  let total1 = sum1.toFixed(2);
-  let total2 = sum2.toFixed(2);
-  let discount = sum3.toFixed(2);
+  let totalMRP = JSON.parse(localStorage.getItem("totalMRP"));
+  let total = JSON.parse(localStorage.getItem("total"));
+  let discount = JSON.parse(localStorage.getItem("discount"));
   //console.log(sum)
-  document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
-  document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+  document.getElementById("totalPrice").innerHTML = " ₹ " + totalMRP;
+  document.getElementById("totalAmount").innerHTML = " ₹ " + total;
   document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
-
-  localStorage.setItem("total", JSON.stringify(total2));
-  localStorage.setItem("discount", JSON.stringify(discount));
 };
 cartTotal();
 
-///------------------------------------adress input
+//------------------------------------------------------adress input
 
 let addressBtn = document.getElementById("addAdress");
 addressBtn.addEventListener("click", () => {
-  addAddress();
+  addAddress(event);
 });
 
-// let data = localStorage.getItem('address')
-// if(data === null){
-//     localStorage.setItem("address",JSON.stringify([]))
-// }
+let data = localStorage.getItem("address");
+if (data === null) {
+  localStorage.setItem("address", JSON.stringify([]));
+}
+
 function addAddress(event) {
   event.preventDefault();
   let name = document.getElementById("name").value;
@@ -202,20 +191,17 @@ function addAddress(event) {
     state,
   };
 
-  if (name && mobileNum && pincode && address && location && city && state) {
-    localStorage.removeItem("address");
-    let data = localStorage.getItem("address");
-    if (data === null) {
-      localStorage.setItem("address", JSON.stringify([]));
-    }
+  let data = JSON.parse(localStorage.getItem("address"));
+  if (name.length > 0) {
     data.push(addressData);
-    localStorage.setItem("address", JSON.stringify(data));
+  }
+  localStorage.setItem("address", JSON.stringify(data));
+
+  if (name && mobileNum && pincode && address && location && city && state) {
     goToAdressPage();
   } else {
     alert("Please Fill all boxes");
   }
-
-  localStorage.setItem("address", JSON.stringify(data));
 
   document.getElementById("name").value;
   document.getElementById("mobileNo").value;
@@ -225,9 +211,8 @@ function addAddress(event) {
   document.getElementById("city").value;
   document.getElementById("state").value;
 }
-//
 
-// modal window
+//---------------------------------------- modal window
 
 var modal = document.getElementById("modal");
 var shade = document.getElementById("shade");
@@ -240,6 +225,15 @@ document.getElementById("myBtn2").onclick = function () {
 document.getElementById("close").onclick = function () {
   modal.style.display = shade.style.display = "none";
 };
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    location.reload();
+  }
+};
+
+//------------------------------------------
 
 let placeOrder = document.getElementById("placeOrder");
 placeOrder.addEventListener("click", () => {
