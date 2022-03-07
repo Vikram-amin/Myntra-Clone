@@ -171,27 +171,6 @@ return  [
       },
   
       {
-        id: 3,
-        categories: "tshirt",
-        size: "Sizes : 39, 40, 42, 44...",
-        title: "Men White & Navy Blue Pure Cotton Striped Polo Collar T-shirt",
-        price: 699,
-        gender: "men",
-        description: "White and navy blue Tshirt for men",
-        brand: "Roadster",
-        color: "white",
-        discount: 50,
-        off_price: 1399,
-        images: {
-          image1: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6712234/2019/3/27/c914a7ac-d808-4ccc-95e6-a73a2bf351831553680490375-Roadster-Men-Navy-Blue-Striped-Polo-Collar-T-shirt-557155368-1.jpg",
-          image2: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6712234/2019/3/27/02f16aef-3086-45eb-b5a0-856dcd8731e51553680490346-Roadster-Men-Navy-Blue-Striped-Polo-Collar-T-shirt-557155368-3.jpg",
-          image3: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6712234/2019/3/27/69723b70-e844-4949-8dfc-ae96c0f66dc01553680490334-Roadster-Men-Navy-Blue-Striped-Polo-Collar-T-shirt-557155368-4.jpg",
-          image4: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6712234/2019/3/27/783dc4de-8dae-47a2-9ccd-628645baa2cf1553680490323-Roadster-Men-Navy-Blue-Striped-Polo-Collar-T-shirt-557155368-5.jpg",
-        },
-        rating: 4.1,
-        count: 47.0,
-      },
-      {
         id: 4,
         categories: "tshirt",
         size: "Sizes : 39, 40, 42, 44...",
@@ -320,34 +299,7 @@ return  [
         rating: 4.5,
         count: 41.5,
       },
-
       {
-        id: 9,
-        categories: "tshirt",
-        size: "Sizes : 39, 40, 42, 44...",
-        title: "Men Black Typography Printed Cotton T-shirt",
-        price: 384,
-        gender: "men",
-        description: "Men Mauve Solid Polo Collar T-shirt",
-        brand: "HRX by Hrithik Roshan",
-        color: "red",
-        discount: 45,
-        off_price: 699,
-        images: {
-          image1:
-            "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/1142777f-026c-4952-adc3-2a92fde814e61576820663411-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-1.jpg",
-          image2:
-            "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/a1cd3b5d-a251-4216-859f-e2a286d886af1576820663361-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-2.jpg",
-          image3:
-            "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/11f92baf-5518-4ca3-8520-655b7035f7771576820663308-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-3.jpg",
-          image4:
-            "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1840362/2019/12/20/31dc399e-1cf9-4053-934a-9f645c421b651576820663105-HRX-by-Hrithik-Roshan-Men-Black-Printed-Round-Neck-T-shirt-8-6.jpg",
-        },
-        rating: 4.2,
-        count: 38.2,
-      },
-
-            {
         id: 10,
         categories: "tshirt",
         size: "Sizes : 39, 40, 42, 44...",

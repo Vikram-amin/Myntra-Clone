@@ -1,23 +1,23 @@
-import { navbar, footer } from "../Component/CheckoutNavbarFooter.js";
+import {navbar,footer} from '../Component/CheckoutNavbarFooter.js'
 import { displaySimilarProducts } from "../Script/showData.js";
 import { items } from "../Component/similarProducs.js";
 
-let headerEl = document.getElementById("headerEl");
-headerEl.innerHTML = navbar();
+let headerEl = document.getElementById('headerEl');
+headerEl.innerHTML = navbar()
 
-let footerEl = document.getElementById("footerEl");
-footerEl.innerHTML = footer();
+let footerEl = document.getElementById('footerEl');
+footerEl.innerHTML = footer()
 
-let cartParent = document.getElementById("cartParent");
+let cartParent = document.getElementById('cartParent');
 
-let cartLeft = document.createElement("div");
-cartLeft.setAttribute("id", "cartLeft");
+let cartLeft = document.createElement('div');
+cartLeft.setAttribute('id','cartLeft')
 
-let avilableOfferDiv = document.createElement("div");
-avilableOfferDiv.setAttribute("id", "avilableOfferDiv");
+let avilableOfferDiv = document.createElement('div');
+avilableOfferDiv.setAttribute('id','avilableOfferDiv')
 
 avilableOfferDiv.innerHTML = `   <div class="avail_offer">
-<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgAWECXD-dGwIJDs8PmoO65IAVSAHqqGi3Q&usqp=CAU" alt=""><b>  Available Offers</b></div>
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgAWECXD-dGwIJDs8PmoO65IAVSAHqqGi3Q&usqp=CAU" alt=""><pre><b>  Available Offers</b></pre></div>
 <ul>
     <li> 5% Unlimited Cashback on Flipkart Axis Bank Ctedit Card TCA</li> <span id="dots"></span><span id="more">
         <li>10% Cashback upto R 100 on Paytm Postpaid transaction on a min spend of Rs 1000 , TCA
@@ -32,28 +32,29 @@ avilableOfferDiv.innerHTML = `   <div class="avail_offer">
         </li></span>
 </ul>
 <button id="showMoreOffer"><b>Show more </b></button>
-</div>`;
+</div>`
 
-cartLeft.append(avilableOfferDiv);
 
-var dataDiv = document.createElement("div");
-dataDiv.setAttribute("id", "dataDiv");
+cartLeft.append(avilableOfferDiv)
 
-const displayData = (data) => {
-  dataDiv.innerHTML = "";
-  data.forEach((el) => {
-    let div = document.createElement("div");
-    div.setAttribute("id", "outerDiv");
+let dataDiv = document.createElement('div')
+dataDiv.setAttribute('id','dataDiv')
 
-    let imgDiv = document.createElement("div");
-    imgDiv.setAttribute("id", "imgDiv");
-    let img = document.createElement("img");
-    img.src = el.images.image1;
-    imgDiv.append(img);
+const displayData =(data) =>{
+    dataDiv.innerHTML="";
+    data.forEach(el => {
+       let div = document.createElement('div')
+       div.setAttribute('id','outerDiv')
 
-    let descriptionDiv = document.createElement("div");
-    descriptionDiv.setAttribute("id", "descriptionDiv");
-    descriptionDiv.innerHTML = `<div>
+       let imgDiv = document.createElement('div')
+       imgDiv.setAttribute('id','imgDiv')
+       let img = document.createElement('img');
+       img.src = el.images.image1;
+       imgDiv.append(img)
+
+       let descriptionDiv = document.createElement('div')
+       descriptionDiv.setAttribute('id','descriptionDiv')
+       descriptionDiv.innerHTML =`<div>
        <div class="brandname"> ${el.brand}</div>
        <div class ='title'> ${el.title}</div>
        <div id="selectDiv">
@@ -78,33 +79,34 @@ const displayData = (data) => {
    </select>
        </div>
        <div class="price"> Rs. ${el.price} <span class="line-through">Rs. ${el.off_price}</span> <span class="discount">(${el.discount}% OFF)</span>
-       </div>`;
+       </div>`
 
-    div.append(imgDiv, descriptionDiv);
+       div.append(imgDiv,descriptionDiv)
 
-    let undo = document.createElement("button");
-    undo.setAttribute("id", "undo");
-    undo.textContent = "X";
-    div.append(undo);
+       let undo = document.createElement("button");
+       undo.setAttribute("id", "undo");
+       undo.textContent = "X";
+       div.append(undo)
+  
+       dataDiv.append(div)
 
-    dataDiv.append(div);
-
-    undo.addEventListener("click", () => {
-      removeCartList(el.id);
+       undo.addEventListener("click", () => {
+        removeCartList(el.id);
+      });
+     
     });
-  });
-  cartLeft.append(dataDiv);
-};
+    cartLeft.append(dataDiv)
+}
 
-displayData(JSON.parse(localStorage.getItem("cart")));
+displayData(JSON.parse(localStorage.getItem('cart')))
 
 //------------------------------------------------------------------------------------
 
-let cartRight = document.createElement("div");
-cartRight.setAttribute("id", "cartRight");
+    let cartRight = document.createElement('div');
+    cartRight.setAttribute('id','cartRight')
 
-let coupensDiv = document.createElement("div");
-coupensDiv.innerHTML = `<div class="coupensDiv">
+    let coupensDiv = document.createElement('div');
+    coupensDiv.innerHTML =`<div class="coupensDiv">
     <div class="couponsBox">
         <div>
             <p class='Cname'>COUPONS</p>
@@ -115,12 +117,12 @@ coupensDiv.innerHTML = `<div class="coupensDiv">
             </div>
         </div>
     </div>
-    </div>`;
+    </div>`
 
-cartRight.append(coupensDiv);
+    cartRight.append(coupensDiv)
 
-let giftsDiv = document.createElement("div");
-giftsDiv.innerHTML = `    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
+    let giftsDiv = document.createElement('div');
+    giftsDiv.innerHTML=`    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
     <div class="gifting">
     <div><img src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp" alt="" ></div>
     <div>
@@ -128,14 +130,14 @@ giftsDiv.innerHTML = `    <p class='Gname'>GIFITNG AND PERSONALIZAION</p>
         <p>Gift wrap and personalised message on card <br> Only 25 RS.</p>
         <button onclick="applyNow()" id="applyNow"><b>Add Gift Wrap</b></button>
     </div>
-    </div>`;
+    </div>`
 
-cartRight.append(giftsDiv);
+    cartRight.append(giftsDiv);
 
-let priceDetailsContainer = document.createElement("div");
-priceDetailsContainer.setAttribute("id", "priceDetailsContainer");
+    let priceDetailsContainer = document.createElement('div');
+    priceDetailsContainer.setAttribute('id','priceDetailsContainer')
 
-priceDetailsContainer.innerHTML = `<div class="priceDetails">PRICE DETAILS <span id="Pcount">( 0 Items )<span></div>
+    priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span id="Pcount">( 0 Items )<span></div>
     <div class="priceDetailDIv">
 
       <div class="totalDiv">
@@ -150,7 +152,7 @@ priceDetailsContainer.innerHTML = `<div class="priceDetails">PRICE DETAILS <span
 
       <div class="totalDiv">
         <div>Coupon Discount</div>
-        <button id="applyCoupensbtn" class><b>Apply Coupon</b></button>
+        <button id="applyCoupensbtn" class><b>Apply Coupen</b></button>
       </div>
 
       <div class="totalDiv">
@@ -169,106 +171,111 @@ priceDetailsContainer.innerHTML = `<div class="priceDetails">PRICE DETAILS <span
       <img src="../IMAGES/cart/noConvFee.jpg"/>
     </div>
 
-    <button id="placeOrder"><a href="../HTML/address.html">PLACE ORDER</a</button>
+    <button id="placeOrder">PLACE ORDER</button>
 
-    </div> <br> <br>`;
+    </div> <br> <br>`
 
-cartRight.append(priceDetailsContainer);
+    cartRight.append(priceDetailsContainer);
 
-cartParent.append(cartLeft, cartRight);
+    cartParent.append(cartLeft,cartRight)
 
-//----------------------------------------------------------------
-//similar product
-let cartContainer = document.getElementById("cartContainer");
-let SimilarProductontainer = document.createElement("div");
 
-let Cpara = document.createElement("div");
-Cpara.innerHTML = ` <div class="container" id="suggestions">
+
+
+  //----------------------------------------------------------------
+  //sililar product
+let cartContainer = document.getElementById('cartContainer')
+  let SimilarProductontainer = document.createElement("div");
+
+  let Cpara = document.createElement("div");
+  Cpara.innerHTML =` <div class="container" id="suggestions">
       <h4 >You May Also Like:</h4>
       <button class="myBtn1">All</button>
       <button class="myBtn">Shoes</button>
       <button class="myBtn">Beauty Accesories</button>
       <button class="myBtn">Lipsticks</button>
-  </div>`;
+  </div>`
 
-Cpara.setAttribute("class", "Cpara");
+  Cpara.setAttribute("class", "Cpara");
 
-let productCOntainerItems = document.createElement("div");
-productCOntainerItems.setAttribute("id", "productCOntainerItems");
+  let productCOntainerItems = document.createElement("div");
+  productCOntainerItems.setAttribute("id", "productCOntainerItems");
 
-displaySimilarProducts(items, productCOntainerItems); //import
+  displaySimilarProducts(items, productCOntainerItems); //import
 
-SimilarProductontainer.append(Cpara);
-SimilarProductontainer.append(productCOntainerItems);
-cartContainer.append(SimilarProductontainer);
+  SimilarProductontainer.append(Cpara);
+  SimilarProductontainer.append(productCOntainerItems);
+  cartContainer.append(SimilarProductontainer);
 
-//-------------------------------------------------------------------------------------
+  //-------------------------------------------------------------------------------------
 
-document.getElementById("showMoreOffer").addEventListener("click", () => {
-  showMore();
+
+document.getElementById('showMoreOffer').addEventListener('click',()=>{
+    showMore()
 });
 
 function showMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("showMoreOffer");
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("showMoreOffer");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less";
-    moreText.style.display = "inline";
-  }
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less";
+        moreText.style.display = "inline";
+    }
 }
 
 //-------------------------------------------------------remove item from cart
 
 const removeCartList = (id) => {
-  // console.log(id)
-  let data = JSON.parse(localStorage.getItem("cart"));
-  const newData = data.filter((item) => item.id != id);
-  localStorage.setItem("cart", JSON.stringify(newData));
-  location.reload();
-};
-displayData(JSON.parse(localStorage.getItem("cart")));
+    // console.log(id)
+    let data = JSON.parse(localStorage.getItem("cart"));
+    const newData = data.filter((item) => item.id != id);
+    localStorage.setItem("cart", JSON.stringify(newData));
+    location.reload();
+  };
+  displayData(JSON.parse(localStorage.getItem("cart")));
 
-/////--------------------------------------------------update count
+  /////--------------------------------------------------update count
 
-let cartCount = document.getElementById("Pcount");
+let cartCount = document.getElementById('Pcount')
 const updateCartCount = (cart) => {
-  cartCount.textContent = `( ${cart.length} Items)`;
-};
-updateCartCount(JSON.parse(localStorage.getItem("cart")));
+  cartCount.textContent = `( ${cart.length} Items)`
+}
+updateCartCount(JSON.parse(localStorage.getItem('cart')))
 
 /// -------------------------------------------------------cart total
-// quantity = document.getElementById('quantity').ariaValueMaxco
 
-const cartTotal = () => {
-  let data = JSON.parse(localStorage.getItem("cart"));
-  let sum1 = 0;
-  let sum2 = 0;
-  let sum3 = 0;
-  for (let i = 0; i < data.length; i++) {
-    sum1 += Number(data[i].off_price);
-    sum2 += Number(data[i].price);
-    sum3 += data[i].off_price - data[i].price;
+
+const cartTotal = ()  => {
+    let data = JSON.parse(localStorage.getItem("cart"));
+    let sum1 = 0
+    let sum2 = 0
+    let sum3 = 0
+    for (let i = 0; i < data.length; i++) {
+      sum1 += Number(data[i].off_price);
+      sum2 += Number(data[i].price);
+      sum3 += (data[i].off_price- data[i].price)
+    }
+    let total1 = sum1.toFixed(2)
+    let total2 = sum2.toFixed(2)
+    let discount = sum3.toFixed(2)
+    //console.log(sum)
+    document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
+    document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+    document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
+  
+    localStorage.setItem("total", JSON.stringify(total2));
+    localStorage.setItem("discount", JSON.stringify(discount));
   }
-  let total1 = sum1.toFixed(2);
-  let total2 = sum2.toFixed(2);
-  let discount = sum3.toFixed(2);
-  //console.log(sum)
-  document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
-  document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
-  document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
+  cartTotal();
 
-  localStorage.setItem("total", JSON.stringify(total2));
-};
-cartTotal();
-
-//----------------------------------------------------------apply Coupen
+  //----------------------------------------------------------apply Coupen
 
 //   let applyCoupensbtn = docume.getElementById('applyCoupensbtn');
 //   applyCoupensbtn.addEventListener('click',()=>{
@@ -279,25 +286,21 @@ cartTotal();
 //       console.log("hi")
 //   }
 
+
 //----------------------------------------------------------
 
-let Quantity = document.getElementById("quantity");
-Quantity.addEventListener("onchange", () => {
-  console.log(Quantity.value);
-});
 
-// let fQuantityButton = document.getElementById("quantity");
-// const getQuantity = () => {
-// console.log("hi")
-// }
+
+
+
 
 //------------------------------------------------------------
 
-let placeOrder = document.getElementById("placeOrder");
-placeOrder.addEventListener("click", () => {
-  goToAddressPage();
-});
+ let placeOrder= document.getElementById('placeOrder');
+ placeOrder.addEventListener('click',() => {
+     goToAddressPage()
+ })
 
-const goToAddressPage = () => {
-  window.location.href = "../HTML/address.html";
-};
+ const  goToAddressPage =() => {
+    window.location.href = "../HTML/addressInput.html";
+ }

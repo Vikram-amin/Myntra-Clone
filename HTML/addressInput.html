@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMAGES/Logo/myntra.svg" />
+    <title>ADDRESS</title>
+    <link rel="stylesheet" href="../Style/adressInput.css">
+    <link rel="stylesheet" href="../Style/checkoutNavFooter.css" />
+</head>
+<body>
+
+    <div id="headerEl"></div>
+    <br><br>
+
+  <div id ="addressContainer">
+      <div id="adreeParent">
+              <form id="addressForm">
+                <div class="container1">
+                  <h3>CONTACT DETAILS</h3>
+                  <input class="name" id="name" type="text" placeholder="NAME*"/><br /><br />
+                  <input class="name"  id="mobileNo" type="number" placeholder="Mobile No*" /><br /><br />
+                </div>
+
+                <div class="container1">
+                  <h3>ADDRESS</h3>
+
+                  <input
+                    class="name"
+                    id="pincode"
+                    type="number"
+                    placeholder="Pin Code*"
+                  /><br /><br />
+                  <input
+                    class="name"
+                    id="address"
+                    type="text"
+                    placeholder="Address(House No, Building, Street, Area)*"
+                  /><br /><br />
+                  <input
+                    class="name"
+                    id="location"
+                    type="text"
+                    placeholder="Location/Town*"
+                  /><br /><br />
+                  <input
+                    class="data"
+                    id="city"
+                    type="text"
+                    placeholder="City*"
+                  />
+                  <input
+                    class="data"
+                    id="state"
+                    type="text"
+                    placeholder="State*"
+                  />
+                </div>
+              </form>
+              <div class="container1">
+                <input type="checkbox" id="checkBox" />
+                <label
+                  for="checkBox"
+                  style="font-size: 14px; margin-left: 8px"
+                  >Make this my Default Address</label
+                >
+              </div>
+              <div class="container2">
+                <button class="button2" id="addAdress">
+                  ADD ADDRESS
+                </button>
+              </div>
+            </div>
+            <div id="totalAdress"></div>
+        </div>
+        
+        <br>
+        <div id="footerEl"></div>
+
+        <script type="module" src="../JS/addressInput.js"></script>
+</body>
+</html>

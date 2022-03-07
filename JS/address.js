@@ -1,135 +1,236 @@
-import { navbar, footer } from "../Component/CheckoutNavbarFooter.js";
+  import { navbar, footer } from "../Component/CheckoutNavbarFooter.js";
 
-let headerEl = document.getElementById("headerEl");
-headerEl.innerHTML = navbar();
+  let headerEl = document.getElementById("headerEl");
+  headerEl.innerHTML = navbar();
 
-let footerEl = document.getElementById("footerEl");
-footerEl.innerHTML = footer();
+  let footerEl = document.getElementById("footerEl");
+  footerEl.innerHTML = footer();
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+
+  let adressContainer = document.getElementById('AdressContainer')
+
+  let LeftPart = document.createElement('div')
+  LeftPart.setAttribute('id','LeftPart')
+
+  let RightPart = document.createElement('div')
+  RightPart.setAttribute('id','RightPart')
+
+  let topDiv = document.createElement('div')
+  let middleDiv = document.createElement('div')
+  middleDiv.setAttribute('id','middleDiv')
+  let BottomDiv = document.createElement('div')
+
+  topDiv.innerHTML=`    <div id="select_add">
+  <div id="select_add_text" > Select Delivery Address </div>
+  <div id="select_add_btn"> <button id="myBtn">ADD NEW ADDRESS</button></div>
+  </div> <br>
+  <div id="default_add_head">DEFAULT ADDRESS</div>
+  `
+
+  let data = JSON.parse(localStorage.getItem('address'))
+
+  function displayAdress(){
+    data.forEach(el => {
+      middleDiv.innerHTML=`<div> </br>
+  <span class="name_txt"><input type="radio">${el.name}</span>
+  <div class="address_txt">${el.address}</div>
+  <div class="location_txt"> <span>${el.city}</span>  <span>${el.state}</span>  <span>${el.pincode}</span> </div> <br>
+  <div class="moble_txt">Mobile :<span> ${el.mobileNum}</span></div> </br>
+  <div class="COD">Cash on Delivery avilable </div> 
+  <div class="button_txt"><button>REMOVE</button> <button>EDIT</button></div>
+  </div>`
+      
+    });
   }
-};
-var modal2 = document.getElementById("myModal2");
-var btn2 = document.getElementById("myBtn2");
-var span2 = document.getElementsByClassName("closeBtn2")[0];
-btn2.onclick = function () {
-  modal2.style.display = "block";
-};
-span2.onclick = function () {
-  modal2.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-};
-var photo = JSON.parse(localStorage.getItem("cart"));
-let discountPrice = JSON.parse(localStorage.getItem("total"));
-let total = 0;
-var price_details = document.querySelector(".payments_details");
-var estimate_delivery = document.querySelector(".delivery-estimate-info-box");
-console.log(photo);
 
-function deliveryUpdates() {
-  for (var i = 0; i < photo.length; i++) {
-    console.log(photo[i].images.image1);
-    // return photo[i].images.image1;
+  displayAdress()
 
-    estimate_delivery.innerHTML = `
-    <div class="delivery-estimate-info">
-      <img
-        src="${photo[i].images.image1}"
-        alt="product"
-        style="height: 48px; width: 36px; display: inline-block"
-      />
-      <div class="deliery-date">
-        <div>
-          <span style="font-family: Whitney, Helvetica, Arial"
-            >ESTIMATED DELIVERY</span
-          >
-          <span
-            style="
-              font-family: Whitney, Helvetica, Arial;
-              font-weight: 600;
-            "
-            >15 MAR 2022</span
-          >
-        </div>
-      </div>
+  BottomDiv.innerHTML=` <div id="add_newAdressDIV">
+  <button id="myBtn2">+ ADD NEW ADDRESS </button> </div>`
+
+  LeftPart.append(topDiv,middleDiv,BottomDiv)
+
+//--------------------------------------------------------------------
+
+  let dataDiv = document.createElement('div')
+  dataDiv.setAttribute('id','dataDiv')
+
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const time = new Date();
+  const month = time.getMonth();
+  const date = time.getDate();
+  const day = time.getDay();
+
+  const displayData =(data) =>{
+      dataDiv.innerHTML="";
+      data.forEach(el => {
+        let div = document.createElement('div')
+        div.setAttribute('id','outerDiv')
+
+        let imgDiv = document.createElement('div')
+        imgDiv.setAttribute('id','imgDiv')
+        let img = document.createElement('img');
+        img.src = el.images.image1;
+        imgDiv.append(img)
+
+        let dateDiv = document.createElement('div');
+        dateDiv.setAttribute('id','dateDiv')
+
+        dateDiv.innerHTML=`Estimated delivery by <span> ${days[day]} ${date} ${months[month]} </span>`
+
+
+        div.append(imgDiv,dateDiv)
+
+        dataDiv.append(div)
+      })
+    }
+
+
+  displayData(JSON.parse(localStorage.getItem('cart')))
+
+  let priceDetailsContainer = document.createElement('div');
+  priceDetailsContainer.setAttribute('id','priceDetailsContainer')
+  
+  priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span id="Pcount">( 0 Items )<span></div>
+  <div class="priceDetailDIv">
+  
+    <div class="totalDiv">
+      <div>Total MRP</div>
+      <div id="totalPrice">₹ 0</div>
     </div>
-  </div>`;
+  
+    <div class="totalDiv">
+      <div>Discount On MRP</div>
+      <div class="greenText" id="discountPrice">-₹ 0</div>
+    </div>
+  
+    <div class="totalDiv">
+      <div>Convinience Fee<span class="knowMore">  Know More</span></div>
+      <div class="greenText">FREE</div>
+    </div>
+  
+    <br/><hr/>
+  
+    <div class="totalAmountDiv totalDiv" >
+      <div>Total Amount</div>
+      <div id="totalAmount">₹ 0</div>
+    </div>`
+  
+  RightPart.append(dataDiv,priceDetailsContainer)
+
+  adressContainer.append(LeftPart,RightPart)
+
+  //---------------------------------------------------------------------------
+
+  let cartCount = document.getElementById('Pcount')
+  const updateCartCount = (cart) => {
+    cartCount.textContent = `( ${cart.length} Items)`
   }
+  updateCartCount(JSON.parse(localStorage.getItem('cart')))
+
+  const cartTotal = ()  => {
+    let data = JSON.parse(localStorage.getItem("cart"));
+    let sum1 = 0
+    let sum2 = 0
+    let sum3 = 0
+    for (let i = 0; i < data.length; i++) {
+      sum1 += Number(data[i].off_price);
+      sum2 += Number(data[i].price);
+      sum3 += (data[i].off_price- data[i].price)
+    }
+    let total1 = sum1.toFixed(2)
+    let total2 = sum2.toFixed(2)
+    let discount = sum3.toFixed(2)
+    //console.log(sum)
+    document.getElementById("totalPrice").innerHTML = " ₹ " + total1;
+    document.getElementById("totalAmount").innerHTML = " ₹ " + total2;
+    document.getElementById("discountPrice").innerHTML = " - ₹ " + discount;
+  
+    localStorage.setItem("total", JSON.stringify(total2));
+    localStorage.setItem("discount", JSON.stringify(discount));
+  }
+  cartTotal();
+
+  ///------------------------------------adress input
+
+  let addressBtn = document.getElementById("addAdress")
+  addressBtn.addEventListener('click',()=>{
+    addAddress(event)
+});
+
+  // let data = localStorage.getItem('address')
+  // if(data === null){
+  //     localStorage.setItem("address",JSON.stringify([]))
+  // }
+  function addAddress(event){
+    event.preventDefault();
+   let name = document.getElementById("name").value;
+   let mobileNum = document.getElementById("mobileNo").value;
+   let  pincode= document.getElementById("pincode").value;
+   let  address = document.getElementById("address").value;
+   let  location = document.getElementById("location").value;
+   let  city = document.getElementById("city").value;
+   let  state = document.getElementById("state").value;
+   
+
+   let addressData ={
+       name,
+       mobileNum,
+       pincode,
+       address,
+       location,
+       city,
+       state,
+   }
+
+  
+
+  
+
+   if(name &&
+     mobileNum &&
+     pincode &&
+     address &&
+     location &&
+     city &&
+     state){
+       localStorage.removeItem('address')
+      let data = localStorage.getItem('address')
+      if(data === null){
+          localStorage.setItem("address",JSON.stringify([]))
+      }
+      data.push(addressData)
+      localStorage.setItem("address",JSON.stringify(data))
+       goToAdressPage()
+     }else{
+       alert('Please Fill all boxes')
+     }
+
+         
+   
+   localStorage.setItem("address",JSON.stringify(data))
+
+    document.getElementById("name").value;
+    document.getElementById("mobileNo").value;
+    document.getElementById("pincode").value;
+    document.getElementById("address").value;
+    document.getElementById("location").value;
+    document.getElementById("city").value;
+    document.getElementById("state").value;
 }
-deliveryUpdates();
-// price_details.innerHTML = ` <h2 style="color: rgb(61, 61, 61); font-size: 18px; padding: 10px">
-// Price Details
-// </h2>
-// <hr />
-// <div
-// style="
-//   color: rgb(36, 36, 36);
-//   font-size: 13px;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
-// "
-// >
-// <div>Total MRP</div>
-// <div>${total()}</div>
-// </div>
-// <div
-// style="
-//   color: rgb(36, 36, 36);
-//   font-size: 13px;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
-// "
-// >
-// <div>Discounted on</div>
-// <div>MRP -${discount()}</div>
-// </div>
-// <div
-// style="
-//   color: rgb(36, 36, 36);
-//   font-size: 13px;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
-// "
-// >
-// <div>Convenience fee</div>
-// <div><b>Free</b></div>
-// </div>
-// <hr />
-// <div
-// style="
-//   color: rgb(36, 36, 36);
-//   font-size: 20px;
-//   font-weight: 400px;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
-// "
-// >
-// <div>Total</div>
-// <div>${discountPrice.total}</div>
-// </div>
-// <hr />
-// <button id="Place_Order">
-// <a href="../HTML/Payment.html" style="color: white"
-//   >Make Payment</a
-// >
-// </button>
-// `;
+//
+
+// modal window
+
+var modal = document.getElementById('modal');
+var shade = document.getElementById('shade');
+document.getElementById('myBtn').onclick = function() {
+  modal.style.display = shade.style.display = 'block';
+};
+document.getElementById('close').onclick = function() {
+  modal.style.display = shade.style.display = 'none';
+};
+
+        
