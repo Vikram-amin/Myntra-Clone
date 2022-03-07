@@ -376,7 +376,6 @@
   color: #ff3f6c;
 }
 
-
 /* ///------------------------------------------------ coupen code */
 
 .modal3 {
@@ -395,7 +394,6 @@
 .modal-content3 {
   max-width: 500px;
   background-color: white;
-  height: 80%;
   margin-top: 25px;
   margin-left: 35%;
   margin-right: 20%;
@@ -437,13 +435,15 @@
   background: #fff;
   padding: 8px;
   box-shadow: 0 -3px 3px 0 #1f1e1e4d;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .button2 {
-  background-color: #ff3f6c!important;
-  font-size: 14px!important;
-  border-radius: 4px!important;
-  padding: 14px!important;
+  background-color: #ff3f6c !important;
+  font-size: 14px !important;
+  border-radius: 4px !important;
+  padding: 14px !important;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -466,10 +466,9 @@
   margin-bottom: 4px;
 }
 
-.enter-code  input{
+.enter-code input {
   border: none;
   font-size: 16px;
-
 }
 
 #coupon-code {
@@ -491,14 +490,11 @@
   letter-spacing: 1px;
 }
 
-
-
 .coupon-code {
   width: 100%;
   padding: 16px 23px 16px 24px;
   background: #fff;
   margin-bottom: 1px;
- 
 }
 
 .coupon-id {
@@ -536,7 +532,7 @@
   margin-left: 55px;
 }
 
-.coupon-offer>p {
+.coupon-offer > p {
   color: #282c3f;
   font-size: 14px;
   font-weight: 600;
