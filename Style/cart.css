@@ -4,7 +4,10 @@
 }
 #current_step-2,
 #current_step-3 {
-  border: none;
+  border: none !important;
+}
+.CheckoutFootercontainer {
+  margin-top: 1% !important;
 }
 #cartContainer {
   width: 75%;
@@ -307,6 +310,9 @@
 .knowMore {
   font-weight: 700;
   color: #ff3f6c;
+  font-size: 11px;
+  position: relative;
+  bottom: 7px;
 }
 
 .totalAmountDiv {

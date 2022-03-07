@@ -136,12 +136,7 @@ const displayData = () => {
   let cart = document.getElementById("cart");
   cart.addEventListener("click", () => {
     addToCart(product);
-    // cart.innerHTML = 'GO TO BAG ->'
-    window.location.href = "../HTML/cart.html";
   });
-
-
-
 
   //-------------------------------------------------------------------
   let shirtSize = document.getElementsByClassName("circles");
@@ -195,15 +190,12 @@ const addToCart = (data) => {
   let cartbtn = document.getElementById("cart");
   let cart = JSON.parse(localStorage.getItem("cart"));
   let checkIfProductExit = cart.find((cartItem) => cartItem.id === data.id);
-    cart.push(data);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    location.reload();
-  
-  
-   
+  cart.push(data);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  location.reload();
 };
 
-// let go = document.getElementById('gotoBag')  
+// let go = document.getElementById('gotoBag')
 // go.addEventListener('click',()=>{
 //   window.location.href = "../HTML/cart.html";
 // })

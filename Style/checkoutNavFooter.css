@@ -79,8 +79,7 @@ a {
 #current_step-3 {
   color: rgb(43, 160, 92);
   padding-bottom: 3px;
-  border-bottom: 3px solid rgb(43, 160, 92);
-  border-radius: 5px;
+  border-bottom: 2px solid rgb(43, 160, 92);
 }
 
 /* ...................................footer  */
@@ -93,7 +92,7 @@ a {
 .CheckoutFootercontainer {
   display: flex;
   align-items: center;
-  padding: 20px;
+  margin-top: 21.5%;
   margin-block-end: 40px;
   padding-right: 50px;
   font-family: "Whitney", Helvetica, Arial, sans-serif !important;

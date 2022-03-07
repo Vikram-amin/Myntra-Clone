@@ -116,7 +116,7 @@ let total = 0;
 changedPrice.innerHTML = `
 <h3>PRICE DETAILS (${length()})</h3>
 <div class="price-1">
-  <p>Total MRP</p>
+  <p>Total MRP to be Paid</p>
   <span>&#8377;${Price_after_discount}</span>
 </div>
 <div class="price-2">

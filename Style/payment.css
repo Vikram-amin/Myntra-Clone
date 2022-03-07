@@ -55,8 +55,7 @@ a {
 #current_step {
   color: rgb(43, 160, 92);
   padding-bottom: 3px;
-  border-bottom: 3px solid rgb(43, 160, 92);
-  border-radius: 5px;
+  border-bottom: 2px solid rgb(43, 160, 92);
 }
 
 .avail_offer {
