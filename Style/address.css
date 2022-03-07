@@ -253,8 +253,7 @@ input{
 
   /* add new adress modal */
 
-  #shade,
-#modal {
+#shade, #modal {
   display: none;
 }
 
@@ -269,11 +268,11 @@ input{
 
 #modal {
   position: fixed;
+  padding: 50px;
   z-index: 101;
-  top: 10%;
+  top: 5%;
   left: 32%;
   width: 100%;
-  
 }
 
 #shade {
