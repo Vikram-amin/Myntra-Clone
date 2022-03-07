@@ -179,6 +179,25 @@ input{
   padding-bottom: 16px;
 }
 
+#placeOrder {
+  margin-left: 10px;
+  width: 95%;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background: #ff3f6c;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#placeOrder a {
+  color: #fff;
+}
+
 #footerEl {
     padding: 0 ;
     margin: 0;

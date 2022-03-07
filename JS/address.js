@@ -116,7 +116,8 @@
     <div class="totalAmountDiv totalDiv" >
       <div>Total Amount</div>
       <div id="totalAmount">₹ 0</div>
-    </div>`
+    </div>
+    <button id="placeOrder">Continue</button>`
   
   RightPart.append(dataDiv,priceDetailsContainer)
 
@@ -233,4 +234,12 @@ document.getElementById('close').onclick = function() {
   modal.style.display = shade.style.display = 'none';
 };
 
-        
+
+let placeOrder= document.getElementById('placeOrder');
+placeOrder.addEventListener('click',() => {
+    goToPaymentPage()
+})
+
+const  goToPaymentPage =() => {
+   window.location.href = "../HTML/payment.html";
+}
