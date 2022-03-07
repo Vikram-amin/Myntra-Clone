@@ -38,6 +38,14 @@ priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span 
 
   amountDiv.append(priceDetailsContainer)
 
+  //---------------------------------------------------------------------------
+
+  let cartCount = document.getElementById('Pcount')
+  const updateCartCount = (cart) => {
+    cartCount.textContent = `( ${cart.length} Items)`
+  }
+  updateCartCount(JSON.parse(localStorage.getItem('cart')))
+
   const cartTotal = ()  => {
     let data = JSON.parse(localStorage.getItem("cart"));
     let sum1 = 0
@@ -112,8 +120,6 @@ priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span 
               alert('Please Fill all boxes')
             }
 
-         
-
            document.getElementById("name").value;
            document.getElementById("mobileNo").value;
            document.getElementById("pincode").value;
@@ -121,8 +127,6 @@ priceDetailsContainer.innerHTML =`<div class="priceDetails">PRICE DETAILS <span 
            document.getElementById("location").value;
            document.getElementById("city").value;
            document.getElementById("state").value;
-
-
       }
 
       function goToAdressPage(){

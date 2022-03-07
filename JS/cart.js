@@ -37,7 +37,7 @@ avilableOfferDiv.innerHTML = `   <div class="avail_offer">
 
 cartLeft.append(avilableOfferDiv)
 
-var dataDiv = document.createElement('div')
+let dataDiv = document.createElement('div')
 dataDiv.setAttribute('id','dataDiv')
 
 const displayData =(data) =>{
