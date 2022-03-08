@@ -302,8 +302,7 @@
   background-color: rgba(211, 211, 211, 0.452);
 }
 .btn-redirect {
-  position: relative;
-  right: 25px;
+  margin: 0 auto;
   background-color: transparent;
   outline: none;
   border-width: 1px;
@@ -316,7 +315,7 @@
   border: 1px solid #ff3f6c;
 }
 .btn-redirect .login-btn:hover {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .dropdown-content a {
   color: gray;

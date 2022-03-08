@@ -35,6 +35,11 @@ body {
   font-family: "Whitney", Helvetica, Arial, sans-serif;
   color: black;
 }
+.logo > img {
+  width: 55px;
+  display: flex;
+  align-items: center;
+}
 .header {
   display: flex;
   justify-content: space-between;
