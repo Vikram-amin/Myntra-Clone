@@ -53,8 +53,9 @@ body {
   color: black;
 }
 .header a img {
-  width: 53px;
-  height: 36px;
+  width: 65px;
+  display: flex;
+  align-items: center;
 }
 .header ul {
   list-style: none;

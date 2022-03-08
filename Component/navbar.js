@@ -1,6 +1,6 @@
 function navbar() {
   return ` <header class="header">
-  <a style="margin-left: 27px;cursor:pointer;" href="../HTML/home.html" class="logo"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt=""></a>
+  <a style="margin-left: 27px;cursor:pointer;" href="../HTML/home.html" class="logo"><img src="../IMAGES/Logo/Myntra-logo.png" alt=""></a>
 <nav>
   <ul class="menu-items">
     <li>

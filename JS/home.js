@@ -18,11 +18,11 @@ let count = JSON.parse(localStorage.getItem("cart"));
 cartCountInfo.textContent = count.length;
 var update = document.querySelector(".dropdown-content");
 var data = JSON.parse(localStorage.getItem("id-details"));
-console.log(data);
-if (data.username == "" && data.email == "") {
+// console.log(data);
+if (data == null) {
   update.innerHTML = `
 <h3>Welcome</h3>
-  <p> <small>To access account and manage orders</small></p>
+  <p>To access account and manage orders</p>
   <button class="btn-redirect"> <a href="../HTML/Registration.html" class="login-btn">LOGIN / SIGNUP</a> </button>
   <hr class="hr1">
   <a href="#">Orders</a>
