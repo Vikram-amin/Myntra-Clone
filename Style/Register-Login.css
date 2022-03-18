@@ -38,8 +38,8 @@ body {
 }
 .header a img {
   width: 65px;
-  display: flex;
-  align-items: center;
+  position: relative;
+  top: 5px;
 }
 .header ul {
   list-style: none;
@@ -50,10 +50,17 @@ body {
   align-items: center;
 }
 .menu-items li {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   padding: 0.5rem 1rem;
   transition: background 0.3s ease-in-out;
+}
+.menu-item-6 .sup-part {
+  color: red;
+  position: relative;
+  font-size: 9px;
+  font-weight: 900;
+  bottom: 8px;
 }
 .nav-last {
   padding: 0 12px 0 17px;
@@ -65,7 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   align-items: center;
   padding-top: 5px;
@@ -73,7 +80,7 @@ body {
 }
 
 #svg {
-  height: 14px;
+  height: 17px;
   margin-left: 0px;
 }
 .search-div {

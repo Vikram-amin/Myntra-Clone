@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(to bottom, #ffffff 0%, #e1e8ed 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e8ed',GradientType=0 );
+  background: rgb(0, 0, 0);
   height: 100vh;
   margin: 13% auto;
   background-repeat: no-repeat;
@@ -60,7 +59,7 @@ h1 {
   bottom: 30px;
   border-radius: 30px;
   text-transform: capitalize;
-  box-shadow: 0 10px 16px 1px rgb(251, 174, 187);
+  box-shadow: 0 0 16px 2px rgb(251, 174, 187);
 }
 .go-home a {
   text-decoration: none;

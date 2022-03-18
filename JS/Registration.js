@@ -7,11 +7,11 @@ login_btn.addEventListener("click", registerData);
 
 function registerData() {
   if (email.value.length == 0) {
-    alert("please Enter Email");
+    alert("Please Enter Email");
   } else if (password.value.length == 0) {
-    alert("please Enter Password");
+    alert("Please Enter Password");
   } else if (user_name.value.length == 0) {
-    alert("please Enter User Name");
+    alert("Please Enter User Name");
   } else {
     loadData(email.value, password.value, user_name.value);
   }

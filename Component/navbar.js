@@ -494,7 +494,7 @@ function navbar() {
           <div class="col">
             <section>
              <img class="image-1" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg" alt="">
-             <p>Your daily insipiration for everything fashion </p>
+             <p>Your daily inspiration for everything fashion </p>
              <img class="image-2" src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="">
              <img src="../IMAGES/Nav-Bar/Item-6 Button.jpg" alt="" class="image-3">
             </section>

@@ -12,15 +12,23 @@ setInterval(function () {
     counter = 1;
   }
 }, 5000);
-
+// const btn_redirect = document.querySelector(".btn-redirect");
+const btn = document.querySelector(".login-btn");
+var val = btn.innerHTML;
+btn.addEventListener("click", () => {
+  localStorage.setItem("btn_text", JSON.stringify(val));
+  profile_details();
+});
+var update_profile_dropdown = JSON.parse(localStorage.getItem("btn_text"));
+console.log(update_profile_dropdown);
 const cartCountInfo = document.getElementById("cart-count-info");
 let count = JSON.parse(localStorage.getItem("cart"));
 cartCountInfo.textContent = count.length;
 var update = document.querySelector(".dropdown-content");
 var data = JSON.parse(localStorage.getItem("id-details"));
-// console.log(data);
-if (data == null) {
-  update.innerHTML = `
+function profile_details() {
+  if (data == null || update_profile_dropdown == "LOGOUT") {
+    update.innerHTML = `
 <h3>Welcome</h3>
   <p>To access account and manage orders</p>
   <button class="btn-redirect"> <a href="../HTML/Registration.html" class="login-btn">LOGIN / SIGNUP</a> </button>
@@ -36,12 +44,12 @@ if (data == null) {
   <a href="#">Saved Cards</a>
   <a href="#">Saved Addresses</a>
  `;
-} else {
-  update.innerHTML = `
+  } else {
+    update.innerHTML = `
   <h3>Welcome</h3>
-    <p><small class="username">${data.username}</small><br>
-    <small>${data.email}</small></p>
-    <button class="btn-redirect"> <a href="../HTML/Registration.html" class="login-btn">LOGIN / SIGNUP</a> </button>
+    <p class="username">${data.username}<br>
+    ${data.email}</p>
+    <button class="btn-redirect"> <a class="login-btn">LOGOUT</a> </button>
     <hr class="hr1">
     <a href="#">Orders</a>
     <a href="#">Wishlist</a>
@@ -54,4 +62,6 @@ if (data == null) {
     <a href="#">Saved Cards</a>
     <a href="#">Saved Addresses</a>
    `;
+  }
 }
+// profile_details();
