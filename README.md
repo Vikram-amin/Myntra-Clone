@@ -61,7 +61,7 @@ Cart Page
 ## Contributors  😇
 
 - 👤 [Vikram](https://www.github.com/Vikram-amin)
-- 👤 [Biswaranjan](https://www.github.com/biswa-ranjan-subudhi)
+- 👤 [Biswaranjan](https://www.github.com/icyflame21)
 - 👤 [Jasmine Shaikh](https://www.github.com/Jasmine-Shaikh)
 
 
