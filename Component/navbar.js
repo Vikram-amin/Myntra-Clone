@@ -1,10 +1,10 @@
 function navbar() {
   return ` <header class="header">
-  <a style="margin-left: 27px;cursor:pointer;" href="../HTML/home.html" class="logo"><img src="https://images.news18.com/ibnlive/uploads/2021/01/1611996262_ynt.jpeg?im=FitAndFill,width=1200,height=900" alt="logo"></a>
+  <a style="margin-left: 27px;cursor:pointer;" href="../index.html" class="logo"><img src="https://images.news18.com/ibnlive/uploads/2021/01/1611996262_ynt.jpeg?im=FitAndFill,width=1200,height=900" alt="logo"></a>
 <nav>
   <ul class="menu-items">
     <li>
-      <a href="../HTML/home.html" class="menu-item-1">MEN</a>
+      <a href="../index.html" class="menu-item-1">MEN</a>
       <div class="mega-menu">
         <div class="content">
           <div class="col">

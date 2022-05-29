@@ -1,4 +1,4 @@
 var goBack = document.querySelector(".go-home");
 goBack.addEventListener("click", () => {
-  window.location.href = "../HTML/home.html";
+  window.location.href = "../index.html";
 });
